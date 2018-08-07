@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 post_taxonomies:
+=======
+---
+blog_taxonomies:
+>>>>>>> b1671f23010217434288b7390f390ab9516e0e5c
   categories:
-  - name: "personal life"
+  - name: personal life
     color: "#333333"
+<<<<<<< HEAD
   - name: "tips and advice"
     color: "#3344ff"
+=======
+  - name: tips and advice
+>>>>>>> b1671f23010217434288b7390f390ab9516e0e5c
