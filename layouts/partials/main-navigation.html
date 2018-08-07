@@ -1,0 +1,32 @@
+<nav role="navigation" class="nav-menu w-nav-menu">
+    {{ range $.Site.Data.menus.main_menu }}
+    {{ if .children }}
+    <div data-delay="0" class="w-dropdown">
+        <div class="nav_link w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div>{{ .name }}</div>
+        </div>
+        <nav class="dropdown-list w-dropdown-list">
+            {{ range .children }}
+            {{ $url := replace .internal_link "_index.md" "" }}
+            {{ $urlComplete := replace $url ".md" "/" }}
+            <a {{ if .external_link }}href="{{ .external_link }}"{{ else }}href="/{{ $urlComplete }}"{{ end }} class="nav_link w-dropdown-link">{{ .name }}</a>
+            {{ end }}
+        </nav>
+    </div>
+    {{ else }}
+    {{ $url := replace .internal_link "_index.md" "" }}
+    {{ $urlComplete := replace $url ".md" "/" }}
+    <a {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link">{{ .name }}</a>
+    {{ end }}
+    {{ end }}
+    <div data-ix="newsletter-popup" class="updates">
+        <img src="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/59758fbbe6ed92540361f420_if_icon-email_211660.svg"
+            width="28" class="envelope-image" />
+        <div class="updates-text">Get Updates</div>
+    </div>
+</nav>
+
+<div class="menu-button w-nav-button">
+    <div class="icon-3 w-icon-nav-menu"></div>
+</div>

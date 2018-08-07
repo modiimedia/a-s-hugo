@@ -6,6 +6,7 @@ main_menu:
 - template: menu-item
   name: About
   internal_link: blog/our-story.md
+  external_link: ""
 - template: menu-item
   name: Services
   internal_link: blog/14-miles.md

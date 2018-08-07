@@ -44,7 +44,10 @@
     {{ if eq .style "black" -}}black{{- end -}}
     {{ if eq .style "alternate" -}}alternate{{- end -}}"
     {{ if eq .style "alternate" -}}
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))"
+        style="
+        background-image: -webkit-linear-gradient(121deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }});
+        background-image: linear-gradient(329deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }});
+    "
     {{- end -}}
 >
     <div class="bg-photo" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ .background_image }})"></div>
