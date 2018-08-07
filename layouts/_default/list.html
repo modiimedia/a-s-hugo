@@ -9,7 +9,7 @@
                     <div class="w-dyn-items">
                         {{ range first 1 .Data.Pages }}
                         <div class="collection-item w-dyn-item">
-                            <a style="background-image:url(&quot;https://daks2k3a4ib2z.cloudfront.net/5966f576355aa852e917b9a0/5a56eca3004c430001d991b2_vegas-trip-e1496939177523.jpg&quot;)"
+                            <a style="background-image:url({{ $.Site.Params.Cloudinary_url }}w_750,q_70,f_auto{{ .Params.featured_image }})"
                                 href="{{ .RelPermalink }}" class="link-block-9 w-inline-block">
                                 <div class="div-block-40">
                                     <h2 class="featured-heading">{{ .Title }}</h2>
@@ -34,18 +34,18 @@
                         <div class="grid-item w-dyn-item">
                             <article>
                                 <a href="{{ .RelPermalink }}" class="link-block-8 w-inline-block">
-                                    <figure style="background-image:url({{ .Params.featured_image }})"
+                                    <figure style="background-image:url({{ $.Site.Params.cloudinary_url }}w_400,h_200,c_fill,q_70,f_auto{{ .Params.featured_image }})"
                                         class="blog-grid-photo"></figure>
                                     <section class="div-block-37">
                                         <div class="w-clearfix">
-                                            {{ with .Params.category }}
+                                            {{ with .Params.categories }}
                                             <div style="background-color:#356597" class="category-label">{{ . }}</div>
                                             {{ end }}
                                             <h3 class="blog-grid-title">{{ .Title }}</h3>
                                             <div class="div-block-39-copy">
                                                 <div class="blog-grid-meta">{{ .Date.Format "January 02, 2006" }}</div>
                                                 <div class="blog-grid-meta"> | </div>
-                                                {{ $auth := .Params.Author }}
+                                                {{ $auth := replace .Params.Author "authors/" "" }}
                                                 <div class="blog-grid-meta">{{- range where $.Site.RegularPages "Section" "=" "authors" -}}{{- if eq .File.LogicalName $auth -}}{{- .Title -}}{{- end -}}{{- end -}}</div>
                                             </div>
                                             <p class="blop-grid-summary">{{ .Description }}</p>

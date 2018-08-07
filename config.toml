@@ -7,3 +7,6 @@ tag = "tags"
 category = "categories"
 videotag = "videotags"
 videoseries = "videoseries"
+
+[params]
+cloudinary_url = "https://res.cloudinary.com/modii/"

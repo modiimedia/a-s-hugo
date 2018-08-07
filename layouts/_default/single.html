@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div style="background-image:url({{ .Params.featured_image }})"
+<div style="background-image:url({{ $.Site.Params.cloudinary_url }}w_1600,q_50,f_auto{{ .Params.featured_image }})"
     class="blog-hero-banner">
     <div class="div-block-31"></div>
     <div class="container-div blog-header">
@@ -21,16 +21,15 @@
     <div class="div-block-34">
         <div class="div-block-33">
             {{ if .Params.Author }}
-            {{ $auth := .Params.Author }}
+            {{ $auth := replace .Params.Author "authors/" "" }}
             {{ range where .Site.RegularPages "Section" "=" "authors" }}
             {{ if eq .File.LogicalName $auth }}
-            <div style="background-image:url({{ .Params.photo }})"
-                class="author-photo"></div>
+            <img class="author-photo" src="{{ $.Site.Params.cloudinary_url }}w_100,h_100,c_fill,g_face,q_90,f_auto{{ .Params.photo }}" alt="photo of {{ .Title }}">
             <p class="author-name">{{ .Title }}</p>
             {{ end }}
             {{ end }}
             {{ end }}
-            <div class="blog-date">January 10, 2018</div>
+            <div class="blog-date">{{ .Date.Format "January 02, 2006" }}</div>
         </div>
     </div>
     <div class="container-div blog-content">
@@ -40,10 +39,14 @@
         <div class="tag-heading">
             <strong>Keywords:</strong>
         </div>
-        <div class="w-dyn-list">
-            <div class="empty-state w-dyn-empty">
-                <div>No keywords found.</div>
+        <div class="tag-list w-dyn-items">     
+            {{ range .Params.tags }}
+            <div class="tag-item w-dyn-item">
+                <a href="/tags/{{ . | urlize }}" class="tag-link w-inline-block">
+                    <div>{{ . }}</div>
+                </a>
             </div>
+            {{ end }}
         </div>
         {{ partial "share-links.html" . }}
         {{ partial "mailchimp-form.html" . }}
