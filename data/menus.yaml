@@ -1,0 +1,20 @@
+---
+main_menu:
+- template: menu-item
+  name: Home
+  internal_link: _index.md
+- template: menu-item
+  name: About
+  internal_link: blog/our-story.md
+- template: menu-item
+  name: Services
+  internal_link: blog/14-miles.md
+- template: dropdown-menu
+  name: Tips & Advice
+  children:
+  - template: menu-item
+    name: Articles
+  - template: menu-item
+    name: Videos
+- template: menu-item
+  name: Contact
