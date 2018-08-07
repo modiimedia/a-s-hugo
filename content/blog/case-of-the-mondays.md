@@ -1,11 +1,11 @@
 ---
 title: Case of the Monday's
 date: 2017-03-28 00:00:00 +0000
-author: aimee-ravichandran.md
+author: authors/aimee-ravichandran.md
 description: Ever wake up on a Monday and just been in a mood? That was me this morning.
   I start my morning routine of making some hot tea and startin...
 featured_image: "/v1533615753/abundantlysocial/20170327_182252%20%281%29.jpg"
-categories: personal life
+category: personal life
 tags:
 - mornings
 - mondays
@@ -14,6 +14,7 @@ seo:
   meta_title: 
   meta_description: 
   social_image: 
+categories: personal life
 
 ---
 Ever wake up on a Monday and just been in a mood? That was me this morning. I start my morning routine of making some hot tea and starting work, when the dogs (Thor and Hercules) started jumping on and off the couch trying to get my attention. They wanted to make it clear that they needed to go outside. I tried to put it off as long as I could to finish my meetings and work for the day, which was not going to happen. I shut my laptop frustrated that the dogs could not wait a couple more minutes. Moments like this I wish we had a yard that I could just let the dogs out the backdoor and continue what I was doing. I put the harnesses on the dogs and we begin our daily walk around the lake.
