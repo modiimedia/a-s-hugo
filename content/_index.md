@@ -10,7 +10,7 @@ hero_banner:
     show_button: true
     button_text: Contact Us Today
     internal_link: blog/our-story.md
-    external_link: 
+    external_link: ''
 testimony_slider:
 - name: Anthony J. Harris
   title: Author
@@ -50,14 +50,14 @@ content_sections:
     thoughts and highlighting key points of your business. These skills capture potential
     client's attention from the moment they click on your website enticing them to
     want to take a closer look at what your company can offer.
-  style: dark
+  style: default
   background_image: "/v1533615752/abundantlysocial/more3%20%281%29.png"
   button_settings:
     show: true
     button_text: Learn More About Us
     internal_link: authors/aimee-ravichandran.md
 - show: true
-  heading: Social Marketing With A Personal Touch
+  heading: We are pretty cool
   text: Abundantly Social has a unique ability to present your company's message to
     the public as if they are long lost friends. This natural ability to communicate
     on a personal level is what makes Abundantly Social so masterful at organizing
@@ -65,21 +65,21 @@ content_sections:
     client's attention from the moment they click on your website enticing them to
     want to take a closer look at what your company can offer.
   style: light
-  background_image: "/v1533615752/abundantlysocial/more3%20%281%29.png"
+  background_image: "/v1533615750/abundantlysocial/kait-loggins-291456-p-3200.jpg"
   button_settings:
     show: true
     button_text: Learn More About Us
     internal_link: authors/aimee-ravichandran.md
 - show: true
-  heading: Social Marketing With A Personal Touch
+  heading: Here's Another Section
   text: Abundantly Social has a unique ability to present your company's message to
     the public as if they are long lost friends. This natural ability to communicate
     on a personal level is what makes Abundantly Social so masterful at organizing
     thoughts and highlighting key points of your business. These skills capture potential
     client's attention from the moment they click on your website enticing them to
     want to take a closer look at what your company can offer.
-  style: black
-  background_image: "/v1533615752/abundantlysocial/more3%20%281%29.png"
+  style: alternate
+  background_image: "/v1533615750/abundantlysocial/kait-loggins-291456-p-3200.jpg"
   button_settings:
     show: true
     button_text: Learn More About Us
