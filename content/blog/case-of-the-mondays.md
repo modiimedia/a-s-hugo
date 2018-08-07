@@ -11,9 +11,9 @@ tags:
 - mondays
 - dog walking
 seo:
-  meta_title: 
-  meta_description: 
-  social_image: 
+  meta_title: ''
+  meta_description: ''
+  social_image: ''
 categories: personal life
 
 ---
