@@ -1,7 +1,7 @@
 ---
-label: Home
-hide_body: 
-is_partial: 
+label: Homepage
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
@@ -35,47 +35,101 @@ fields:
       label: Show button
       type: boolean
       hidden: false
-      default: ''
+      default: true
     - name: button_text
       label: Button text
       type: text
       hidden: false
       default: ''
-    - name: internal_link
-      label: Internal link
-      type: text
-      hidden: false
-      default: ''
+    - type: select
+      name: internal_link
+      config:
+        source:
+          type: pages
+      label: Internal Link
+      description: Select a page within your website you want to link to.
     - name: external_link
-      label: External link
+      label: Custom External Link
       type: text
       hidden: false
       default: ''
+      description: Copy and paste the url you want to link to. If this field is filled
+        in it will override the internal link selected above
     hidden: false
     default: ''
   hidden: false
   default: ''
-- name: testimony_slider
-  label: Testimony slider
-  type: field_group_list
+- type: field_group_list
+  name: testimony_slider
+  label: Testimony Slider
   fields:
-  - name: name
+  - type: text
+    name: name
     label: Name
-    type: text
-    hidden: false
-    default: ''
-  - name: title
+    description: Enter the name of the reviewer
+    config:
+      required: true
+  - type: text
+    name: title
     label: Title
-    type: text
-    hidden: false
-    default: ''
-  - name: testimony_text
-    label: Testimony text
-    type: textarea
-    hidden: false
-    default: ''
-  hidden: false
-  default: ''
+    description: Enter the title or position of the reviewer. (If the the reviewer
+      is a business you can put the type of business it is)
+  - type: textarea
+    name: testimony_text
+    label: Testimony Text
+    config:
+      required: true
+- type: field_group_list
+  label: Content Sections
+  name: content_sections
+  fields:
+  - type: boolean
+    label: Show Section
+    name: show
+    default: true
+  - type: text
+    name: heading
+    label: Section Heading
+  - type: textarea
+    name: text
+    label: Section Text
+  - type: select
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - light
+      - dark
+    label: Style
+    name: style
+    default: dark
+  - type: file
+    name: background_image
+    label: Background Image
+  - type: field_group
+    label: Button Settings
+    name: button_settings
+    fields:
+    - type: boolean
+      label: Show Button
+      name: show
+    - type: text
+      name: button_text
+      label: Button Text
+      default: Learn More
+    - type: select
+      name: internal_link
+      config:
+        source:
+          type: pages
+      label: Internal Link
+      description: Select a page on your website you want to link to
+    - type: text
+      name: external_link
+      label: Custom External Link
+      description: Copy and paste the external URL you want to link to. Filling out
+        this field will override the internal link selected above.
 - name: seo
   label: Seo
   type: field_group
