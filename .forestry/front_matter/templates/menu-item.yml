@@ -1,0 +1,23 @@
+---
+label: Menu Item
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: name
+  label: Name
+  config:
+    required: true
+- type: select
+  name: internal_link
+  config:
+    source:
+      type: pages
+    required: false
+  label: Page Link
+  description: What page do you want this item to link to?
+- type: text
+  name: external_link
+  label: Custom External Link
+  description: Copy the external URL you want to link to. Filling out this field will
+    override the page link field above.
