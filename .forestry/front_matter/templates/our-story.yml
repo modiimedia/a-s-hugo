@@ -41,9 +41,12 @@ fields:
   name: categories
   config:
     source:
-      type: datafiles
-      file: 
-      path: blog_taxonomies
+      type: simple
+      file: data-taxonomies-yaml
+      path: 
+    options:
+    - articles
+    - personal life
   label: Categories
 - name: tags
   label: Tags
