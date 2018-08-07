@@ -1,6 +1,6 @@
 ---
 title: 14 Miles
-date: 2017-01-16 00:00:00 +0000
+date: 2017-01-16 18:00:00 -0600
 author: authors/aimee-ravichandran.md
 description: You see, my idea of camping or being outdoors is being clean and not
   letting bugs bite me. I guess in a sense, I am a little bit of a...
