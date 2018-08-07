@@ -138,7 +138,7 @@ figcaption {
 }
 
 .nav_link:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .nav_link.w--current {
@@ -202,7 +202,7 @@ figcaption {
   padding: 15px 20px;
   float: none;
   border-radius: 0px;
-  background-color: var(--primary);
+  background-color: var(--accent);
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
@@ -210,7 +210,7 @@ figcaption {
 }
 
 .button:hover {
-  background-color: var(--primary);
+  background-color: var(--accent);
   filter: brightness(95%)
 }
 
@@ -441,7 +441,7 @@ figcaption {
 .submit-button {
   display: none;
   margin-top: 40px;
-  background-color: var(--primary);
+  background-color: var(--accent);
 }
 
 .success-message {
@@ -1317,7 +1317,7 @@ figcaption {
 }
 
 .updates:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .updates-text {
@@ -1409,7 +1409,7 @@ figcaption {
   display: block;
   width: 120px;
   height: 2px;
-  background-color: var(--primary);
+  background-color: var(--accent);
   opacity: 0;
   -webkit-transform: scale3d(0.5, 1, 1);
   transform: scale3d(0.5, 1, 1);
@@ -1730,7 +1730,7 @@ figcaption {
 }
 
 .blog-text-block a {
-  color: var(--primary);
+  color: var(--accent);
   font-weight: 400;
   text-decoration: underline;
 }
@@ -1807,7 +1807,7 @@ figcaption {
 }
 
 .link-block-8:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .blog-grid-photo {
@@ -1925,7 +1925,7 @@ figcaption {
   margin-bottom: 10px;
   border-style: none none solid;
   border-width: 1px 1px 0px;
-  border-color: var(--primary);
+  border-color: var(--accent);
   -webkit-transition: border 200ms ease;
   transition: border 200ms ease;
 }
@@ -2045,7 +2045,7 @@ figcaption {
 }
 
 .category-link {
-  color: var(--primary);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -2075,18 +2075,18 @@ figcaption {
 .tag-link {
   padding-right: 10px;
   padding-left: 10px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--accent);
   border-radius: 20px;
   -webkit-transition: background-color 200ms ease, color 200ms ease;
   transition: background-color 200ms ease, color 200ms ease;
-  color: var(--primary);
+  color: var(--accent);
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;
 }
 
 .tag-link:hover {
-  background-color: var(--primary);
+  background-color: var(--accent);
   color: #fff;
 }
 
@@ -2278,7 +2278,7 @@ figcaption {
 }
 
 .video-item-inner:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .video-thumb {
@@ -2422,20 +2422,20 @@ figcaption {
 }
 
 .link-block-11:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .button-smaller {
   padding: 5px 15px;
   float: none;
   border-radius: 0px;
-  background-color: var(--primary);
+  background-color: var(--accent);
   color: #fff;
   text-decoration: none;
 }
 
 .button-smaller:hover {
-  background-color: var(--primary);
+  background-color: var(--accent);
   filter: brightness(95%);
   -webkit-filter: brightness(95%);
 }

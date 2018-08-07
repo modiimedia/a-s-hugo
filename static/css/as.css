@@ -33,7 +33,7 @@
     color: var(--text-color);
   }
   .alternate .button {
-    background:var(--secondary);
+    background:var(--main);
   }
   .light .button {
     background: var(--text-color);
@@ -44,7 +44,7 @@
     color: var(--text-color);
   }
   .dark_section.alternate {
-    background:var(--secondary);
+    background:var(--main);
   }
 
   .dark_section.black {

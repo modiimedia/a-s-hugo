@@ -23,13 +23,13 @@ fields:
     config:
       color_format: Hex
       required: true
-    label: Primary Color
-    name: primary
+    label: accent Color
+    name: accent
   - type: color
-    name: secondary
+    name: main
     config:
       color_format: Hex
       required: true
-    label: Secondary Color
+    label: main Color
 data_files:
 - data/style.yaml

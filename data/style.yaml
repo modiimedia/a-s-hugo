@@ -1,11 +1,11 @@
 ---
 site_colors:
   background: "#373868"
-  primary: "#fd27b0"
-  secondary: "#57a1ff"
+  accent: "#fd27b0"
+  main: "#57a1ff"
   text_color: "#333333"
 # site_colors:
 #   background: "#373868"
-#   primary: "#fd27b0"
-#   secondary: "#57a1ff"
+#   accent: "#fd27b0"
+#   main: "#57a1ff"
 #   text_color: "#333333"
