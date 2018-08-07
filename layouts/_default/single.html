@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div style="background-image:url({{ .Params.featured_image }})"
+    class="blog-hero-banner">
+    <div class="div-block-31"></div>
+    <div class="container-div blog-header">
+        <div class="blog-breadcrumbs">
+            <div class="breadcrumb-text">
+                <a href="/{{ .Section | urlize }}" class="link-3">{{ title .Section }} </a>
+                {{ with .Params.category }}&nbsp;/&nbsp;
+                <a href="/category/{{ . | urlize }}" class="breadcrump-link w-inline-block">
+                    <div class="breadcrumb-text">{{ title . }}</div>
+                </a>
+            {{ end }}
+            </div>
+        </div>
+        <h1 class="blog-title">{{ .Title }}</h1>
+        <p class="blog-subheading">{{ .Description }}</p>
+    </div>
+</div>
+<div class="about_page_section-copy">
+    <div class="div-block-34">
+        <div class="div-block-33">
+            {{ if .Params.Author }}
+            {{ $auth := .Params.Author }}
+            {{ range where .Site.RegularPages "Section" "=" "authors" }}
+            {{ if eq .File.LogicalName $auth }}
+            <div style="background-image:url({{ .Params.photo }})"
+                class="author-photo"></div>
+            <p class="author-name">{{ .Title }}</p>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+            <div class="blog-date">January 10, 2018</div>
+        </div>
+    </div>
+    <div class="container-div blog-content">
+        <div class="blog-text-block w-richtext">
+            {{ .Content }}
+        </div>
+        <div class="tag-heading">
+            <strong>Keywords:</strong>
+        </div>
+        <div class="w-dyn-list">
+            <div class="empty-state w-dyn-empty">
+                <div>No keywords found.</div>
+            </div>
+        </div>
+        {{ partial "share-links.html" . }}
+        {{ partial "mailchimp-form.html" . }}
+    </div>
+</div>
+{{ end }}

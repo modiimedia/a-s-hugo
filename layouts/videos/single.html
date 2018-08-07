@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+{{ $ytId := replace .Params.video_link "https://www.youtube.com/watch?v=" "" }}
+
+<div class="video-hero-section w-embed">
+    <div class="video-hero-image" 
+    {{ if .Params.featured_image }}
+        style="background-image: URL({{ .Params.featured_image }}); background-size: cover; background-repeat: no-repeat; background-position: center center"
+    {{ else }}
+        style="background-image: URL(https://img.youtube.com/vi/{{ $ytId }}/hqdefault.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center"
+    {{ end }}>
+        <div class="video-banner-overlay"></div>
+    </div>
+</div>
+<div class="video-hero-section w-condition-invisible">
+    <div style="background-image:none" class="video-hero-image">
+        <div class="video-banner-overlay"></div>
+    </div>
+</div>
+<div class="about_page_section-copy">
+    <div class="container-div video-content">
+        <div>
+            <a href="/videos" class="link-4">return to videos</a>
+        </div>
+        <h1 class="video-single-title">{{ .Title }}</h1>
+        <div class="html-embed-2 w-embed w-iframe">
+            <iframe width="100%" height="100%" style="position: absolute;" src="https://www.youtube.com/embed/{{ $ytId }}?rel=0&showinfo=0"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="video w-condition-invisible w-video w-embed"></div>
+        <div class="video-date">{{ .Date.Format "January 02, 2006"}}</div>
+        <div class="video-date w-condition-invisible w-dyn-bind-empty"></div>
+        <div class="w-richtext">
+            <p>{{ .Description }}</p>
+        </div>
+        {{ if .Params.videotags }}
+        <div class="tag-heading">
+            <strong>Tags:</strong>
+        </div>
+        <div class="w-dyn-list">
+            <div class="tag-list w-dyn-items">
+                {{ range .Params.videotags }}
+                <div class="tag-item w-dyn-item">
+                    <a href="/videotags/{{ . | urlize }}" class="tag-link w-inline-block">
+                        <div>{{ . }}</div>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ partial "share-links.html" . }}
+        {{ partial "mailchimp-form.html" . }}
+    </div>
+</div>
+{{ end }}

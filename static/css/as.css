@@ -1,0 +1,13 @@
+
+      /*a:hover .other-post-hover-overlay {
+	opacity: 0.7;
+  }*/
+
+  a:hover .featured-heading {
+    border-bottom: 10px solid #fd27b0;
+  }
+
+  .heading-7-copy {
+    position: sticky !important;
+    top: 10px;
+  }
