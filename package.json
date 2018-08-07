@@ -1,0 +1,31 @@
+{
+  "name": "abundantlysocial-hugo-site",
+  "version": "0.0.1",
+  "description": "hugo website for Abundantly Social",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModiiMedia/a-s-hugo.git"
+  },
+  "keywords": [
+    "hugo",
+    "website",
+    "forestryio"
+  ],
+  "author": "Josh Michaels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ModiiMedia/a-s-hugo/issues"
+  },
+  "homepage": "https://github.com/ModiiMedia/a-s-hugo#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "mkdirp": "^0.5.1",
+    "slugify": "^1.3.1",
+    "uglify-js": "^3.4.6",
+    "webflow-api": "^0.4.1"
+  }
+}
