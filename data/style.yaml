@@ -4,8 +4,6 @@ site_colors:
   primary: "#fd27b0"
   secondary: "#57a1ff"
   text_color: "#333333"
-# site_colors:
-#   background: "#373868"
-#   primary: "#fd27b0"
-#   secondary: "#57a1ff"
-#   text_color: "#333333"
+textures:
+  banner_texture: "/v1533685278/abundantlysocial/AdobeStock_83107159%20compressed.jpg"
+  background_texture: "/v1533615746/abundantlysocial/spiration-light.png"
