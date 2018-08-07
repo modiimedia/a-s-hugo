@@ -30,9 +30,19 @@
 
   .dark_section.light {
     background: white;
-    color: var(--text);
+    color: var(--text-color);
   }
-
+  .alternate .button {
+    background:var(--secondary);
+  }
+  .light .button {
+    background: var(--text-color);
+    color: white;
+  }
+  .black .button {
+    background: white;
+    color: var(--text-color);
+  }
   .dark_section.alternate {
     background:var(--secondary);
   }
