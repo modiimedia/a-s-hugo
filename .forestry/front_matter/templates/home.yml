@@ -84,6 +84,7 @@ fields:
       options:
       - light
       - dark
+      - black
     label: Style
     name: style
     default: dark
