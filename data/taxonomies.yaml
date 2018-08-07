@@ -1,7 +1,7 @@
 post_categoryies:
-- name: personal life
-  color: "#333333"
-- name: "tips and advice"
-  color: "#3344ff"
+  articles:
+    color: "#ff33aa"
+  personal_life:
+    color: "#3333ff"
 
 

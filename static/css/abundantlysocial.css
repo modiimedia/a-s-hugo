@@ -1,9 +1,9 @@
 body {
   min-height: 100vh;
   padding-top: 85px;
-  background-color: #373968;
+  background-color: var(--background);
   font-family: Lato, sans-serif;
-  color: #333;
+  color: var(--text-color);
   font-size: 18px;
   line-height: 30px;
 }
@@ -137,7 +137,7 @@ figcaption {
 }
 
 .nav_link:hover {
-  color: #fd27b0;
+  color: var(--primary);
 }
 
 .nav_link.w--current {
@@ -201,15 +201,16 @@ figcaption {
   padding: 15px 20px;
   float: none;
   border-radius: 0px;
-  background-color: #fd27b0;
-  color: #fff;
+  background-color: var(--primary);
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: #d82096;
+  background-color: var(--primary);
+  filter: brightness(95%)
 }
 
 .button.small {
@@ -439,7 +440,7 @@ figcaption {
 .submit-button {
   display: none;
   margin-top: 40px;
-  background-color: #fd27b0;
+  background-color: var(--primary);
 }
 
 .success-message {
@@ -1311,7 +1312,7 @@ figcaption {
 }
 
 .updates:hover {
-  color: #fd27b0;
+  color: var(--primary);
 }
 
 .updates-text {
@@ -1403,7 +1404,7 @@ figcaption {
   display: block;
   width: 120px;
   height: 2px;
-  background-color: #fd27b0;
+  background-color: var(--primary);
   opacity: 0;
   -webkit-transform: scale3d(0.5, 1, 1);
   transform: scale3d(0.5, 1, 1);
@@ -1719,7 +1720,7 @@ figcaption {
 }
 
 .blog-text-block a {
-  color: #fd27b0;
+  color: var(--primary);
   font-weight: 400;
   text-decoration: underline;
 }
@@ -1796,7 +1797,7 @@ figcaption {
 }
 
 .link-block-8:hover {
-  color: #fd27b0;
+  color: var(--primary);
 }
 
 .blog-grid-photo {
@@ -1914,7 +1915,7 @@ figcaption {
   margin-bottom: 10px;
   border-style: none none solid;
   border-width: 1px 1px 0px;
-  border-color: #fd27b0;
+  border-color: var(--primary);
   -webkit-transition: border 200ms ease;
   transition: border 200ms ease;
 }
@@ -2034,7 +2035,7 @@ figcaption {
 }
 
 .category-link {
-  color: #fd27b0;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -2064,18 +2065,18 @@ figcaption {
 .tag-link {
   padding-right: 10px;
   padding-left: 10px;
-  border: 1px solid #fd27b0;
+  border: 1px solid var(--primary);
   border-radius: 20px;
   -webkit-transition: background-color 200ms ease, color 200ms ease;
   transition: background-color 200ms ease, color 200ms ease;
-  color: #fd27b0;
+  color: var(--primary);
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;
 }
 
 .tag-link:hover {
-  background-color: #fd27b0;
+  background-color: var(--primary);
   color: #fff;
 }
 
@@ -2267,7 +2268,7 @@ figcaption {
 }
 
 .video-item-inner:hover {
-  color: #fd27b0;
+  color: var(--primary);
 }
 
 .video-thumb {
@@ -2411,20 +2412,22 @@ figcaption {
 }
 
 .link-block-11:hover {
-  color: #fd27b0;
+  color: var(--primary);
 }
 
 .button-smaller {
   padding: 5px 15px;
   float: none;
   border-radius: 0px;
-  background-color: #fd27b0;
+  background-color: var(--primary);
   color: #fff;
   text-decoration: none;
 }
 
 .button-smaller:hover {
-  background-color: #d82096;
+  background-color: var(--primary);
+  filter: brightness(95%);
+  -webkit-filter: brightness(95%);
 }
 
 .button-smaller.small {
