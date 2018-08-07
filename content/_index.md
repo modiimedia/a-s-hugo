@@ -64,35 +64,7 @@ content_sections:
     thoughts and highlighting key points of your business. These skills capture potential
     client's attention from the moment they click on your website enticing them to
     want to take a closer look at what your company can offer.
-  style: light
-  background_image: "/v1533615750/abundantlysocial/kait-loggins-291456-p-3200.jpg"
-  button_settings:
-    show: true
-    button_text: Learn More About Us
-    internal_link: authors/aimee-ravichandran.md
-- show: true
-  heading: Here's Another Section
-  text: Abundantly Social has a unique ability to present your company's message to
-    the public as if they are long lost friends. This natural ability to communicate
-    on a personal level is what makes Abundantly Social so masterful at organizing
-    thoughts and highlighting key points of your business. These skills capture potential
-    client's attention from the moment they click on your website enticing them to
-    want to take a closer look at what your company can offer.
   style: alternate
-  background_image: "/v1533615750/abundantlysocial/kait-loggins-291456-p-3200.jpg"
-  button_settings:
-    show: true
-    button_text: Learn More About Us
-    internal_link: authors/aimee-ravichandran.md
-- show: true
-  heading: Here's Another Section
-  text: Abundantly Social has a unique ability to present your company's message to
-    the public as if they are long lost friends. This natural ability to communicate
-    on a personal level is what makes Abundantly Social so masterful at organizing
-    thoughts and highlighting key points of your business. These skills capture potential
-    client's attention from the moment they click on your website enticing them to
-    want to take a closer look at what your company can offer.
-  style: black
   background_image: "/v1533615750/abundantlysocial/kait-loggins-291456-p-3200.jpg"
   button_settings:
     show: true
