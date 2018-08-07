@@ -1,18 +1,48 @@
 ---
-label: Our Story
-hide_body: 
-is_partial: 
+label: Post
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: description
   label: Description
   type: textarea
   hidden: false
   default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+  config:
+    date_format: MM/DD/YYYY
+    time_format: h:mm A
+    required: true
+- type: select
+  name: author
+  config:
+    source:
+      type: pages
+      section: authors
+    required: false
+  label: Author
+- name: featured_image
+  label: Featured image
+  type: file
+  hidden: false
+  default: ''
+- type: select
+  name: categories
+  config:
+    source:
+      type: datafiles
+  label: Categories
 - name: seo
   label: Seo
   type: field_group
@@ -22,36 +52,22 @@ fields:
     type: text
     hidden: false
     default: ''
+    description: Title referenced in search engines. (If not set regular title will
+      be used)
   - name: meta_description
     label: Meta description
     type: text
     hidden: false
     default: ''
+    description: Description referenced in search engines. (If not set regular title
+      will be used)
   - name: social_image
     label: Social image
     type: text
     hidden: false
     default: ''
-  hidden: false
-  default: ''
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
-- name: author
-  label: Author
-  type: text
-  hidden: false
-  default: ''
-- name: featured_image
-  label: Featured image
-  type: file
-  hidden: false
-  default: ''
-- name: categories
-  label: Categories
-  type: tag_list
+    description: Image to display when shared on social media. (Will use featured
+      image if not set)
   hidden: false
   default: ''
 - name: tags
