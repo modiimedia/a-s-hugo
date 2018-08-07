@@ -1,0 +1,6 @@
+blog_taxonomies:
+  categories:
+  - name: "personal life"
+    color: "#333333"
+  - name: "tips and advice"
+  - color: "#3344ff"
