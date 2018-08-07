@@ -35,5 +35,15 @@ fields:
     label: Text Color
     name: text_color
     description: Color of the text
+- type: field_group
+  name: textures
+  label: Textures
+  fields:
+  - type: file
+    name: banner_texture
+    label: Banner Texture
+  - type: file
+    name: background_texture
+    label: Background Texture
 data_files:
 - data/style.yaml
