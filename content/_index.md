@@ -10,7 +10,7 @@ hero_banner:
     show_button: true
     button_text: Contact Us Today
     internal_link: blog/our-story.md
-    external_link: 
+    external_link: ''
 testimony_slider:
 - name: Anthony J. Harris
   title: Author
@@ -57,7 +57,7 @@ content_sections:
     button_text: Learn More About Us
     internal_link: authors/aimee-ravichandran.md
 - show: true
-  heading: Social Marketing With A Personal Touch
+  heading: We are pretty cool
   text: Abundantly Social has a unique ability to present your company's message to
     the public as if they are long lost friends. This natural ability to communicate
     on a personal level is what makes Abundantly Social so masterful at organizing
@@ -65,7 +65,7 @@ content_sections:
     client's attention from the moment they click on your website enticing them to
     want to take a closer look at what your company can offer.
   style: light
-  background_image: "/v1533615752/abundantlysocial/more3%20%281%29.png"
+  background_image: "/v1533615748/abundantlysocial/AdobeStock_36972905-Converted-compressor.png"
   button_settings:
     show: true
     button_text: Learn More About Us
