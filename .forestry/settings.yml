@@ -9,6 +9,8 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  templates:
+  - post
 - type: directory
   path: content
   label: Pages
@@ -19,6 +21,8 @@ sections:
   label: Authors
   create: all
   match: "**/*"
+  templates:
+  - author
 - type: directory
   path: content/videos
   label: Videos
