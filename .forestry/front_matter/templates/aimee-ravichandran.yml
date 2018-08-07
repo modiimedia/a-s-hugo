@@ -15,6 +15,13 @@ fields:
   type: file
   hidden: false
   default: ''
+- type: textarea
+  name: bio
+  label: Bio
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
 - name: contact_info
   label: Contact info
   type: field_group
