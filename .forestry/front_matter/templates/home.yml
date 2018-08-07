@@ -60,26 +60,6 @@ fields:
   hidden: false
   default: ''
 - type: field_group_list
-  name: testimony_slider
-  label: Testimony Slider
-  fields:
-  - type: text
-    name: name
-    label: Name
-    description: Enter the name of the reviewer
-    config:
-      required: true
-  - type: text
-    name: title
-    label: Title
-    description: Enter the title or position of the reviewer. (If the the reviewer
-      is a business you can put the type of business it is)
-  - type: textarea
-    name: testimony_text
-    label: Testimony Text
-    config:
-      required: true
-- type: field_group_list
   label: Content Sections
   name: content_sections
   fields:
@@ -130,6 +110,26 @@ fields:
       label: Custom External Link
       description: Copy and paste the external URL you want to link to. Filling out
         this field will override the internal link selected above.
+- type: field_group_list
+  name: testimony_slider
+  label: Testimony Slider
+  fields:
+  - type: text
+    name: name
+    label: Name
+    description: Enter the name of the reviewer
+    config:
+      required: true
+  - type: text
+    name: title
+    label: Title
+    description: Enter the title or position of the reviewer. (If the the reviewer
+      is a business you can put the type of business it is)
+  - type: textarea
+    name: testimony_text
+    label: Testimony Text
+    config:
+      required: true
 - name: seo
   label: Seo
   type: field_group
