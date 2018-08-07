@@ -1,7 +1,7 @@
 ---
 title: Our Story
 date: 2017-01-31 00:00:00 +0000
-author: aimee-ravichandran.md
+author: authors/aimee-ravichandran.md
 description: I want to share with you all how Josh and I met and leading up to our
   engagement. You see Josh and I met at Lakeview Community College, a...
 categories: personal life
