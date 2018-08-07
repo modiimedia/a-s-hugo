@@ -82,8 +82,9 @@ fields:
         type: simple
       required: true
       options:
+      - default
+      - alternate
       - light
-      - dark
       - black
     label: Style
     name: style
