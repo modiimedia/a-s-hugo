@@ -3,19 +3,25 @@ main_menu:
 - template: menu-item
   name: Home
   internal_link: _index.md
+  title: Home
 - template: menu-item
   name: About
   internal_link: blog/our-story.md
-  external_link: ""
+  external_link: ''
+  title: About
 - template: menu-item
   name: Services
   internal_link: blog/14-miles.md
+  title: Services
 - template: dropdown-menu
   name: Tips & Advice
   children:
   - template: menu-item
     name: Articles
+    title: Articles
   - template: menu-item
     name: Videos
+    title: Videos
 - template: menu-item
   name: Contact
+  title: Contact
