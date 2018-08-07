@@ -6,8 +6,8 @@
         <div class="blog-breadcrumbs">
             <div class="breadcrumb-text">
                 <a href="/{{ .Section | urlize }}" class="link-3">{{ title .Section }} </a>
-                {{ with .Params.category }}&nbsp;/&nbsp;
-                <a href="/category/{{ . | urlize }}" class="breadcrump-link w-inline-block">
+                {{ with .Params.categories }}&nbsp;/&nbsp;
+                <a href="/categories/{{ . | urlize }}" class="breadcrump-link w-inline-block">
                     <div class="breadcrumb-text">{{ title . }}</div>
                 </a>
             {{ end }}

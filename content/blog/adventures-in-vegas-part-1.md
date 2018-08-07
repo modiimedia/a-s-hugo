@@ -5,7 +5,7 @@ date:
 author: "aimee-ravichandran.md"
 description: "This past week I went on a road-trip to Las Vegas with my friend Robyn and her three kids. It was full of fun, adventure, and wine! I got..."
 featured_image: "/uploads/aimee-r-at-vegas-with-friend.jpg"
-category: "personal life"
+categories: "personal life"
 tags: ["adventure", "vegas", "road trip", "fun with friends"]
 seo:
     meta_title: 

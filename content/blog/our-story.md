@@ -5,7 +5,7 @@ author: aimee-ravichandran.md
 description: I want to share with you all how Josh and I met and leading up to our
   engagement. You see Josh and I met at Lakeview Community College, a...
 featured_image: "/uploads/meet-Aimee.jpg"
-category: personal life
+categories: personal life
 tags:
 - proposal
 - engagement

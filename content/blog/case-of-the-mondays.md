@@ -5,7 +5,7 @@ author: aimee-ravichandran.md
 description: Ever wake up on a Monday and just been in a mood? That was me this morning.
   I start my morning routine of making some hot tea and startin...
 featured_image: "/v1533615753/abundantlysocial/20170327_182252%20%281%29.jpg"
-category: personal life
+categories: personal life
 tags:
 - mornings
 - mondays

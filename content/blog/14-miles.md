@@ -5,7 +5,7 @@ author: aimee-ravichandran.md
 description: You see, my idea of camping or being outdoors is being clean and not
   letting bugs bite me. I guess in a sense, I am a little bit of a...
 featured_image: "/v1533615754/abundantlysocial/hike%20%281%29.jpg"
-category: personal life
+categories: personal life
 tags:
 - proposal
 - engagement
