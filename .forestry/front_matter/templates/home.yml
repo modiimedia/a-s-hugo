@@ -133,3 +133,5 @@ fields:
     label: Testimony Text
     config:
       required: true
+pages:
+- content/_index.md
