@@ -24,9 +24,9 @@ sections:
   label: Videos
   create: all
   match: "**/*"
-upload_dir: ''
+upload_dir: abundantlysocial
 public_path: ''
 front_matter_path: ''
-use_front_matter_path: 
-file_template: ":filename:"
+use_front_matter_path: true
+file_template: 'w_700,q_50,f_auto/:filename:'
 version: '0.46'
