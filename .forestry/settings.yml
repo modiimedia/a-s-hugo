@@ -13,9 +13,9 @@ sections:
   - post
 - type: directory
   path: content
-  label: Pages
+  label: HomePage
   create: all
-  match: "*"
+  match: "*_index.md"
 - type: directory
   path: content/authors
   label: Authors
