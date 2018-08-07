@@ -42,6 +42,8 @@ fields:
   config:
     source:
       type: datafiles
+      file: data-taxonomies-yaml
+      path: blog_taxonomies
   label: Categories
 - name: tags
   label: Tags
