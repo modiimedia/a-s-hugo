@@ -43,6 +43,11 @@ fields:
     source:
       type: datafiles
   label: Categories
+- name: tags
+  label: Tags
+  type: tag_list
+  hidden: false
+  default: ''
 - name: seo
   label: Seo
   type: field_group
@@ -68,11 +73,6 @@ fields:
     default: ''
     description: Image to display when shared on social media. (Will use featured
       image if not set)
-  hidden: false
-  default: ''
-- name: tags
-  label: Tags
-  type: tag_list
   hidden: false
   default: ''
 pages:
