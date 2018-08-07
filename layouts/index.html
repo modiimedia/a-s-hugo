@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="hero_section" 
     style="
-        background-image: -webkit-linear-gradient(121deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "76" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url('/uploads/AdobeStock_83107159.png');
-        background-image: linear-gradient(329deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "76" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url('/uploads/AdobeStock_83107159.png');
+        background-image: -webkit-linear-gradient(121deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url('/uploads/AdobeStock_83107159.png');
+        background-image: linear-gradient(329deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url('/uploads/AdobeStock_83107159.png');
     "
 >
     <div data-ix="particle-cycle" class="particle4"></div>
@@ -60,7 +60,11 @@
 </div>
 {{ end }}
 {{ end }}
-<div class="section">
+<div class="section" 
+    style="
+        background: -webkit-linear-gradient(349deg, rgba(133, 167, 255, .08), {{ add $.Site.Data.style.site_colors.secondary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.primary "aa" }}, {{ add $.Site.Data.style.site_colors.primary "aa" }}), url('/uploads/AdobeStock_83107159.png');
+        background: linear-gradient(349deg, rgba(133, 167, 255, .08), {{ add $.Site.Data.style.site_colors.secondary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.primary "aa" }}, {{ add $.Site.Data.style.site_colors.primary "aa" }}), url('/uploads/AdobeStock_83107159.png');"
+>
     <div data-animation="slide" data-nav-spacing="5" data-duration="500" data-infinite="1" class="testimonial_slider w-slider">
         <h2 data-ix="new-interaction-3" class="heading2 testimonial_heading">Testimonials</h2>
         <div data-ix="new-interaction-3" class="mask w-slider-mask">

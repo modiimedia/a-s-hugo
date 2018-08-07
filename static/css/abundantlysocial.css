@@ -280,7 +280,7 @@ figcaption {
 
 .footer {
   padding-top: 50px;
-  background-color: #373968;
+  background-color: var(--background);
   color: #fff;
 }
 

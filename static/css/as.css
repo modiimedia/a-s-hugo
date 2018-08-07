@@ -33,7 +33,7 @@
     color: var(--text-color);
   }
   .alternate .button {
-    background:var(--secondary);
+    background:var(--primary);
   }
   .light .button {
     background: var(--text-color);
