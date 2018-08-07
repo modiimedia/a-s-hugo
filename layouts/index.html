@@ -39,7 +39,7 @@
 </div>
 {{ range .Params.content_sections }}
 {{ if eq .show true }}
-<div class="dark_section {{ if eq .style "light" }}light{{ end }}{{ if eq .style "black" }}black{{ end }}">
+<div class="dark_section {{ if eq .style "light" }}light{{ end }}{{ if eq .style "black" }}black{{ end }}{{ if eq .style "alternate" }}alternate{{ end }}">
     <div class="bg-photo" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ .background_image }})"></div>
     <div data-ix="new-interaction-4" class="container-3 w-container">
         <h2 class="about_heading">{{ .heading }}</h2>

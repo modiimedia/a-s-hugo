@@ -33,6 +33,10 @@
     color: var(--text);
   }
 
+  .dark_section.alternate {
+    background:var(--secondary);
+  }
+
   .dark_section.black {
     background: #000000;
   }
