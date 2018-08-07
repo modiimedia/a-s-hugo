@@ -1,8 +1,7 @@
-post_taxonomies:
-  categories:
-  - name: personal life
-    color: "#333333"
-  - name: "tips and advice"
-    color: "#3344ff"
+post_categoryies:
+- name: personal life
+  color: "#333333"
+- name: "tips and advice"
+  color: "#3344ff"
 
 
