@@ -8,28 +8,31 @@ fields:
   name: site_colors
   fields:
   - type: color
-    config:
-      color_format: Hex
-      required: true
-    label: Text Color
-    name: text_color
-  - type: color
-    config:
-      color_format: Hex
-      required: false
-    label: Background Color
-    name: background
-  - type: color
-    config:
-      color_format: Hex
-      required: true
-    label: accent Color
-    name: accent
-  - type: color
     name: main
     config:
       color_format: Hex
       required: true
     label: main Color
+    description: Choose your site's main color
+  - type: color
+    config:
+      color_format: Hex
+      required: false
+    label: Main Dark
+    name: background
+    description: Choose a dark version of the main colo
+  - type: color
+    config:
+      color_format: Hex
+      required: true
+    label: Accent Color
+    name: accent
+    description: Choose an accent color for your site
+  - type: color
+    config:
+      color_format: Hex
+      required: true
+    label: Text Color
+    name: text_color
 data_files:
 - data/style.yaml
