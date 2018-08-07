@@ -1,0 +1,33 @@
+---
+label: Style
+hide_body: true
+is_partial: false
+fields:
+- type: field_group
+  label: Site Colors
+  name: site_colors
+  fields:
+  - type: color
+    config:
+      color_format: Hex
+      required: true
+    label: Text Color
+    name: text_color
+  - type: color
+    config:
+      color_format: Hex
+      required: false
+    label: Background Color
+    name: background
+  - type: color
+    config:
+      color_format: Hex
+      required: true
+    label: Primary Color
+    name: primary
+  - type: color
+    name: secondary
+    config:
+      color_format: Hex
+      required: true
+    label: Secondary Color
