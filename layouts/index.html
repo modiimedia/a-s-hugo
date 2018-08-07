@@ -1,0 +1,77 @@
+{{ define "main" }}
+<div class="hero_section" 
+    style="
+        background-image: -webkit-linear-gradient(121deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "76" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url('/uploads/AdobeStock_83107159.png');
+        background-image: linear-gradient(329deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "76" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url('/uploads/AdobeStock_83107159.png');
+    "
+>
+    <div data-ix="particle-cycle" class="particle4"></div>
+    <div data-ix="particle-cycle-2" class="particle6"></div>
+    <div data-ix="particle-cycle-2" class="particle5"></div>
+    <div data-ix="particle-cycle" class="particle3"></div>
+    <div data-ix="particle-cycle-4" class="particle2"></div>
+    <div data-ix="particle-cycle-3" class="particle1"></div>
+    <div class="row-3 w-row">
+        <div class="column-10 w-col w-col-5">
+            <img src="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596a632a81afc15158042989_59674f654afeb23d73aa73cd_tablet-02.png"
+                data-ix="tablet-hover" width="127" alt="tablet" class="tablet" />
+            <img src="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596a623a985b65490eb6afdb_59674f657de95e548cb69857_phone-02.png"
+                data-ix="phone-hover" width="88" alt="mobile phone" class="phone" />
+            <img src="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/59674d8f4afeb23d73aa737e_computer.png" data-ix="computer-hover"
+                width="372" alt="computer" class="computer" />
+        </div>
+        {{ $hero := .Params.hero_banner }}
+        <div data-ix="photo-entrance-2" class="column-9 w-col w-col-7">
+            <h1 class="hero_heading">{{ $hero.heading }}</h1>
+            <p class="paragraph">{{ $hero.text }}</p>
+            {{ if eq $hero.button.show_button true }}
+            <a href="
+            {{- if $hero.button.external_link -}}
+                {{- $hero.button.external_link -}}
+            {{- else -}}
+                {{- $link := replace $hero.button.internal_link ".md" "" -}}
+                {{- $link -}}
+            {{- end -}}
+            " class="button w-button">{{ .Params.hero_banner.button.button_text }}</a>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ range .Params.content_sections }}
+{{ if eq .show true }}
+<div class="dark_section {{ if eq .style "light" }}light{{ end }}{{ if eq .style "black" }}black{{ end }}">
+    <div class="bg-photo" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ .background_image }})"></div>
+    <div data-ix="new-interaction-4" class="container-3 w-container">
+        <h2 class="about_heading">{{ .heading }}</h2>
+        <p class="paragraph">Abundantly Social has a unique ability to present your company&#x27;s message to the public as if they are long lost
+            friends. This natural ability to communicate on a personal level is what makes Abundantly Social so masterful
+            at organizing thoughts and highlighting key points of your business. These skills capture potential client&#x27;s
+            attention from the moment they click on your website enticing them to want to take a closer look at what your
+            company can offer.</p>
+        <a href="/about" class="button w-button">Learn More About Us</a>
+    </div>
+</div>
+{{ end }}
+{{ end }}
+<div class="section">
+    <div data-animation="slide" data-nav-spacing="5" data-duration="500" data-infinite="1" class="testimonial_slider w-slider">
+        <h2 data-ix="new-interaction-3" class="heading2 testimonial_heading">Testimonials</h2>
+        <div data-ix="new-interaction-3" class="mask w-slider-mask">
+            {{ range .Params.testimony_slider }}
+            <div class="testimonial_slide slide2 w-slide">
+                <div class="testimonial_text">{{ .testimony_text }}</div>
+                <div class="testimonial_name">{{ .name }}</div>
+                <div class="testimonial_title">{{ .title }}</div>
+            </div>
+            {{ end }}
+        </div>
+        <div data-ix="new-interaction-3" class="left-arrow w-slider-arrow-left">
+            <div class="icon-2 w-icon-slider-left"></div>
+        </div>
+        <div data-ix="new-interaction-3" class="right-arrow w-slider-arrow-right">
+            <div class="icon w-icon-slider-right"></div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

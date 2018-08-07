@@ -11,6 +11,45 @@
     position: sticky !important;
     top: 10px;
   }
+  .bg-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+  }
+
+  .dark_section .bg-photo {
+    background-size: auto 110vw;
+    background-position: -10vw -250px, 100px 0px;
+  }
+
+  .dark_section.light {
+    background: white;
+    color: var(--text);
+  }
+
+  .dark_section.black {
+    background: #000000;
+  }
+
+  @media (min-width: 1600px) {
+    .dark_section .bg-photo {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .dark_section .bg-photo {
+      background-size: cover;
+      background-position: center;
+    }
+  }
 
   .blog-text-block iframe {
     width: 100%;

@@ -40,10 +40,6 @@ testimony_slider:
     her work. She's creative, hardworking, trustworthy and she gets projects done
     quickly. I really can't say enough great things about her and would recommend
     her to everyone.
-seo:
-  meta_title: 
-  meta_description: 
-  social_image: 
 featured_image: "/v1533615752/abundantlysocial/more3%20%281%29.png"
 content_sections:
 - show: true
@@ -55,6 +51,34 @@ content_sections:
     client's attention from the moment they click on your website enticing them to
     want to take a closer look at what your company can offer.
   style: dark
+  background_image: "/v1533615752/abundantlysocial/more3%20%281%29.png"
+  button_settings:
+    show: true
+    button_text: Learn More About Us
+    internal_link: authors/aimee-ravichandran.md
+- show: true
+  heading: Social Marketing With A Personal Touch
+  text: Abundantly Social has a unique ability to present your company's message to
+    the public as if they are long lost friends. This natural ability to communicate
+    on a personal level is what makes Abundantly Social so masterful at organizing
+    thoughts and highlighting key points of your business. These skills capture potential
+    client's attention from the moment they click on your website enticing them to
+    want to take a closer look at what your company can offer.
+  style: light
+  background_image: "/v1533615752/abundantlysocial/more3%20%281%29.png"
+  button_settings:
+    show: true
+    button_text: Learn More About Us
+    internal_link: authors/aimee-ravichandran.md
+- show: true
+  heading: Social Marketing With A Personal Touch
+  text: Abundantly Social has a unique ability to present your company's message to
+    the public as if they are long lost friends. This natural ability to communicate
+    on a personal level is what makes Abundantly Social so masterful at organizing
+    thoughts and highlighting key points of your business. These skills capture potential
+    client's attention from the moment they click on your website enticing them to
+    want to take a closer look at what your company can offer.
+  style: black
   background_image: "/v1533615752/abundantlysocial/more3%20%281%29.png"
   button_settings:
     show: true

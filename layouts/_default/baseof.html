@@ -66,10 +66,10 @@
   <meta name="google-site-verification" content="JYlmsJwQbcvxZ9Hckrj0_hkD-EPYaz62ug1NWs61yrA" />
   <style>
   :root {
-    --text-color: #333333;
-    --background: #373868;
-    --primary: #fd27b0;
-    --secondary: 
+    --text-color: {{ $.Site.Data.style.site_colors.text_color }};
+    --background: {{ $.Site.Data.style.site_colors.background }};
+    --primary: {{ $.Site.Data.style.site_colors.primary }};
+    --secondary: {{ $.Site.Data.style.site_colors.secondary }}
   }
   </style>
 </head>

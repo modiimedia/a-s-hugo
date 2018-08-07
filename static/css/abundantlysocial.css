@@ -101,6 +101,7 @@ figcaption {
 }
 
 .hero_section {
+  color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -232,7 +233,7 @@ figcaption {
 
 .paragraph {
   margin-bottom: 20px;
-  color: hsla(0, 0%, 100%, .8);
+  opacity: 0.8;
   font-size: 18px;
   line-height: 26px;
 }
@@ -608,9 +609,8 @@ figcaption {
   z-index: 0;
   padding-top: 150px;
   padding-bottom: 150px;
-  background-color: #fff;
-  background-image: -webkit-linear-gradient(270deg, rgba(55, 57, 104, .75), rgba(55, 57, 104, .75)), url('../images/more3.png');
-  background-image: linear-gradient(180deg, rgba(55, 57, 104, .75), rgba(55, 57, 104, .75)), url('../images/more3.png');
+  background: #111111;
+  background: var(--background, #333333);
   background-position: 0px 0px, 0px 34%;
   background-size: auto, 110%;
   background-repeat: repeat, no-repeat;
@@ -629,6 +629,10 @@ figcaption {
 
 .container-3 {
   padding-right: 400px;
+}
+.container-3.w-container {
+  max-width: 1180px;
+  padding-left: 30px;
 }
 
 .menu-button {
@@ -1289,6 +1293,7 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   box-shadow: 1px 1px 34px -6px #333;
+  background: url(/uploads/AdobeStock_83107159.png);
 }
 
 .updates {
@@ -1417,6 +1422,11 @@ figcaption {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  font-size: 40px;
+  line-height: 40px;
+}
+.social-footer-link:hover {
+  opacity: 0.8;
 }
 
 .div-block-16 {
@@ -2613,6 +2623,13 @@ figcaption {
   font-size: 26px;
   font-weight: 300;
 }
+.footer-phone a {
+  color: white;
+  text-decoration: none;
+}
+.footer-phone a:hover {
+  opacity: 0.8;
+}
 
 .follow-heading {
   margin-top: 0px;
@@ -2861,8 +2878,7 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
   .dark_section {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: -webkit-linear-gradient(270deg, rgba(55, 57, 104, .75), rgba(55, 57, 104, .75)), url('../images/more3.png');
-    background-image: linear-gradient(180deg, rgba(55, 57, 104, .75), rgba(55, 57, 104, .75)), url('../images/more3.png');
+    background: var(--background);
     background-position: 0px 0px, 8% -68px;
     background-size: auto, auto;
   }
@@ -3002,8 +3018,7 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
   }
   .dark_section {
     padding: 50px 20px;
-    background-image: -webkit-linear-gradient(270deg, rgba(55, 57, 104, .75), rgba(55, 57, 104, .75)), url('../images/more3.png');
-    background-image: linear-gradient(180deg, rgba(55, 57, 104, .75), rgba(55, 57, 104, .75)), url('../images/more3.png');
+    background: var(--background);
     background-position: 0px 0px, 50% 50%;
   }
   .about_heading {
@@ -3014,6 +3029,10 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
     padding-right: 10px;
     padding-bottom: 20px;
     padding-left: 10px;
+  }
+  .container-3.w-container {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .menu-button {
     margin-right: -15px;
@@ -3220,8 +3239,7 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
     margin-left: -20px;
   }
   .dark_section {
-    background-image: -webkit-linear-gradient(270deg, rgba(55, 57, 104, .75), rgba(55, 57, 104, .75)), url('../images/more3.png');
-    background-image: linear-gradient(180deg, rgba(55, 57, 104, .75), rgba(55, 57, 104, .75)), url('../images/more3.png');
+    background: var(--background);
     background-position: 0px 0px, 0px 50%;
     background-size: auto, cover;
     background-attachment: scroll, scroll;
