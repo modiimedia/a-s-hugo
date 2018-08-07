@@ -1,11 +1,11 @@
 ---
 title: 14 Miles
 date: 2017-01-16 00:00:00 +0000
-author: aimee-ravichandran.md
+author: authors/aimee-ravichandran.md
 description: You see, my idea of camping or being outdoors is being clean and not
   letting bugs bite me. I guess in a sense, I am a little bit of a...
 featured_image: "/v1533615754/abundantlysocial/hike%20%281%29.jpg"
-categories: personal life
+category: personal life
 tags:
 - proposal
 - engagement
@@ -14,6 +14,7 @@ seo:
   meta_title: 
   meta_description: 
   social_image: 
+categories: personal life
 
 ---
 You see, my idea of camping or being outdoors is being clean and not letting bugs bite me. I guess in a sense, I am a little bit of a girlie girl. Now I will go hiking with my husband when he is on break from school because it is something he enjoys doing, part of being married is sometimes doing what the other one enjoys.

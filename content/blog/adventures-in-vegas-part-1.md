@@ -1,25 +1,29 @@
 ---
-
-title: "Adventure to Vegas Part 1"
-date: 
-author: "aimee-ravichandran.md"
-description: "This past week I went on a road-trip to Las Vegas with my friend Robyn and her three kids. It was full of fun, adventure, and wine! I got..."
-featured_image: "/uploads/aimee-r-at-vegas-with-friend.jpg"
-categories: "personal life"
-tags: ["adventure", "vegas", "road trip", "fun with friends"]
+title: Adventure to Vegas Part 1
+date: 2018-01-10 15:00:00 -0600
+author: authors/aimee-ravichandran.md
+description: This past week I went on a road-trip to Las Vegas with my friend Robyn
+  and her three kids. It was full of fun, adventure, and wine! I got...
+featured_image: "/v1533615752/abundantlysocial/aimee-r-at-vegas-with-friend.jpg"
+categories: personal life
+tags:
+- adventure
+- vegas
+- road trip
+- fun with friends
 seo:
-    meta_title: 
-    meta_description: 
-    social_image: 
----
+  meta_title: ''
+  meta_description: ''
+  social_image: ''
 
-![Me and a friend in Vegas](/uploads/aimee-r-at-vegas-with-friend.jpg)
+---
+![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1533615752/abundantlysocial/aimee-r-at-vegas-with-friend.jpg)
 
 This past week I went on a road-trip to Las Vegas with my friend Robyn and her three kids. It was full of fun, adventure, and wine! I got to travel to new places on this adventure. Experience and try new things that I wouldn't have tried otherwise. I want to share all of those mini adventures we had on our way to Viva Las Vegas with y'all.
 
 Did I ever tell you guys that I am not a morning person? Well.. this is how I feel about waking up early!
 
-![sleepy in the morning](/20170531_102736-e1496940445789.jpg)
+![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1533615753/abundantlysocial/20170531_102736-e1496940445789.jpg)
 
 Our adventure started early Memorial Day.. early as in 5 AM..I rolled out of bed at 4:30 am to get dressed and double check that I have everything I need for the adventure to Vegas! Before I knew it we were embarking on our journey, their was some people on the road, it was pitch black still outside. I was sitting in the seat thinking who gets up this early by choice...definitely not me. The kids are sacked out in there seats. Robyn and I are talking passing the time till we got to El Paso to rest for the night. We did a quick stop in San Antonio to eat breakfast then continued on.
 
@@ -27,6 +31,6 @@ Once in El paso we checked into the Hotel unpacked the car. The kids changed in 
 
 After a scare of a lifetime we all decided we had had enough of the pool. We all headed back up to the hotel room changed out of our swim suits and got ready for dinner. We found a great restaurant that was voted one of the best in El Paso. After such a long drive from Houston to El Paso and a scary event at the pool. Robyn and I decided a margarita was in order.
 
-![tasty margarhitta](/20170531_102736-e1496940445789.jpg)
+![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1533623991/abundantlysocial/20170529_182954.jpg)
 
-Dinner was amazing after such a long day we all loaded up in the van and headed back to the hotel all of us exhausted. The kids played and relaxed in the hotel room. Finally it was sleep time granted it was only 8:30pm in El Paso Robyn and I were exhausted and ready to get some sleep! Next stop Albuquerque, New Mexico. 
+Dinner was amazing after such a long day we all loaded up in the van and headed back to the hotel all of us exhausted. The kids played and relaxed in the hotel room. Finally it was sleep time granted it was only 8:30pm in El Paso Robyn and I were exhausted and ready to get some sleep! Next stop Albuquerque, New Mexico.

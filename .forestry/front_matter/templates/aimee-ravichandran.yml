@@ -1,0 +1,57 @@
+---
+label: Author
+hide_body: true
+is_partial: false
+fields:
+- name: title
+  label: Name
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: photo
+  label: Photo
+  type: file
+  hidden: false
+  default: ''
+- type: textarea
+  name: bio
+  label: Bio
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+- name: contact_info
+  label: Contact info
+  type: field_group
+  fields:
+  - name: email
+    label: Email
+    type: text
+    hidden: false
+    default: ''
+  - name: website
+    label: Website
+    type: text
+    hidden: false
+    default: ''
+  - name: twitter
+    label: Twitter
+    type: text
+    hidden: false
+    default: ''
+  - name: facebook
+    label: Facebook
+    type: text
+    hidden: false
+    default: ''
+  - name: instagram
+    label: Instagram
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+pages:
+- content/authors/aimee-ravichandran.md
