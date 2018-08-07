@@ -13,6 +13,9 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: file
+  name: featured_image
+  label: Featured Image
 - name: hero_banner
   label: Hero banner
   type: field_group
@@ -130,24 +133,3 @@ fields:
     label: Testimony Text
     config:
       required: true
-- name: seo
-  label: Seo
-  type: field_group
-  fields:
-  - name: meta_title
-    label: Meta title
-    type: text
-    hidden: false
-    default: ''
-  - name: meta_description
-    label: Meta description
-    type: text
-    hidden: false
-    default: ''
-  - name: social_image
-    label: Social image
-    type: text
-    hidden: false
-    default: ''
-  hidden: false
-  default: ''
