@@ -1,0 +1,13 @@
+---
+label: Dropdown Menu
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: name
+  label: Name
+  config:
+    required: true
+- type: field_group_list
+  name: children
+  label: Children
