@@ -31,3 +31,5 @@ fields:
       color_format: Hex
       required: true
     label: Secondary Color
+data_files:
+- data/style.yaml
