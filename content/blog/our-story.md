@@ -1,6 +1,6 @@
 ---
 title: Our Story
-date: 2017-01-31 00:00:00 +0000
+date: 2017-01-31 18:00:00 -0600
 author: authors/aimee-ravichandran.md
 description: I want to share with you all how Josh and I met and leading up to our
   engagement. You see Josh and I met at Lakeview Community College, a...
@@ -11,9 +11,9 @@ tags:
 - engagement
 - hiking
 seo:
-  meta_title: 
-  meta_description: 
-  social_image: 
+  meta_title: ''
+  meta_description: ''
+  social_image: ''
 
 ---
 I want to share with you all how Josh and I met and leading up to our engagement.
