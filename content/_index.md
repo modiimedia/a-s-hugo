@@ -64,7 +64,7 @@ content_sections:
     thoughts and highlighting key points of your business. These skills capture potential
     client's attention from the moment they click on your website enticing them to
     want to take a closer look at what your company can offer.
-  style: light
+  style: black
   background_image: "/v1533615750/abundantlysocial/kait-loggins-291456-p-3200.jpg"
   button_settings:
     show: true
