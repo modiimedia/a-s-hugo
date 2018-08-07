@@ -8,6 +8,8 @@ fields:
   label: Name
   config:
     required: true
-- type: field_group_list
+- type: blocks
   name: children
   label: Children
+  template_types:
+  - menu-item
