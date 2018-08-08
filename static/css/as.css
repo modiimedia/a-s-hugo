@@ -4,7 +4,17 @@
   }*/
 
   a:hover .featured-heading {
-    border-bottom: 10px solid #fd27b0;
+    border-bottom: 10px solid var(--primary);
+  }
+
+  .link-block-4 {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .link-block-4:hover {
+    opacity: 0.8;
   }
 
   .heading-7-copy {

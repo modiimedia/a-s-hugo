@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="hero_section" 
     style="
-        background-image: -webkit-linear-gradient(121deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url('/uploads/AdobeStock_83107159.png');
-        background-image: linear-gradient(329deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url('/uploads/AdobeStock_83107159.png');
+        background-image: -webkit-linear-gradient(121deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+        background-image: linear-gradient(329deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
     "
 >
     <div data-ix="particle-cycle" class="particle4"></div>
@@ -30,7 +30,7 @@
                 {{- $hero.button.external_link -}}
             {{- else -}}
                 {{- $link := replace $hero.button.internal_link ".md" "" -}}
-                {{- $link -}}
+                /{{- $link -}}
             {{- end -}}
             " class="button w-button">{{ .Params.hero_banner.button.button_text }}</a>
             {{ end }}
@@ -53,20 +53,25 @@
     <div class="bg-photo" style="background-image: url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ .background_image }})"></div>
     <div data-ix="new-interaction-4" class="container-3 w-container">
         <h2 class="about_heading">{{ .heading }}</h2>
-        <p class="paragraph">Abundantly Social has a unique ability to present your company&#x27;s message to the public as if they are long lost
-            friends. This natural ability to communicate on a personal level is what makes Abundantly Social so masterful
-            at organizing thoughts and highlighting key points of your business. These skills capture potential client&#x27;s
-            attention from the moment they click on your website enticing them to want to take a closer look at what your
-            company can offer.</p>
-        <a href="/about" class="button w-button">Learn More About Us</a>
+        <p class="paragraph">{{ .text }}</p>
+        {{ if eq .button_settings.show true }}
+        <a 
+            {{ if .button_settings.external_link -}}
+            href="{{ .button_settings.external_link }}"
+            {{- else -}}
+            {{- $link := replace .button_settings.internal_link ".md" "" -}}
+            href="/{{ $link }}"
+            {{- end }}
+            class="button w-button">{{ .button_settings.button_text }}</a>
+        {{ end }}
     </div>
 </div>
 {{ end }}
 {{ end }}
 <div class="section" 
     style="
-        background: -webkit-linear-gradient(349deg, rgba(133, 167, 255, .08), {{ add $.Site.Data.style.site_colors.secondary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.primary "aa" }}, {{ add $.Site.Data.style.site_colors.primary "aa" }}), url('/uploads/AdobeStock_83107159.png');
-        background: linear-gradient(349deg, rgba(133, 167, 255, .08), {{ add $.Site.Data.style.site_colors.secondary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.primary "aa" }}, {{ add $.Site.Data.style.site_colors.primary "aa" }}), url('/uploads/AdobeStock_83107159.png');"
+        background: -webkit-linear-gradient(349deg, rgba(133, 167, 255, .08), {{ add $.Site.Data.style.site_colors.secondary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.primary "aa" }}, {{ add $.Site.Data.style.site_colors.primary "aa" }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+        background: linear-gradient(349deg, rgba(133, 167, 255, .08), {{ add $.Site.Data.style.site_colors.secondary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.primary "aa" }}, {{ add $.Site.Data.style.site_colors.primary "aa" }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});"
 >
     <div data-animation="slide" data-nav-spacing="5" data-duration="500" data-infinite="1" class="testimonial_slider w-slider">
         <h2 data-ix="new-interaction-3" class="heading2 testimonial_heading">Testimonials</h2>

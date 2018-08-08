@@ -1,0 +1,63 @@
+{{ $color := $.Site.Data.style.site_colors }}
+{{ $texture := $.Site.Data.style.textures.banner_texture }}
+<div class="popup-blackout">
+    <div class="newsletter_popup">
+        <div data-ix="newsletter-close-button" class="close-button">
+            <div class="text-block-11">X</div>
+        </div>
+        <div class="form-block" 
+            style="
+                background-image: -webkit-linear-gradient(225deg, {{ add $color.primary "AA" }}, hsla(0, 0%, 100%, 0)), -webkit-linear-gradient(180deg, {{ add $color.secondary "99"}}, {{ add $color.secondary "99" }}), url({{ $.Site.Params.cloudinary_url }}w_500,h_300,f_auto,c_fill,q_60{{ $texture }}));"
+        >
+
+            <!-- Begin MailChimp Signup Form -->
+                <form action="https://abundantlysocial.us17.list-manage.com/subscribe/post?u=49acdb3ace0813d38bf458f1b&amp;id=5ab8c66c86"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank"
+                    novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <h2 class="heading-10">Sign Up For Our Newsletter</h2>
+                        <div class="mc-field-group">
+                            <input type="email" placeholder="Your Email Address*" value="" name="EMAIL" class="required email text-field-5 w-input" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group div-block-44">
+                            <input type="text" placeholder="First Name" value="" name="FNAME" class="text-field-4 w-input" id="mce-FNAME">
+                            <input type="text" value="" placeholder="Last Name" name="LNAME" class="text-field-4 w-input" id="mce-LNAME">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_49acdb3ace0813d38bf458f1b_5ab8c66c86" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                            <input type="submit" value="Subscribe" name="Submit" id="mc-embedded-subscribe" class="mform-submit w-button">
+                        </div>
+                    </div>
+                </form>
+
+            <!--End mc_embed_signup-->
+            <!-- <form id="wf-form-Newsletter-Signup" name="wf-form-Newsletter-Signup" method="post" action="https://abundantlysocial.us17.list-manage.com/subscribe/post?u=49acdb3ace0813d38bf458f1b&amp;amp;id=5ab8c66c86"
+                class="form">
+                <h5 class="heading-10">Sign Up for Our Newsletter</h5>
+                <div class="div-block-44">
+                    <input type="text" class="text-field-4 w-input" maxlength="256" name="FNAME" data-name="FNAME" placeholder="First Name" id="FNAME"
+                    />
+                    <input type="text" class="text-field-3 w-input" maxlength="256" name="LNAME" data-name="LNAME" placeholder="Last Name" id="LNAME"
+                    />
+                </div>
+                <input type="email" class="text-field-5 w-input" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="Your Email Address*"
+                    id="EMAIL-5" required="" />
+                <input type="submit" value="Submit" data-wait="Please wait..." class="mform-submit w-button" />
+            </form>
+            <div class="success-message-2 w-form-done">
+                <div class="text-block-28">Thank you for signing up
+                    <br/>to our Newsletter!</div>
+            </div>
+            <div class="error-message-2 w-form-fail">
+                <div>Oops! Something went wrong while submitting the form</div>
+            </div> -->
+        </div>
+    </div>
+</div>
