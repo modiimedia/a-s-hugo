@@ -1,10 +1,9 @@
-site_settings:
+seo:
   site_title: "Abundantly Social"
   site_slogan: "Social Marketing With A Personal Touch"
   site_description: "Abundantly Social is a company in Houston, TX that is committing to helping small businesses expand their presence on social media. We offer social media management services and consultations."
-  logo:
-  logo_white:
 contact_info:
+  company_name: "Abundantly Social"
   phone: +1-210-452-3622
   email: 
   social_media:
@@ -16,3 +15,7 @@ contact_info:
     url: "https://www.instagram.com/abundantly_social/"
   - platform: "linkedin"
     url: "https://www.linkedin.com/in/aimee-ravichandran-353848124"
+logos:
+  main_logo:
+  logo_white:
+  favicon:
