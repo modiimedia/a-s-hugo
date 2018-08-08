@@ -1,0 +1,83 @@
+---
+label: Settings
+hide_body: false
+is_partial: false
+fields:
+- type: field_group
+  name: seo
+  label: For Search Engines
+  fields:
+  - type: text
+    name: site_title
+    label: Site Title
+    config:
+      required: true
+  - type: text
+    label: Site Slogan
+    name: site_slogan
+  - type: text
+    name: site_description
+    label: Site Description
+  - type: boolean
+    name: prevent_all_indexing
+    label: Prevent Indexing Sitewide
+    description: Checking this will tell crawlers not to index your site.
+- type: field_group
+  name: contact_info
+  label: Contact Info
+  fields:
+  - type: text
+    name: company_name
+    label: Company Name
+  - type: text
+    name: phone
+    label: Phone Number
+  - type: text
+    name: email
+    label: Email Address
+  - type: field_group_list
+    name: social_media
+    label: Social Media Accounts
+    fields:
+    - type: select
+      config:
+        source:
+          type: simple
+        options:
+        - facebook
+        - twitter
+        - instagram
+        - linkedin
+        - pinterest
+        - youtube
+        - tumblr
+        - vimeo
+        required: true
+      label: Social Platform
+      name: platform
+      description: Select a social media platform. If you don't see the one you need  contact
+        your webmaster.
+    - type: text
+      label: url
+      name: url
+      config:
+        required: true
+      description: Copy and paste the link to your social media account here
+- type: field_group
+  name: logos
+  label: Logos & Media
+  fields:
+  - type: file
+    name: main_logo
+    label: Main Logo
+    description: Regular version of your logo
+  - type: file
+    name: logo_white
+    label: White Logo
+    description: A version of your logo that is all white, so that it can be used
+      on dark backgrounds.
+  - type: file
+    name: favicon
+    label: Favicon
+    description: Little icon that appears in the tab at the top of browsers. Upload
+      a square PNG for best results.
