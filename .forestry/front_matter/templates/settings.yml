@@ -5,7 +5,7 @@ is_partial: false
 fields:
 - type: field_group
   name: seo
-  label: For Search Engines
+  label: SEO Settings
   fields:
   - type: text
     name: site_title
@@ -22,6 +22,7 @@ fields:
     name: prevent_all_indexing
     label: Prevent Indexing Sitewide
     description: Checking this will tell crawlers not to index your site.
+  description: Site-wide Settings for Search Engines
 - type: field_group
   name: contact_info
   label: Contact Info
