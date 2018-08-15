@@ -58,6 +58,7 @@ fields:
       name: platform
       description: Select a social media platform. If you don't see the one you need  contact
         your webmaster.
+      default: facebook
     - type: text
       label: url
       name: url
