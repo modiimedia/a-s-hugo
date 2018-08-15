@@ -19,6 +19,7 @@ main_menu:
   - template: menu-item
     name: Articles
     title: Articles
+    internal_link: blog/_index.md
   - template: menu-item
     name: Videos
     title: Videos
