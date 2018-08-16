@@ -70,3 +70,5 @@ fields:
   hidden: false
   default: ''
   description: Settings for search engines
+pages:
+- content/videos/authortalk-with-russell-aimee-sandy.md
