@@ -1,7 +1,7 @@
 ---
 site_colors:
   background: "#373868"
-  primary: "#fd27b0"
+  primary: rgb(253, 39, 176)
   secondary: "#57a1ff"
   text_color: "#333333"
   footer_color: "#242546"
