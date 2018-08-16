@@ -81,7 +81,7 @@ fields:
   hidden: false
   default: ''
 pages:
-- content/blog/case-of-the-mondays.md
-- content/blog/14-miles.md
 - content/blog/our-story.md
+- content/blog/14-miles.md
+- content/blog/case-of-the-mondays.md
 - content/blog/adventures-in-vegas-part-1.md

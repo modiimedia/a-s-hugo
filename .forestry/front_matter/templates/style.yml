@@ -35,6 +35,12 @@ fields:
     label: Text Color
     name: text_color
     description: Color of the text
+  - type: color
+    name: footer_color
+    config:
+      color_format: Hex
+      required: true
+    label: Footer Color
 - type: field_group
   name: textures
   label: Textures
