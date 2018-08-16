@@ -1,38 +1,52 @@
 ---
-label: AuthorTalk with Russell, Aimee & Sandy
-hide_body: 
-is_partial: 
+label: Video
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: date
   label: Date
   type: datetime
   hidden: false
   default: ''
+  config:
+    required: true
 - name: video_link
   label: Video link
   type: text
   hidden: false
   default: ''
-- name: video_platform
-  label: Video platform
-  type: text
-  hidden: false
-  default: ''
+  description: Paste the URL of your video here
+  config:
+    required: true
+- type: select
+  name: video_platform
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - youtube
+  label: Video Platform
+  default: youtube
 - name: description
   label: Description
   type: text
   hidden: false
   default: ''
-- name: videotags
-  label: Videotags
-  type: list
-  hidden: false
-  default: ''
+- type: tag_list
+  name: videotags
+  label: Tags
+- type: file
+  name: featured_image
+  label: Thumbnail
+  description: If not set the page will use the default Youtube thumbnail.
 - name: seo
   label: Seo
   type: field_group
@@ -42,15 +56,17 @@ fields:
     type: text
     hidden: false
     default: ''
+    description: If left blank the default title will be used
   - name: meta_description
     label: Meta description
     type: text
     hidden: false
     default: ''
-  - name: social_image
-    label: Social image
-    type: text
-    hidden: false
-    default: ''
+    description: If left blank the default description will be used
+  - type: file
+    name: social_image
+    label: Social Image
+    description: Image to appear when shared on social media.
   hidden: false
   default: ''
+  description: Settings for search engines
