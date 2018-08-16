@@ -1,13 +1,19 @@
 <!-- Begin MailChimp Signup Form -->
 {{ $colors := $.Site.Data.style.site_colors }}
+{{ $primary := replace $colors.primary "rgb" "rgba" }}
+{{ $secondary := replace $colors.secondary "rgb" "rgba" }}
+
+{{ $p1 := replace $primary ")" ", 0.5)" }} 
+{{ $s1 := replace $secondary ")" ", 0.75)" }}
+
 {{ $texture := $.Site.Data.style.textures.banner_texture }}
 
 <div id="mc_embed_signup" class="mailchimp-form">
     <form class="mform-content" action="https://abundantlysocial.us17.list-manage.com/subscribe/post?u=49acdb3ace0813d38bf458f1b&amp;id=5ab8c66c86"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate
         style="
-        background-image: -webkit-linear-gradient(273deg, {{ add $colors.primary "88" }}, rgba(55, 57, 104, 0) 96%), -webkit-linear-gradient(180deg, {{ add $colors.secondary "99" }}, {{ add $colors.secondary "99" }}), url('{{ $.Site.Params.cloudinary_url }}w_850,q_60,f_auto{{ $texture }}');
-        background-image: linear-gradient(177deg, {{ add $colors.primary "88" }}, rgba(55, 57, 104, 0) 96%), linear-gradient(180deg, {{ add $colors.secondary "99" }}, {{ add $colors.secondary "99" }}), url('{{ $.Site.Params.cloudinary_url }}w_850,q_60,f_auto{{ $texture }}');"
+        background-image: -webkit-linear-gradient(273deg, {{ $p1 | safeCSS }}, rgba(55, 57, 104, 0) 96%), -webkit-linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url('{{ $.Site.Params.cloudinary_url }}w_850,q_60,f_auto{{ $texture }}');
+        background-image: linear-gradient(177deg, {{ $p1 | safeCSS }}, rgba(55, 57, 104, 0) 96%), linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url('{{ $.Site.Params.cloudinary_url }}w_850,q_60,f_auto{{ $texture }}');"
     >
         <div id="mc_embed_signup_scroll">
             <h3 class="mform-heading">Stay in the know! Join our email newsletter</h3>

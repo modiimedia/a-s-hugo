@@ -1,4 +1,10 @@
-{{ $color := $.Site.Data.style.site_colors }}
+{{ $colors := $.Site.Data.style.site_colors }}
+{{ $primary := replace $colors.primary "rgb" "rgba" }}
+{{ $secondary := replace $colors.secondary "rgb" "rgba" }}
+
+{{ $p1 := replace $primary ")" ", 0.5)" }} 
+{{ $s1 := replace $secondary ")" ", 0.75)" }}
+
 {{ $texture := $.Site.Data.style.textures.banner_texture }}
 <div class="popup-blackout">
     <div class="newsletter_popup">
@@ -7,7 +13,9 @@
         </div>
         <div class="form-block" 
             style="
-                background-image: -webkit-linear-gradient(225deg, {{ add $color.primary "AA" }}, hsla(0, 0%, 100%, 0)), -webkit-linear-gradient(180deg, {{ add $color.secondary "99"}}, {{ add $color.secondary "99" }}), url({{ $.Site.Params.cloudinary_url }}w_500,h_300,f_auto,c_fill,q_60{{ $texture }}));"
+                background-image: -webkit-linear-gradient(225deg, {{ $p1 | safeCSS }}, hsla(0, 0%, 100%, 0)), -webkit-linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_500,h_300,f_auto,c_fill,q_60{{ $texture }});
+                background-image: linear-gradient(225deg, {{ $p1 | safeCSS }}, hsla(0, 0%, 100%, 0)), linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_500,h_300,f_auto,c_fill,q_60{{ $texture }});
+            "
         >
 
             <!-- Begin MailChimp Signup Form -->

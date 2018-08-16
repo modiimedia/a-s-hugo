@@ -66,18 +66,18 @@
   <meta name="google-site-verification" content="JYlmsJwQbcvxZ9Hckrj0_hkD-EPYaz62ug1NWs61yrA" />
   <style>
   :root {
-    --text-color: {{ $.Site.Data.style.site_colors.text_color }};
-    --background: {{ $.Site.Data.style.site_colors.background }};
-    --primary: {{ $.Site.Data.style.site_colors.primary }};
-    --secondary: {{ $.Site.Data.style.site_colors.secondary }};
-    --footer-color: {{ $.Site.Data.style.site_colors.footer_color }};
+    {{ $colors := $.Site.Data.style.site_colors }}
+    --text-color: {{ $colors.text_color | safeCSS }};
+    --background: {{ $colors.background | safeCSS }};
+    --primary: {{ $colors.primary | safeCSS }};
+    --secondary: {{ $colors.secondary | safeCSS }};
+    --footer-color: {{ $colors.footer_color | safeCSS }};
   }
   </style>
 </head>
 
 <body>
   {{ partial "header.html" . }} 
-  
   {{ block "main" . }}
   
   {{ end }}

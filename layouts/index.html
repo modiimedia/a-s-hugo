@@ -1,8 +1,22 @@
 {{ define "main" }}
+
+{{ $colors := $.Site.Data.style.site_colors }}
+{{ $primary := replace $colors.primary "rgb" "rgba" }}
+{{ $secondary := replace $colors.secondary "rgb" "rgba" }}
+{{ $background := replace $colors.background "rgb" "rgba" }}
+
+{{ $p1 := replace $primary ")" ", 0.6)" }} 
+{{ $p2 := replace $primary ")" ", 0.75)" }}
+
+{{ $transparent := replace $primary ")" ", 0)" }}
+
+{{ $s1 := replace $secondary ")" ", 0.75)" }}
+{{ $s2 := replace $secondary ")" ", 0.6)" }}
+
 <div class="hero_section" 
     style="
-        background-image: -webkit-linear-gradient(121deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
-        background-image: linear-gradient(329deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+        background-image: -webkit-linear-gradient(121deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+        background-image: linear-gradient(329deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
     "
 >
     <div data-ix="particle-cycle" class="particle4"></div>
@@ -45,8 +59,8 @@
     {{ if eq .style "alternate" -}}alternate{{- end -}}"
     {{ if eq .style "alternate" -}}
         style="
-        background-image: -webkit-linear-gradient(121deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }});
-        background-image: linear-gradient(329deg, #ff4ebf0a, {{ add $.Site.Data.style.site_colors.primary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.secondary "aa" }}, {{ add $.Site.Data.style.site_colors.secondary "aa" }});
+        background-image: -webkit-linear-gradient(121deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }});
+        background-image: linear-gradient(329deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }});
     "
     {{- end -}}
 >
@@ -70,8 +84,8 @@
 {{ end }}
 <div class="section" 
     style="
-        background: -webkit-linear-gradient(349deg, rgba(133, 167, 255, .08), {{ add $.Site.Data.style.site_colors.secondary "99" }}), -webkit-linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.primary "aa" }}, {{ add $.Site.Data.style.site_colors.primary "aa" }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
-        background: linear-gradient(349deg, rgba(133, 167, 255, .08), {{ add $.Site.Data.style.site_colors.secondary "99" }}), linear-gradient(180deg, {{ add $.Site.Data.style.site_colors.primary "aa" }}, {{ add $.Site.Data.style.site_colors.primary "aa" }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});"
+        background: -webkit-linear-gradient(349deg, {{ $transparent | safeCSS }}, {{ $s2 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $p2 | safeCSS }}, {{ $p2 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+        background: linear-gradient(349deg, {{ $transparent | safeCSS }}, {{ $s2 | safeCSS }}), linear-gradient(180deg, {{ $p2 | safeCSS }}, {{ $p2 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});"
 >
     <div data-animation="slide" data-nav-spacing="5" data-duration="500" data-infinite="1" class="testimonial_slider w-slider">
         <h2 data-ix="new-interaction-3" class="heading2 testimonial_heading">Testimonials</h2>
