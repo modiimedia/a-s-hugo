@@ -1,0 +1,21 @@
+---
+label: Page
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: description
+  label: Description
+- type: file
+  name: featured_image
+  label: Featured Image
+- type: blocks
+  name: sections
+  label: Sections
+  template_types:
+  - 2-column-section
