@@ -1,10 +1,10 @@
 ---
 site_colors:
-  background: "#373868"
+  background: rgb(55, 56, 104)
   primary: rgb(253, 39, 176)
-  secondary: "#57a1ff"
-  text_color: "#333333"
-  footer_color: "#242546"
+  secondary: rgb(87, 161, 255)
+  text_color: rgb(51, 51, 51)
+  footer_color: rgb(36, 37, 70)
 textures:
   banner_texture: "/v1533685278/abundantlysocial/AdobeStock_83107159%20compressed.jpg"
   background_texture: "/v1533615746/abundantlysocial/spiration-light.png"
