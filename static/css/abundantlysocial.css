@@ -1964,6 +1964,11 @@ figcaption {
   text-align: left;
   text-transform: uppercase;
 }
+.heading-7.taxonomy {
+  text-transform: none;
+  font-size: 26px;
+  line-height: 40px;
+}
 
 .text-block-25-copy {
   position: absolute;
@@ -3126,6 +3131,10 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
   .heading-7 {
     font-size: 36px;
     line-height: 46px;
+  }
+  .heading-7.taxonomy {
+    font-size: 20px;
+    line-height: 30px;
   }
   .column-left {
     margin-bottom: 30px;

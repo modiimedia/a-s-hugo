@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<div class="about_page_section-copy blog">
+    <div class="container-div">
+        <div class="standard-row w-row">
+            <div class="column-left w-col w-col-8">
+                {{ if eq .Section "tags" }}
+                    <h1 class="heading-7 taxonomy">Posts tagged with "{{ .Title }}"</h1>
+                {{ end }}
+                {{ if eq .Section "videotags" }}
+                    <h1 class="heading-7 taxonomy">Videos tagged with "{{ .Title }}"</h1>
+                {{ end }}
+                <div class="w-dyn-list">
+                    <div class="grid-wrapper w-dyn-items">
+                        {{ range .Data.Pages }}
+                        {{ $ytStart := replace .Params.video_link "https://youtu.be/" "" }}
+                        {{ $ytId := replace $ytStart "https://www.youtube.com/watch?v=" "" }}
+                        <div class="grid-item w-dyn-item">
+                            <article>
+                                <a href="{{ .RelPermalink }}" class="link-block-8 w-inline-block">
+                                    <figure style="background-image:url(
+                                        {{- if .Params.featured_image -}}
+                                            {{- $.Site.Params.cloudinary_url -}}w_400,h_200,c_fill,q_70,f_auto{{- .Params.featured_image -}}
+                                        {{- else -}}
+                                            {{- if eq .Section "videos" -}}https://img.youtube.com/vi/{{ $ytId }}/hqdefault.jpg{{- end -}}
+                                        {{- end -}}
+                                        )"
+                                    class="blog-grid-photo"></figure>
+                                    <section class="div-block-37">
+                                        <div class="w-clearfix">
+                                            {{ with .Params.categories }}
+                                            <div style="background-color:#356597" class="category-label">{{ . }}</div>
+                                            {{ end }}
+                                            <h3 class="blog-grid-title">{{ .Title }}</h3>
+                                            <div class="div-block-39-copy">
+                                                <div class="blog-grid-meta">{{ .Date.Format "January 02, 2006" }}</div>
+                                                <div class="blog-grid-meta"> | </div>
+                                                {{ $auth := replace .Params.Author "authors/" "" }}
+                                                <div class="blog-grid-meta">{{- range where $.Site.RegularPages "Section" "=" "authors" -}}{{- if eq .File.LogicalName $auth -}}{{- .Title -}}{{- end -}}{{- end -}}</div>
+                                            </div>
+                                            <p class="blop-grid-summary">{{ .Description }}</p>
+                                        </div>
+                                    </section>
+                                </a>
+                            </article>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ partial "blog-sidebar.html" . }}
+
+        </div>
+    </div>
+</div>
+
+{{ end }}
