@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-{{ $ytId := replace .Params.video_link "https://www.youtube.com/watch?v=" "" }}
+{{ $ytStart := replace .Params.video_link "https://youtu.be/" "" }}
+{{ $ytId := replace $ytStart "https://www.youtube.com/watch?v=" "" }}
 
 <div class="video-hero-section w-embed">
     <div class="video-hero-image" 

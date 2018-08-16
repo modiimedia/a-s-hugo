@@ -1,0 +1,150 @@
+{{ define "main" }}
+
+<div class="about_page_section-copy blog">
+    <div class="container-div">
+        <h2 class="heading-7-copy2">Most Recent</h2>
+        <div class="w-dyn-list">
+            <div class="w-dyn-items">
+                {{ range first 1 .Data.Pages }}
+                {{ $ytStart := replace .Params.video_link "https://youtu.be/" "" }}
+                {{ $ytId := replace $ytStart "https://www.youtube.com/watch?v=" "" }}
+                <div class="collection-item w-dyn-item">
+                    <div class="standard-row w-row">
+                        <div class="column-left w-col w-col-8">
+                            <div class="featured-video w-embed w-iframe">
+                                <iframe width="100%" height="100%" style="position: absolute;" src="https://www.youtube.com/embed/{{ $ytId }}?rel=0&showinfo=0"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="column-right w-col w-col-4">
+                            <a href="{{ .RelPermalink }}" class="link-block-11 w-inline-block">
+                                <h3 class="heading-11">{{ .Title }}</h3>
+                            </a>
+                            <div class="text-block-29">{{ .Date.Format "January, 02 2006"}}</div>
+                            <div class="text-block-29 w-condition-invisible w-dyn-bind-empty"></div>
+                            <div class="rich-text-block w-richtext">
+                                <p>{{ .Params.Description }}</p>
+                            </div>
+                            <a href="{{ .RelPermalink }}" class="button-smaller w-button">Details</a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        <h2 class="heading-7">Other Videos</h2>
+        <div class="w-dyn-list">
+            <div class="collection-grid w-dyn-items">
+                <div class="video-item w-dyn-item">
+                    <div class="html-embed w-embed">
+                        <a class="video-item-inner" href="https://abundantlysocial.com/video/authortalk-with-suehawley">
+                            <article style="width:100%">
+                                <figure class="video-thumb" style="background-image: URL(https://img.youtube.com/vi/ACwkDlaHky4/mqdefault.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat">
+                                </figure>
+                                <section class="video-item-content">
+                                    <h3 class="video-item-title">AuthorTalk with SueHawley</h3>
+                                    <p class="item-meta">Dec 04, 2017</p>
+                                </section>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="html-embed w-condition-invisible w-embed">
+                        <a class="video-item-inner" href="https://abundantlysocial.com/video/authortalk-with-suehawley">
+                            <article>
+                                <figure class="video-thumb" style="background-image: URL(https://img.youtube.com/vi/ACwkDlaHky4/mqdefault.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat">
+                                </figure>
+                                <section class="video-item-content">
+                                    <h3 class="video-item-title">AuthorTalk with SueHawley</h3>
+                                    <p class="item-meta">Feb 02, 2018</p>
+                                </section>
+                            </article>
+                        </a>
+                    </div>
+                    <a href="/video/authortalk-with-suehawley" class="video-item-inner w-inline-block w-condition-invisible">
+                        <article>
+                            <figure style="background-image:none" class="video-thumb custom"></figure>
+                            <section class="video-item-content">
+                                <h3 class="video-item-title">AuthorTalk with SueHawley</h3>
+                                <div class="item-meta w-condition-invisible">Feb 2, 2018</div>
+                                <div class="item-meta">December 4, 2017</div>
+                            </section>
+                        </article>
+                    </a>
+                </div>
+                <div class="video-item w-dyn-item">
+                    <div class="html-embed w-embed">
+                        <a class="video-item-inner" href="https://abundantlysocial.com/video/what-is-this-80-20-rule-p">
+                            <article style="width:100%">
+                                <figure class="video-thumb" style="background-image: URL(https://img.youtube.com/vi/pt4NgEBw4Uo/mqdefault.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat">
+                                </figure>
+                                <section class="video-item-content">
+                                    <h3 class="video-item-title">What Is This 80/20 Rule? P</h3>
+                                    <p class="item-meta">Nov 13, 2017</p>
+                                </section>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="html-embed w-condition-invisible w-embed">
+                        <a class="video-item-inner" href="https://abundantlysocial.com/video/what-is-this-80-20-rule-p">
+                            <article>
+                                <figure class="video-thumb" style="background-image: URL(https://img.youtube.com/vi/pt4NgEBw4Uo/mqdefault.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat">
+                                </figure>
+                                <section class="video-item-content">
+                                    <h3 class="video-item-title">What Is This 80/20 Rule? P</h3>
+                                    <p class="item-meta">Feb 02, 2018</p>
+                                </section>
+                            </article>
+                        </a>
+                    </div>
+                    <a href="/video/what-is-this-80-20-rule-p" class="video-item-inner w-inline-block w-condition-invisible">
+                        <article>
+                            <figure style="background-image:none" class="video-thumb custom"></figure>
+                            <section class="video-item-content">
+                                <h3 class="video-item-title">What Is This 80/20 Rule? P</h3>
+                                <div class="item-meta w-condition-invisible">Feb 2, 2018</div>
+                                <div class="item-meta">November 13, 2017</div>
+                            </section>
+                        </article>
+                    </a>
+                </div>
+                <div class="video-item w-dyn-item">
+                    <div class="html-embed w-embed">
+                        <a class="video-item-inner" href="https://abundantlysocial.com/video/why-should-you-use-hashtags-on-social-media">
+                            <article style="width:100%">
+                                <figure class="video-thumb" style="background-image: URL(https://img.youtube.com/vi/uOE0edzBGyY/mqdefault.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat">
+                                </figure>
+                                <section class="video-item-content">
+                                    <h3 class="video-item-title">Why should you use #Hashtags on social media</h3>
+                                    <p class="item-meta">Nov 06, 2017</p>
+                                </section>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="html-embed w-condition-invisible w-embed">
+                        <a class="video-item-inner" href="https://abundantlysocial.com/video/why-should-you-use-hashtags-on-social-media">
+                            <article>
+                                <figure class="video-thumb" style="background-image: URL(https://img.youtube.com/vi/uOE0edzBGyY/mqdefault.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat">
+                                </figure>
+                                <section class="video-item-content">
+                                    <h3 class="video-item-title">Why should you use #Hashtags on social media</h3>
+                                    <p class="item-meta">Jan 16, 2018</p>
+                                </section>
+                            </article>
+                        </a>
+                    </div>
+                    <a href="/video/why-should-you-use-hashtags-on-social-media" class="video-item-inner w-inline-block w-condition-invisible">
+                        <article>
+                            <figure style="background-image:none" class="video-thumb custom"></figure>
+                            <section class="video-item-content">
+                                <h3 class="video-item-title">Why should you use #Hashtags on social media</h3>
+                                <div class="item-meta w-condition-invisible">Jan 16, 2018</div>
+                                <div class="item-meta">November 6, 2017</div>
+                            </section>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
