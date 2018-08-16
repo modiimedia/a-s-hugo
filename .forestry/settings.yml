@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/_index.md
   label: HomePage
-  match: "*_index.md"
 - type: directory
   path: content/blog
   label: Posts
@@ -21,8 +20,6 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: md
-  templates:
-  - page
 - type: directory
   path: content/videos
   label: Videos
