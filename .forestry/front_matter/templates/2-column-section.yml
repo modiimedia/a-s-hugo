@@ -76,4 +76,4 @@ fields:
   - type: file
     name: background_image
     label: Background Image
-    default: "/v1533615746/abundantlysocial/spiration-light.png"
+    default: ''
