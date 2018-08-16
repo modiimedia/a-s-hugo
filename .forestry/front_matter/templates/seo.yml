@@ -20,3 +20,4 @@ fields:
     name: social_image
     label: Social Image
     description: Image that appears as a thumbnail when shared on social media.
+  description: Settings for Search Engine Optimization and Social Media Sharing
