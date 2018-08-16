@@ -73,5 +73,6 @@ fields:
   default: ''
   description: Settings for search engines
 pages:
+- content/videos/what-is-this-80-20-rule.md
 - content/videos/authortalk-with-suehawley.md
 - content/videos/authortalk-with-russell-aimee-sandy.md
