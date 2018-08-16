@@ -8,12 +8,11 @@ fields:
   label: Title
   config:
     required: true
-- type: text
-  name: description
-  label: Description
-- type: file
-  name: featured_image
-  label: Featured Image
+- type: include
+  name: seo
+  label: SEO
+  description: Settings for search engine optimization and social media sharing
+  template: seo
 - type: blocks
   name: sections
   label: Sections
