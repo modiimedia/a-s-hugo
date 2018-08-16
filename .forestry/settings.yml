@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content
+  label: HomePage
+  create: all
+  match: "*_index.md"
+- type: directory
   path: content/blog
   label: Posts
   create: all
@@ -12,10 +17,12 @@ sections:
   templates:
   - post
 - type: directory
-  path: content
-  label: HomePage
+  path: content/videos
+  label: Videos
   create: all
-  match: "*_index.md"
+  match: "**/*"
+  templates:
+  - video
 - type: directory
   path: content/authors
   label: Authors
@@ -23,13 +30,6 @@ sections:
   match: "**/*"
   templates:
   - author
-- type: directory
-  path: content/videos
-  label: Videos
-  create: all
-  match: "**/*"
-  templates:
-  - video
 upload_dir: abundantlysocial
 public_path: https://res.cloudinary.com/modii/w_840,q_50,f_auto
 front_matter_path: ''
