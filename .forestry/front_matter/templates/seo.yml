@@ -3,18 +3,20 @@ label: SEO
 hide_body: false
 is_partial: true
 fields:
-- type: text
-  name: meta_title
-  label: Meta Title
-  description: Title for this page when it appears in search engines & social media
-  config:
-    required: false
-- type: textarea
-  name: meta_description
-  label: Meta Description
-  description: Description for this page when it appears in search engines & social
-    media
-- type: file
-  label: Social Image
-  name: social_image
-  description: Image that appears as a thumbnail when shared on social media.
+- type: field_group
+  name: seo
+  label: SEO
+  fields:
+  - type: text
+    name: meta_title
+    label: Meta Title
+    description: Title for this page when it appears in search engines & social media
+  - type: textarea
+    name: meta_description
+    label: Meta Description
+    description: Description for this page when it appears in search engines & social
+      media
+  - type: file
+    name: social_image
+    label: Social Image
+    description: Image that appears as a thumbnail when shared on social media.
