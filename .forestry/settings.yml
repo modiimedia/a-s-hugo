@@ -28,6 +28,8 @@ sections:
   label: Videos
   create: all
   match: "**/*"
+  templates:
+  - video
 upload_dir: abundantlysocial
 public_path: https://res.cloudinary.com/modii/w_840,q_50,f_auto
 front_matter_path: ''
