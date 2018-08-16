@@ -17,6 +17,8 @@ fields:
   default: ''
   config:
     required: true
+    time_format: h:mm A
+    display_utc: true
 - name: video_link
   label: Video link
   type: text
