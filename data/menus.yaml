@@ -23,6 +23,7 @@ main_menu:
   - template: menu-item
     name: Videos
     title: Videos
+    internal_link: videos/_index.md
 - template: menu-item
   name: Contact
   title: Contact
