@@ -17,6 +17,14 @@ sections:
   templates:
   - post
 - type: directory
+  path: content/pages/*
+  label: Pages
+  create: all
+  match: "**/*"
+  new_doc_ext: ".md"
+  templates:
+  - page
+- type: directory
   path: content/videos
   label: Videos
   create: all
