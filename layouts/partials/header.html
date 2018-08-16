@@ -2,7 +2,7 @@
     {{ partial "mailchimp-nav-form.html" . }}
     <div class="container-div">
         <a href="/" class="brand w-nav-brand">
-            <img src="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01.png" width="227"
+            <img src="{{ $.Site.Params.cloudinary_url }},w_300,q_80,f_auto{{ $.Site.Data.settings.logos.main_logo }}" width="227"
                 alt="Abundantly Social" srcset="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01-p-500.png 500w, https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01-p-800.png 800w, https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01-p-1080.png 1080w, https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01.png 1715w"
                 sizes="(max-width: 479px) 200px, 227px" class="logo-image" />
         </a>
