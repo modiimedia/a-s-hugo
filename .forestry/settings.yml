@@ -17,7 +17,7 @@ sections:
   templates:
   - post
 - type: directory
-  path: content/pages/*
+  path: content/pages
   label: Pages
   create: all
   match: "**/*"
