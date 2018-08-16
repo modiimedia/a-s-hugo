@@ -1,0 +1,56 @@
+---
+label: AuthorTalk with Russell, Aimee & Sandy
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: video_link
+  label: Video link
+  type: text
+  hidden: false
+  default: ''
+- name: video_platform
+  label: Video platform
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- name: videotags
+  label: Videotags
+  type: list
+  hidden: false
+  default: ''
+- name: seo
+  label: Seo
+  type: field_group
+  fields:
+  - name: meta_title
+    label: Meta title
+    type: text
+    hidden: false
+    default: ''
+  - name: meta_description
+    label: Meta description
+    type: text
+    hidden: false
+    default: ''
+  - name: social_image
+    label: Social image
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
