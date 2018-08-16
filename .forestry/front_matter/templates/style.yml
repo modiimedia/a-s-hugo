@@ -10,27 +10,27 @@ fields:
   - type: color
     name: primary
     config:
-      color_format: Hex
+      color_format: RGB
       required: true
     label: Primary Color
     description: Choose your site's main color
   - type: color
     config:
-      color_format: Hex
+      color_format: RGB
       required: true
     label: Primary Dark Color
     name: background
     description: Main color to be used on dark backgrounds
   - type: color
     config:
-      color_format: Hex
+      color_format: RGB
       required: true
     label: Secondary Color
     name: secondary
     description: Choose an accent color for your site
   - type: color
     config:
-      color_format: Hex
+      color_format: RGB
       required: true
     label: Text Color
     name: text_color
@@ -38,7 +38,7 @@ fields:
   - type: color
     name: footer_color
     config:
-      color_format: Hex
+      color_format: RGB
       required: true
     label: Footer Color
 - type: field_group
