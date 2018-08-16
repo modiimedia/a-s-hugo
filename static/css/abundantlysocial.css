@@ -119,8 +119,6 @@ figcaption {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: -webkit-linear-gradient(121deg, rgba(255, 78, 191, .04), rgba(255, 32, 175, .46)), -webkit-linear-gradient(270deg, rgba(87, 161, 255, .74), rgba(87, 161, 255, .74)), url('../images/AdobeStock_83107159.png');
-  background-image: linear-gradient(329deg, rgba(255, 78, 191, .04), rgba(255, 32, 175, .46)), linear-gradient(180deg, rgba(87, 161, 255, .74), rgba(87, 161, 255, .74)), url('../images/AdobeStock_83107159.png');
   background-position: 0px 0px, 0px 0px, 50% 0px;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -173,8 +171,6 @@ figcaption {
   border-color: #373968;
   border-bottom-width: 20px;
   background-color: transparent;
-  background-image: -webkit-linear-gradient(101deg, rgba(133, 167, 255, .08), rgba(99, 149, 255, .66)), -webkit-linear-gradient(270deg, rgba(255, 60, 255, .51), rgba(255, 60, 255, .51)), url('../images/AdobeStock_83107159.png');
-  background-image: linear-gradient(349deg, rgba(133, 167, 255, .08), rgba(99, 149, 255, .66)), linear-gradient(180deg, rgba(255, 60, 255, .51), rgba(255, 60, 255, .51)), url('../images/AdobeStock_83107159.png');
   background-position: 0px 0px, 0px 0px, 50% 0px;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -1294,7 +1290,6 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   box-shadow: 1px 1px 34px -6px #333;
-  background: url(/uploads/AdobeStock_83107159.png);
 }
 
 .updates {
@@ -1356,8 +1351,6 @@ figcaption {
 
 .div-block-7 {
   height: 50px;
-  background-image: -webkit-linear-gradient(277deg, rgba(253, 39, 176, .44), rgba(55, 57, 104, 0)), -webkit-linear-gradient(270deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/AdobeStock_83107159.png');
-  background-image: linear-gradient(173deg, rgba(253, 39, 176, .44), rgba(55, 57, 104, 0)), linear-gradient(180deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/AdobeStock_83107159.png');
   background-position: 0px 0px, 0px 0px, 0px 0px;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -2109,8 +2102,6 @@ figcaption {
 .mform-content {
   padding: 30px;
   border-radius: 5px;
-  background-image: -webkit-linear-gradient(273deg, rgba(255, 32, 175, .46), rgba(55, 57, 104, 0) 96%), -webkit-linear-gradient(270deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('/uploads/AdobeStock_83107159.png');
-  background-image: linear-gradient(177deg, rgba(255, 32, 175, .46), rgba(55, 57, 104, 0) 96%), linear-gradient(180deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('/uploads/AdobeStock_83107159.png');
   background-position: 0px 0px, 0px 0px, 50% 50%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -2492,8 +2483,6 @@ figcaption {
   margin-bottom: 50px;
   padding: 30px;
   border-radius: 5px;
-  background-image: -webkit-linear-gradient(273deg, rgba(255, 32, 175, .46), rgba(55, 57, 104, 0) 96%), -webkit-linear-gradient(270deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/AdobeStock_83107159.png');
-  background-image: linear-gradient(177deg, rgba(255, 32, 175, .46), rgba(55, 57, 104, 0) 96%), linear-gradient(180deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/AdobeStock_83107159.png');
   background-position: 0px 0px, 0px 0px, 50% 50%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -2575,8 +2564,6 @@ figcaption {
   display: none;
   width: 100%;
   padding: 30px;
-  background-image: -webkit-linear-gradient(258deg, rgba(255, 32, 175, .46), hsla(0, 0%, 100%, 0)), -webkit-linear-gradient(270deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/AdobeStock_83107159.png');
-  background-image: linear-gradient(192deg, rgba(255, 32, 175, .46), hsla(0, 0%, 100%, 0)), linear-gradient(180deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/AdobeStock_83107159.png');
   background-position: 0px 0px, 0px 0px, 0px 0px;
   box-shadow: 0 4px 21px -1px rgba(0, 0, 0, .35);
 }
@@ -2668,13 +2655,12 @@ figcaption {
 .html-embed-3 {
   margin-right: -5px;
   margin-left: -5px;
-  font-family: 'Fontawesome webfont', sans-serif;
   font-weight: 400;
 }
 
 .share-this-heading {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 700;
 }
 
@@ -2835,8 +2821,6 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
 @media (max-width: 991px) {
   .hero_section {
     padding: 100px 20px;
-    background-image: -webkit-linear-gradient(121deg, rgba(255, 78, 191, .04), rgba(255, 32, 175, .46)), -webkit-linear-gradient(270deg, rgba(87, 161, 255, .74), rgba(87, 161, 255, .74)), url('../images/AdobeStock_83107159.png');
-    background-image: linear-gradient(329deg, rgba(255, 78, 191, .04), rgba(255, 32, 175, .46)), linear-gradient(180deg, rgba(87, 161, 255, .74), rgba(87, 161, 255, .74)), url('../images/AdobeStock_83107159.png');
     background-position: 0px 0px, 0px 0px, 50% 0px;
     background-size: auto, auto, cover;
     background-repeat: repeat, repeat, no-repeat;
@@ -2846,8 +2830,6 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
     margin-left: -8px;
   }
   .section {
-    background-image: -webkit-linear-gradient(101deg, rgba(133, 167, 255, .08), rgba(99, 149, 255, .66)), -webkit-linear-gradient(270deg, null, null), url('../images/AdobeStock_83107159.png');
-    background-image: linear-gradient(349deg, rgba(133, 167, 255, .08), rgba(99, 149, 255, .66)), linear-gradient(180deg, null, null), url('../images/AdobeStock_83107159.png');
     background-size: auto, auto, cover;
   }
   .nav-menu {
@@ -2858,16 +2840,12 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
   .hero_section_other {
     padding-right: 20px;
     padding-left: 20px;
-    background-image: -webkit-linear-gradient(121deg, rgba(255, 78, 191, .04), rgba(255, 32, 175, .46)), -webkit-linear-gradient(270deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/AdobeStock_83107159.png');
-    background-image: linear-gradient(329deg, rgba(255, 78, 191, .04), rgba(255, 32, 175, .46)), linear-gradient(180deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/AdobeStock_83107159.png');
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, auto, cover;
     background-repeat: repeat, repeat, repeat;
     background-attachment: scroll, scroll, fixed;
   }
   .section-light-blue {
-    background-image: -webkit-linear-gradient(270deg, null, null), -webkit-linear-gradient(45deg, rgba(253, 39, 176, .65), rgba(31, 125, 245, .75)), url('../images/AdobeStock_83107159.png');
-    background-image: linear-gradient(180deg, null, null), linear-gradient(45deg, rgba(253, 39, 176, .65), rgba(31, 125, 245, .75)), url('../images/AdobeStock_83107159.png');
     background-size: auto, auto, cover;
   }
   .social_media_container {
@@ -3443,11 +3421,4 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
   .follow-heading {
     font-size: 26px;
   }
-}
-
-@font-face {
-  font-family: 'Fontawesome webfont';
-  src: url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
 }
