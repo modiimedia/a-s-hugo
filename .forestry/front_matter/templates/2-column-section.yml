@@ -1,0 +1,79 @@
+---
+label: 2 Column Section
+hide_body: false
+is_partial: true
+fields:
+- type: boolean
+  label: Show Section
+  name: show
+  default: true
+- type: select
+  name: content_order
+  config:
+    source:
+      type: simple
+    options:
+    - left to right
+    - right to left
+    required: true
+  label: Content Order
+  default: left to right
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+    required: true
+  label: Main Content
+  name: main_content
+- type: textarea
+  name: secondary_content
+  label: Secondary Content
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group
+  name: button
+  label: Button
+  fields:
+  - type: boolean
+    name: show_button
+    label: Show Button
+  - type: text
+    name: text
+    label: Button Text
+    config:
+      required: true
+    default: Learn More
+  - type: select
+    name: internal_link
+    config:
+      source:
+        type: pages
+    label: Internal Link
+    description: Choose a page within your website you want to link to
+  - type: text
+    name: custom_link
+    label: Custom External Link
+    description: Paste your custom URL here. Populating this field will override the
+      "internal link" chosen above
+- type: field_group
+  name: appearance
+  label: Appearance
+  fields:
+  - type: select
+    config:
+      source:
+        type: simple
+      options:
+      - light
+      - dark
+      required: true
+    label: Section Style
+    default: light
+    name: style
+  - type: file
+    name: background_image
+    label: Background Image
+    default: "/v1533615746/abundantlysocial/spiration-light.png"
