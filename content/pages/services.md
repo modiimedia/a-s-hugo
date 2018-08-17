@@ -36,5 +36,43 @@ style = "light"
 custom_link = "#web-design"
 show_button = true
 text = "See Pricing"
+[[sections]]
+details = "**All plans include:**\n\n* 1 post a day for 5 days (per platform)\n* Engagment in groups\n* Custom scripted responses (per platform)\n* Building connections\n* Engage with audience\n* Shared on all my platforms and my audience \n* One consultation call a month"
+heading = "Social Media Pricing Plans"
+template = "pricing-grid"
+[[sections.add_ons]]
+name = "Custom Graphics"
+notes = "Includes 2 per month"
+price = "50"
+[[sections.add_ons]]
+name = "Event Coverage"
+price = "200"
+[[sections.add_ons]]
+name = "Creating and monitoring a Facebook Ad"
+price = "50"
+[[sections.items]]
+name = "1 Platform"
+payment_type = "monthly payment"
+price = "150"
+[sections.items."purchase_/_sign_up_button"]
+button_text = "Purchase"
+[[sections.items]]
+name = "2 Platforms"
+payment_type = "monthly payment"
+price = "250"
+[sections.items."purchase_/_sign_up_button"]
+button_text = "Purchase"
+[[sections.items]]
+name = "3 Platforms"
+payment_type = "monthly payment"
+price = "0.00"
+[sections.items."purchase_/_sign_up_button"]
+button_text = "Purchase"
+[[sections.items]]
+name = "4+ Platforms"
+payment_type = "one time payment"
+price = "500"
+[sections.items."purchase_/_sign_up_button"]
+button_text = "Purchase"
 
 +++
