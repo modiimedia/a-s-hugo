@@ -37,6 +37,7 @@ custom_link = "#web-design"
 show_button = true
 text = "See Pricing"
 [[sections]]
+description = "Description Goes Here"
 details = "**All plans include:**\n\n* 1 post a day for 5 days (per platform)\n* Engagment in groups\n* Custom scripted responses (per platform)\n* Building connections\n* Engage with audience\n* Shared on all my platforms and my audience \n* One consultation call a month"
 heading = "Social Media Pricing Plans"
 template = "pricing-grid"
