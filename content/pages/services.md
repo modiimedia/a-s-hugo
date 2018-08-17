@@ -52,6 +52,7 @@ price = "200"
 name = "Creating and monitoring a Facebook Ad"
 price = "50"
 [[sections.items]]
+featured = true
 name = "1 Platform"
 payment_type = "monthly payment"
 price = "150"
@@ -66,7 +67,7 @@ button_text = "Purchase"
 [[sections.items]]
 name = "3 Platforms"
 payment_type = "monthly payment"
-price = "0.00"
+price = "350"
 [sections.items."purchase_/_sign_up_button"]
 button_text = "Purchase"
 [[sections.items]]
