@@ -18,3 +18,4 @@ fields:
   label: Sections
   template_types:
   - 2-column-section
+  - pricing-grid
