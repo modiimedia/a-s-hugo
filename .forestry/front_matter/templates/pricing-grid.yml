@@ -95,3 +95,7 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+- type: file
+  label: Background Image
+  name: background_image
+  description: Leaving black will use a default texture image
