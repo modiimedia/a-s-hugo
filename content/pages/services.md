@@ -56,18 +56,26 @@ featured = true
 name = "1 Platform"
 payment_type = "monthly payment"
 price = "150"
+[sections.items.button]
+button_text = "Purchase"
+link = "/"
+show_button = true
 [sections.items."purchase_/_sign_up_button"]
 button_text = "Purchase"
 [[sections.items]]
 name = "2 Platforms"
 payment_type = "monthly payment"
 price = "250"
+[sections.items.button]
+button_text = "Purchase"
 [sections.items."purchase_/_sign_up_button"]
 button_text = "Purchase"
 [[sections.items]]
 name = "3 Platforms"
 payment_type = "monthly payment"
 price = "350"
+[sections.items.button]
+button_text = "Purchase"
 [sections.items."purchase_/_sign_up_button"]
 button_text = "Purchase"
 link = "/"
@@ -76,6 +84,8 @@ show_button = true
 name = "4+ Platforms"
 payment_type = "one time payment"
 price = "500"
+[sections.items.button]
+button_text = "Purchase"
 [sections.items."purchase_/_sign_up_button"]
 button_text = "Purchase"
 
