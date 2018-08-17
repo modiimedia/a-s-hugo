@@ -58,7 +58,7 @@ fields:
       label: Button Link
       description: Paste the URL you want the button to go to
       config:
-        required: true
+        required: false
   label: Grid Items
 - type: field_group_list
   label: Optional Add-ons
