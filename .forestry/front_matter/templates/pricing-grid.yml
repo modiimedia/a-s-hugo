@@ -41,7 +41,7 @@ fields:
     name: featured
     label: Featured Plan
   - type: field_group
-    name: purchase_/_sign_up_button
+    name: button
     label: Purchase / Sign Up Button
     fields:
     - type: boolean
