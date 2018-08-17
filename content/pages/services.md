@@ -82,5 +82,25 @@ payment_type = "one time payment"
 price = "500"
 [sections.items.button]
 button_text = "Purchase"
+[[sections]]
+add_ons = []
+appearance = "default"
+background_image = "/v1533615750/abundantlysocial/kait-loggins-291456-p-3200.jpg"
+description = "Description Goes Here"
+details = "**All website plans come with**\n\n* Web hosting\n* CDN deployment\n* Easy to use content management system\n* SSL encryption\n* 1 custom email address\n* Contact forms\n* Working blog\n* 3 editor accounts\n* Security patches and maintenance\n* 1 hour of website changes / updates every month"
+heading = "Web Design Pricing"
+template = "pricing-grid"
+[[sections.items]]
+name = "5 Page Website"
+payment_type = "one time payment"
+price = "500"
+[[sections.items]]
+name = "10 Page Website"
+payment_type = "one time payment"
+price = "850"
+[[sections.items]]
+name = "20 Page Website"
+payment_type = "one time payment"
+price = "1500"
 
 +++
