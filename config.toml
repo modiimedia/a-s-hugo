@@ -10,3 +10,6 @@ videoseries = "videoseries"
 
 [params]
 cloudinary_url = "https://res.cloudinary.com/modii/"
+
+[permalinks]
+pages = "/:filename"

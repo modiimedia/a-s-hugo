@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+{{ $colors := $.Site.Data.style.site_colors }}
+{{ $primary := replace $colors.primary "rgb" "rgba" }}
+{{ $secondary := replace $colors.secondary "rgb" "rgba" }}
+{{ $background := replace $colors.background "rgb" "rgba" }}
+
+{{ $p1 := replace $primary ")" ", 0.6)" }} 
+{{ $p2 := replace $primary ")" ", 0.75)" }}
+
+{{ $transparent := replace $primary ")" ", 0)" }}
+
+{{ $s1 := replace $secondary ")" ", 0.75)" }}
+{{ $s2 := replace $secondary ")" ", 0.6)" }}
+
+<div class="hero_section_other" style="
+    background-image: -webkit-linear-gradient(121deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+    background-image: linear-gradient(329deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+">
+    <div data-ix="new-interaction-3" class="about_hero_container w-container">
+        <h1 class="hero_heading2">Meet Aimee</h1>
+    </div>
+    <div data-ix="particle-cycle" class="particle3"></div>
+    <div data-ix="particle-cycle" class="particle3"></div>
+</div>
+<div class="about_page_section-copy">
+    <div class="container-div">
+        {{ range .Params.sections }}
+            {{ if eq .template "2-column-section" }}
+                {{ partial "blocks/2-column-section.html" . }}
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}

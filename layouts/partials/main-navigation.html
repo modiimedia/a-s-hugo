@@ -9,14 +9,16 @@
         <nav class="dropdown-list w-dropdown-list">
             {{ range .children }}
             {{ $url := replace .internal_link "_index.md" "" }}
-            {{ $urlComplete := replace $url ".md" "/" }}
+            {{ $urlB := replace $url "pages/" "" }}
+            {{ $urlComplete := replace $urlB ".md" "/" }}
             <a {{ if .external_link }}href="{{ .external_link }}"{{ else }}href="/{{ $urlComplete }}"{{ end }} class="nav_link w-dropdown-link">{{ .name }}</a>
             {{ end }}
         </nav>
     </div>
     {{ else }}
     {{ $url := replace .internal_link "_index.md" "" }}
-    {{ $urlComplete := replace $url ".md" "/" }}
+    {{ $urlB := replace $url "pages/" "" }}
+    {{ $urlComplete := replace $urlB ".md" "/" }}
     <a {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link">{{ .name }}</a>
     {{ end }}
     {{ end }}

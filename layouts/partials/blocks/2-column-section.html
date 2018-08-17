@@ -1,0 +1,17 @@
+<div class="content_row w-row {{ if eq .appearance.style "dark" }}dark{{ end }}">
+    {{ if eq .content_order "left to right" }}
+        <div class="column-22 w-col w-col-7">
+            {{ .main_content | markdownify }}
+        </div>
+        <div class="column-15 w-col w-col-5">
+            {{ replace .secondary_content "/w_840" "/w_750" | markdownify }}
+        </div>
+    {{ else }}
+        <div class="column-11 w-col w-col-5">
+            {{ replace .secondary_content "/w_840" "/w_750" | markdownify }}
+        </div>
+        <div class="column-21 w-col w-col-7">
+            {{ .main_content | markdownify }}
+        </div>
+    {{ end }}
+</div>

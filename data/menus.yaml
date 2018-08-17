@@ -6,12 +6,12 @@ main_menu:
   title: Home
 - template: menu-item
   name: About
-  internal_link: blog/our-story.md
+  internal_link: pages/about.md
   external_link: ''
   title: About
 - template: menu-item
   name: Services
-  internal_link: blog/14-miles.md
+  internal_link: pages/services.md
   title: Services
 - template: dropdown-menu
   name: Tips & Advice
