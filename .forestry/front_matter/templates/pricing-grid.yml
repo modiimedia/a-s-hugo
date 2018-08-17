@@ -1,0 +1,80 @@
+---
+label: Pricing Grid
+hide_body: false
+is_partial: true
+fields:
+- type: textarea
+  label: Details / Description
+  name: details
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  name: items
+  fields:
+  - type: text
+    name: name
+    label: Item Name
+    config:
+      required: true
+  - type: number
+    name: price
+    label: Price
+    config:
+      required: true
+      min: '0'
+      step: '0.01'
+    default: '0.00'
+  - type: select
+    name: payment_type
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - one time payment
+      - monthly payment
+      - annual payment
+    label: Payment Type
+    default: one time payment
+  - type: boolean
+    name: featured
+    label: Featured Plan
+  - type: field_group
+    name: purchase_/_sign_up_button
+    label: Purchase / Sign Up Button
+    fields:
+    - type: boolean
+      name: show_button
+      label: Show Button
+    - type: text
+      name: button_text
+      label: Button Text
+      config:
+        required: true
+      default: Sign Up
+    - type: text
+      name: link
+      label: Button Link
+      description: Paste the URL you want the button to go to
+      config:
+        required: true
+  label: Grid Items
+- type: field_group_list
+  label: Optional Add-ons
+  name: add_ons
+  fields:
+  - type: text
+    label: Name
+    name: name
+    config:
+      required: true
+  - type: number
+    name: price
+    label: Price
+    config:
+      step: '0.01'
+  - type: text
+    name: notes
+    label: Notes
