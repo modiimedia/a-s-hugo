@@ -95,3 +95,72 @@
       height: 200px;
     }
   }
+
+.pricing-grid {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  margin: -10px;
+  color: var(--text-color);
+}
+
+.pgrid-item {
+  min-width: 250px;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.pgrid-item .purchase-button {
+  padding: 5px 25px;
+  display: inline-block;
+  background: var(--primary);
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+  line-height: 30px;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+.pgrid-item .item-inner {
+  background: white;
+  box-shadow: 0px 5px 10px #00000055;
+  text-align: center;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.pgrid-item .title {
+  font-weight: bolder;
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pgrid-item .price {
+  font-size: 40px;
+  color: var(--primary);
+  font-weight: bolder;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.pgrid-item.featured .item-inner {
+  background: var(--primary);
+  color: white;
+}
+
+.pgrid-item.featured .purchase-button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.pgrid-item.featured .price {
+  color: white;
+}

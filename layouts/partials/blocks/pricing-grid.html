@@ -1,0 +1,19 @@
+<div class="container-div">
+    <h2 id="{{ urlize .heading }}">{{ .heading }}</h2>
+    <div class="pricing-grid">
+    {{ range .items }}
+        <div class="pgrid-item{{ if eq .featured true }} featured{{ end }}">
+            <div class="item-inner">
+                <div class="title">{{ .name }}</div>
+                <div class="price">${{ .price }}
+                    <span>{{ if eq .payment_type "monthly payment" }} / month{{ end }}
+                    {{ if eq .payment_type "annual payment" }} / year{{ end }}</span>
+                </div>
+                {{ if eq .button.show_button true }}
+                    <a href="{{ .button.link }}" class="purchase-button">{{ .button.button_text }}</a>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+    </div>
+</div>

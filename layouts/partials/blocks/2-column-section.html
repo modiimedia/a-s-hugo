@@ -1,17 +1,41 @@
 <div class="content_row w-row {{ if eq .appearance.style "dark" }}dark{{ end }}">
     {{ if eq .content_order "left to right" }}
-        <div class="column-22 w-col w-col-7">
+        <div class="column-22 w-col w-col-7 col-section">
             {{ .main_content | markdownify }}
+            {{- if eq .button.show_button true -}}
+            {{- $link := replace .button.internal_link "_index.md" "" -}}
+                <div>
+                    <br>
+                    <a 
+                        {{ if .button.custom_link -}}
+                            href="{{ .button.custom_link }}"
+                        {{- else -}}
+                            href="/{{ replace $link ".md" "/" }}"
+                        {{- end }} class="button w-button">See Pricing</a>
+                </div>
+            {{- end -}}
         </div>
-        <div class="column-15 w-col w-col-5">
+        <div class="column-15 w-col w-col-5 col-section">
             {{ replace .secondary_content "/w_840" "/w_750" | markdownify }}
         </div>
     {{ else }}
-        <div class="column-11 w-col w-col-5">
-            {{ replace .secondary_content "/w_840" "/w_750" | markdownify }}
+        <div class="column-11 w-col w-col-5 col-section">
+            {{- replace .secondary_content "/w_840" "/w_750" | markdownify -}}
         </div>
-        <div class="column-21 w-col w-col-7">
-            {{ .main_content | markdownify }}
+        <div class="column-21 w-col w-col-7 col-section">
+            {{- .main_content | markdownify -}}
+            {{- if eq .button.show_button true -}}
+                {{- $link := replace .button.internal_link "_index.md" "" -}}
+                <div>
+                    <br>
+                    <a 
+                        {{ if .button.custom_link -}}
+                            href="{{ .button.custom_link }}"
+                        {{- else -}}
+                            href="/{{ replace $link ".md" "/" }}"
+                        {{- end }} class="button w-button">See Pricing</a>
+                </div>
+            {{- end -}}
         </div>
     {{ end }}
 </div>

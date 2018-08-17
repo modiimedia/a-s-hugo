@@ -41,6 +41,7 @@ description = "Description Goes Here"
 details = "**All plans include:**\n\n* 1 post a day for 5 days (per platform)\n* Engagment in groups\n* Custom scripted responses (per platform)\n* Building connections\n* Engage with audience\n* Shared on all my platforms and my audience \n* One consultation call a month"
 heading = "Social Media Pricing Plans"
 template = "pricing-grid"
+appearance = "dark"
 [[sections.add_ons]]
 name = "Custom Graphics"
 notes = "Includes 2 per month"
@@ -60,23 +61,17 @@ price = "150"
 button_text = "Purchase"
 link = "/"
 show_button = true
-[sections.items."purchase_/_sign_up_button"]
-button_text = "Purchase"
 [[sections.items]]
 name = "2 Platforms"
 payment_type = "monthly payment"
 price = "250"
 [sections.items.button]
 button_text = "Purchase"
-[sections.items."purchase_/_sign_up_button"]
-button_text = "Purchase"
 [[sections.items]]
 name = "3 Platforms"
 payment_type = "monthly payment"
 price = "350"
 [sections.items.button]
-button_text = "Purchase"
-[sections.items."purchase_/_sign_up_button"]
 button_text = "Purchase"
 link = "/"
 show_button = true
@@ -85,8 +80,6 @@ name = "4+ Platforms"
 payment_type = "one time payment"
 price = "500"
 [sections.items.button]
-button_text = "Purchase"
-[sections.items."purchase_/_sign_up_button"]
 button_text = "Purchase"
 
 +++
