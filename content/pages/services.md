@@ -14,7 +14,7 @@ show_button = true
 text = "See Pricing"
 [[sections]]
 content_order = "right to left"
-main_content = "Social Media Consultation"
+main_content = "## Social Media Consultation\n\nConsultations for small and medium sized businesses. Do you find yourself struggling to cultivate an audience? Or are your customer interactions dwindling? We have years of experience working in public relations and social media management. We'll help you form a plan and give you advice on how to execute it!\n\n**Consultation rate:**\n\n90 minute session - $195"
 secondary_content = "![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1533615748/abundantlysocial/consulting-image-compressed-compressor.jpg)"
 show = true
 template = "2-column-section"
