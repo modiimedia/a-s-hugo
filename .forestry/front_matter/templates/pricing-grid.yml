@@ -51,7 +51,7 @@ fields:
       name: button_text
       label: Button Text
       config:
-        required: true
+        required: false
       default: Sign Up
     - type: text
       name: link
