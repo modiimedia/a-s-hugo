@@ -9,6 +9,16 @@ fields:
 - type: text
   label: Section Description
   name: description
+- type: select
+  name: appearance
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - default
+  label: Appearance Style
+  default: default
 - type: field_group_list
   name: items
   fields:
