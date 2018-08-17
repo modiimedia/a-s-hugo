@@ -17,6 +17,7 @@ fields:
     required: true
     options:
     - default
+    - dark
   label: Appearance Style
   default: default
 - type: field_group_list
