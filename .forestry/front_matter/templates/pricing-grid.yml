@@ -3,13 +3,12 @@ label: Pricing Grid
 hide_body: false
 is_partial: true
 fields:
-- type: textarea
-  label: Details / Description
-  name: details
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
+- type: text
+  label: Section Heading
+  name: heading
+- type: text
+  label: Section Description
+  name: description
 - type: field_group_list
   name: items
   fields:
@@ -78,3 +77,10 @@ fields:
   - type: text
     name: notes
     label: Notes
+- type: textarea
+  label: Product Details / Description
+  name: details
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
