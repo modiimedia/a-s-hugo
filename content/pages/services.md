@@ -70,6 +70,7 @@ payment_type = "monthly payment"
 price = "350"
 [sections.items."purchase_/_sign_up_button"]
 button_text = "Purchase"
+show_button = true
 [[sections.items]]
 name = "4+ Platforms"
 payment_type = "one time payment"
