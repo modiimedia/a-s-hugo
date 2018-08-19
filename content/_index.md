@@ -69,7 +69,7 @@ content_sections:
   button_settings:
     show: true
     button_text: Learn More About Us
-    internal_link: authors/aimee-ravichandran.md
+    internal_link: pages/about.md
 - show: true
   text: Abundantly Social has a unique ability to present your company's message to
     the public as if they are long lost friends. This natural ability to communicate
