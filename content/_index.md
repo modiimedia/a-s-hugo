@@ -55,7 +55,7 @@ content_sections:
   button_settings:
     show: true
     button_text: Learn More About Us
-    internal_link: authors/aimee-ravichandran.md
+    internal_link: pages/about.md
 - show: true
   heading: We are pretty cool
   text: Abundantly Social has a unique ability to present your company's message to
