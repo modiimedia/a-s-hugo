@@ -78,7 +78,7 @@ link = "/"
 show_button = false
 [[sections.items]]
 name = "4+ Platforms"
-payment_type = "one time payment"
+payment_type = "monthly payment"
 price = "500"
 [sections.items.button]
 button_text = "Purchase"
