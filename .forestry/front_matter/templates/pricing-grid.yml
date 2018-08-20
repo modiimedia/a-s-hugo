@@ -48,6 +48,9 @@ fields:
       - annual payment
     label: Payment Type
     default: one time payment
+  - type: text
+    name: notes
+    label: Notes
   - type: boolean
     name: featured
     label: Featured Plan
