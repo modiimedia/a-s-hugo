@@ -78,6 +78,7 @@ link = "/"
 show_button = false
 [[sections.items]]
 name = "4+ Platforms"
+notes = "Price indicates a starting price, which is scaled as the number of platforms increases."
 payment_type = "monthly payment"
 price = "500"
 [sections.items.button]
