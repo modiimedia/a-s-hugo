@@ -61,7 +61,7 @@ price = "150"
 [sections.items.button]
 button_text = "Purchase"
 link = "/"
-show_button = true
+show_button = false
 [[sections.items]]
 name = "2 Platforms"
 payment_type = "monthly payment"
@@ -75,7 +75,7 @@ price = "350"
 [sections.items.button]
 button_text = "Purchase"
 link = "/"
-show_button = true
+show_button = false
 [[sections.items]]
 name = "4+ Platforms"
 payment_type = "one time payment"
