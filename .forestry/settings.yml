@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: "/admin"
 webhook_url: 
 sections:
 - type: document
@@ -41,4 +41,4 @@ public_path: https://res.cloudinary.com/modii/w_840,q_50,f_auto
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
-version: '0.46'
+version: 0.47.1
