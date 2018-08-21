@@ -1,0 +1,63 @@
+{{ $fb := .facebook }}
+{{ $c := .company }}
+{{ $p := .phone }}
+{{ $em := .e_mail }}
+<div class="content_row w-row {{ if eq .appearance.style " dark " }}dark{{ end }}">
+    <div class="column-22 w-col w-col-7 col-section">
+        <h2 class="heading-3">{{ .content.heading }}</h2>
+        <form name="contact" method="POST" netlify>
+            <label for="name">Name:</label>
+            <input type="text" class="w-input" maxlength="256" name="name"
+                data-name="Name" placeholder="Enter your name" id="name" required="">
+            <label for="Phone-Number">Phone Number</label>
+            <input type="text" class="w-input" maxlength="256" name="Phone-Number" data-name="Phone Number" placeholder="(xxx)xxx-xxxx" id="Phone-Number" required="">
+            <label for="email">Email Address:</label>
+            <input type="email" class="w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email address" id="email" required="">
+            <label for="Service" class="field-label"><strong>What Service are you Interested In?</strong><br>(hold ctrl/command to select multiple)</label>
+            <select id="Service" name="Service" multiple="" required="" data-name="Service" class="select-field-2 w-select">
+                <option value="Social Media">Social Media Management</option>
+                <option value="Consulting">Social Media Consulting</option>
+                <option value="Web Design">Web Design</option>
+            </select><label for="Comment">How Can We Help You?</label>
+            <textarea id="Comment" name="Comment" maxlength="5000" data-name="Comment" placeholder="Give us some details about what you would like to accomplish with your business." class="w-input"></textarea>
+            <div style="margin: 20px 0px;" data-netlify-recaptcha></div>
+            <input type="submit" value="Submit" class="submit-button w-button">
+        </form>
+    </div>
+    <div class="column-15 w-col w-col-5 col-section">
+        {{ range $i, $e := .content.widgets }}
+            {{ if ne $i 0 }}
+                <div class="separator">__________________________</div>
+            {{ end }}
+            {{ if eq .template "facebook-widget" }}
+                {{ if .heading }}<h3>{{ .heading }}</h3>{{ end }}
+                <div class="fb-page" data-href="{{ $fb }}" 
+                    data-tabs='
+                    {{- if eq .tabs "none" -}}
+                        none
+                    {{- else -}}
+                        {{- if eq .tabs "show all" -}}
+                            timeline, events, messages
+                        {{- else -}}
+                            {{- .tabs -}}
+                        {{- end -}}
+                    {{- end -}}'
+                    data-height="400" 
+                    {{ if .small_header }}data-small-header="{{ .small_header }}"{{ end }}
+                    data-adapt-container-width="true" 
+                    data-hide-cover="{{ .hide_cover }}" 
+                    data-show-facepile="{{ .show_friends }}"
+                >
+                    <blockquote cite="{{ $fb }}" class="fb-xfbml-parse-ignore">
+                        <a href="{{ $fb }}">{{ $c }}</a>
+                    </blockquote>
+                </div>
+            {{ end }}
+            {{ if eq .template "contact-info" }}
+                {{ if .heading }}<h3>{{ .heading }}</h3>{{ end }}
+                {{ if eq .show_phone true }}<div><a href="tel:{{ $p }}">{{ replace $p "-" " " }}</a></div>{{ end }}
+                {{ if eq .show_email true }}<div><a href="mailto:{{ $em }}">{{ $em }}</a></div>{{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+</div>

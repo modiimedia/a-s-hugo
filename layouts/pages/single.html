@@ -20,7 +20,7 @@
     background-image: linear-gradient(329deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
 ">
     <div data-ix="new-interaction-3" class="about_hero_container w-container">
-        <h1 class="hero_heading2">Meet Aimee</h1>
+        <h1 class="hero_heading2">{{ .Title }}</h1>
     </div>
     <div data-ix="particle-cycle" class="particle3"></div>
     <div data-ix="particle-cycle" class="particle3"></div>
@@ -33,22 +33,33 @@
             </div>
         </div>        
         {{ end }}
-            {{ if eq .template "pricing-grid" }}
-            <section class="dark_section"
-                {{- if eq .appearance "dark" -}}
-                    style="
-                    background-image: -webkit-linear-gradient(121deg, {{ $transparent | safeCSS }}, {{ $b1 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $b1 | safeCSS }}, {{ $b1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
-                    background-image: linear-gradient(75deg, {{ $transparent | safeCSS }}, {{ $b1 | safeCSS }}), linear-gradient(180deg, {{ $b1 | safeCSS }}, {{ $b1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
-                    "
-                {{- end -}}
-                {{- if eq .appearance "default" -}}
-                    style="
-                    background-image: -webkit-linear-gradient(189deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
-                    background-image: linear-gradient(340deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
-                    "
-                {{- end -}}>
-                {{ partial "blocks/pricing-grid.html" . }}
-            </section>
-            {{ end }}
+        {{ if eq .template "pricing-grid" }}
+        <section class="dark_section"
+            {{- if eq .appearance "dark" -}}
+                style="
+                background-image: -webkit-linear-gradient(121deg, {{ $transparent | safeCSS }}, {{ $b1 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $b1 | safeCSS }}, {{ $b1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+                background-image: linear-gradient(75deg, {{ $transparent | safeCSS }}, {{ $b1 | safeCSS }}), linear-gradient(180deg, {{ $b1 | safeCSS }}, {{ $b1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+                "
+            {{- end -}}
+            {{- if eq .appearance "default" -}}
+                style="
+                background-image: -webkit-linear-gradient(189deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+                background-image: linear-gradient(340deg, {{ $transparent | safeCSS }}, {{ $p1 | safeCSS }}), linear-gradient(180deg, {{ $s1 | safeCSS }}, {{ $s1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+                "
+            {{- end -}}>
+            {{ partial "blocks/pricing-grid.html" . }}
+        </section>
         {{ end }}
+        {{ if eq .template "contact-form" }}
+        <section class="page-section">
+            <div class="container-div">
+                {{ $phone := $.Site.Data.settings.contact_info.phone }}
+                {{ $facebook := "https://www.facebook.com/abundantlysocial/" }}
+                {{ $company := $.Site.Data.settings.contact_info.company_name }}
+                {{ $email := $.Site.Data.settings.contact_info.email }}
+                {{ partial "blocks/contact-form.html" (dict "content" . "phone" $phone "e_mail" $email "facebook" $facebook "company"  $company ) }}
+            </div>
+        </section>    
+        {{ end }}
+    {{ end }}
 {{ end }}
