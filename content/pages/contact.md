@@ -31,7 +31,7 @@ style = "dark"
 heading = "Contact Us"
 template = "contact-form"
 [sections.appearance]
-background_image = "/v1533615751/abundantlysocial/portrait.jpg"
-style = "alternate"
+background_image = "/v1533615752/abundantlysocial/more3%20%281%29.png"
+style = "color gradient"
 
 +++
