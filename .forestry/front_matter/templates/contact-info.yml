@@ -2,4 +2,16 @@
 label: Contact Info
 hide_body: false
 is_partial: true
-fields: []
+fields:
+- type: text
+  name: heading
+  label: Heading
+  default: Contact Info
+- type: boolean
+  name: show_phone
+  label: Show Phone
+  default: true
+- type: boolean
+  name: show_email
+  label: Show Email
+  default: true
