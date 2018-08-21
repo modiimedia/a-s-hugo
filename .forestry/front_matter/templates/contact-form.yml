@@ -29,4 +29,5 @@ fields:
   name: widgets
   label: Widgets
   template_types:
+  - contact-info
   - facebook-widget
