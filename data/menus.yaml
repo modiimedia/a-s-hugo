@@ -27,3 +27,4 @@ main_menu:
 - template: menu-item
   name: Contact
   title: Contact
+  internal_link: pages/contact.md
