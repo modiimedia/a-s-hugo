@@ -11,7 +11,7 @@ sections:
   path: content/blog
   label: Posts
   create: all
-  match: "!**/index.md"
+  match: "**/_**"
   templates:
   - post
 - type: directory
