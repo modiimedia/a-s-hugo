@@ -8,14 +8,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: description
-  label: Description
-  type: text
-  hidden: false
-  default: ''
-- type: file
-  name: featured_image
-  label: Featured Image
 - name: hero_banner
   label: Hero banner
   type: field_group
@@ -135,5 +127,8 @@ fields:
     label: Testimony Text
     config:
       required: true
+- type: file
+  name: featured_image
+  label: Featured Image
 pages:
 - content/_index.md
