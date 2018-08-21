@@ -22,18 +22,5 @@ show_friends = true
 small_header = false
 tabs = "timeline"
 template = "facebook-widget"
-[[sections]]
-heading = "Throw Us A Line"
-template = "contact-form"
-[sections.appearance]
-background_image = "/v1534549187/abundantlysocial/fabrice-villard-740512-unsplash%20%281%29.jpg"
-style = "dark"
-[[sections.widgets]]
-heading = "Like Us On Facebook"
-hide_cover = false
-show_friends = true
-small_header = true
-tabs = "none"
-template = "facebook-widget"
 
 +++
