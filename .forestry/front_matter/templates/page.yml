@@ -19,3 +19,5 @@ fields:
   template_types:
   - 2-column-section
   - pricing-grid
+pages:
+- content/pages/contact.md
