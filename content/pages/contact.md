@@ -9,7 +9,7 @@ social_image = ""
 heading = "Contact Us"
 template = "contact-form"
 [sections.appearance]
-background_image = "/v1533615751/abundantlysocial/portrait.jpg"
+background_image = ""
 style = "light"
 [[sections.widgets]]
 heading = "Contact Info"
@@ -23,16 +23,5 @@ show_friends = true
 small_header = false
 tabs = "timeline"
 template = "facebook-widget"
-[[sections]]
-template = "contact-form"
-[sections.appearance]
-background_image = "/v1534549187/abundantlysocial/fabrice-villard-740512-unsplash%20%281%29.jpg"
-style = "dark"
-[[sections]]
-heading = "Contact Us"
-template = "contact-form"
-[sections.appearance]
-background_image = "/v1533615752/abundantlysocial/more3%20%281%29.png"
-style = "color gradient"
 
 +++
