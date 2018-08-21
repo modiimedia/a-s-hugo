@@ -11,7 +11,7 @@ sections:
   path: content
   label: Posts
   create: all
-  match: "**/**/_**"
+  match: "**/_**"
   templates:
   - post
 - type: directory
