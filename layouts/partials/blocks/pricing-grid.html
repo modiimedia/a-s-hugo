@@ -1,5 +1,6 @@
 <div class="container-div">
-    <h2 id="{{ urlize .heading }}">{{ .heading }}</h2>
+    <h2 class="pgrid-title" id="{{ urlize .heading }}">{{ .heading }}</h2>
+    <div class="pgrid-description">{{ .description }}</div>
     <div class="pricing-grid">
     {{ range .items }}
         <div class="pgrid-item{{ if eq .featured true }} featured{{ end }}">
@@ -15,5 +16,16 @@
             </div>
         </div>
     {{ end }}
+    </div>
+    <div class="pgrid-textbox">
+        <div>
+            {{ .details | markdownify }}
+        </div>
+        <div>
+            {{ range .add_ons }}
+                <div>{{ .name }} - ${{ .price }}</div>
+                <div>{{ .notes }}</div>
+            {{ end }}
+        </div>
     </div>
 </div>
