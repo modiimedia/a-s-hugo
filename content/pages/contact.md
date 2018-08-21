@@ -11,10 +11,15 @@ template = "contact-form"
 [sections.appearance]
 style = "light"
 [[sections.widgets]]
+heading = "Contact Info"
+show_email = true
+show_phone = true
+template = "contact-info"
+[[sections.widgets]]
 heading = "Like Us On Facebook"
-hide_cover = true
-show_friends = false
-small_header = true
+hide_cover = false
+show_friends = true
+small_header = false
 tabs = "timeline"
 template = "facebook-widget"
 [[sections]]
