@@ -1,0 +1,32 @@
+---
+label: Facebook Widget
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: heading
+  label: Heading
+  default: Like Us On Facebook
+- type: select
+  name: tabs
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - timeline
+    - events
+    - messages
+    - show all
+  label: Tab to Show
+  default: timeline
+- type: boolean
+  name: small_header
+  label: Use Small Header
+- type: boolean
+  name: hide_cover
+  label: Hide Cover Photo
+- type: boolean
+  name: show_friends
+  label: Show Friend's Faces
+  default: true
