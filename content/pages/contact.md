@@ -28,7 +28,7 @@ heading = "Like Us On Facebook"
 hide_cover = true
 show_friends = true
 small_header = true
-tabs = "events"
+tabs = "messages"
 template = "facebook-widget"
 [[sections]]
 heading = "La la"
