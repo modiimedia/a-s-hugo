@@ -30,22 +30,10 @@ background_image = "/v1534549187/abundantlysocial/fabrice-villard-740512-unsplas
 style = "dark"
 [[sections.widgets]]
 heading = "Like Us On Facebook"
-hide_cover = true
+hide_cover = false
 show_friends = true
 small_header = true
-tabs = "messages"
-template = "facebook-widget"
-[[sections]]
-heading = "La la"
-template = "contact-form"
-[sections.appearance]
-background_image = "/v1533615749/abundantlysocial/meet-Aimee.jpg"
-style = "alternate"
-[[sections.widgets]]
-heading = "Like Us On Facebook"
-hide_cover = false
-show_friends = false
-tabs = "events"
+tabs = "none"
 template = "facebook-widget"
 
 +++
