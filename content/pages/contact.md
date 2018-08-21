@@ -10,6 +10,13 @@ heading = "Contact Us"
 template = "contact-form"
 [sections.appearance]
 style = "light"
+[[sections.widgets]]
+heading = "Like Us On Facebook"
+hide_cover = true
+show_friends = false
+small_header = true
+tabs = "timeline"
+template = "facebook-widget"
 [[sections]]
 heading = "Throw Us A Line"
 template = "contact-form"
