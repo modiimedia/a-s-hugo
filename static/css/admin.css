@@ -32,7 +32,9 @@ aside.Sidebar-m__sidebar___1ckti {
 aside div {
     background: transparent!important;
 }
-
+aside div.UserInfo-m__user-profile___1Hfkt {
+    background: #333!important;
+}
 li.Navigation-m__nav-item___29fP- a {
     opacity: 1;
 }
