@@ -14,11 +14,12 @@ fields:
       type: simple
     required: true
     options:
+    - none
     - timeline
     - events
     - messages
     - show all
-  label: Tab to Show
+  label: Tab(s) to Show
   default: timeline
 - type: boolean
   name: small_header
