@@ -8,10 +8,10 @@ sections:
   path: content/_index.md
   label: HomePage
 - type: directory
-  path: content/blog
+  path: content
   label: Posts
   create: all
-  match: "**/_**"
+  match: "**/**/_**"
   templates:
   - post
 - type: directory
