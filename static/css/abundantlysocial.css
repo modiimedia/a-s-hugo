@@ -1587,6 +1587,13 @@ figcaption {
   margin-bottom: 150px;
 }
 
+.page-section.bgphoto {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 150px 0px;
+  background-size: cover;
+}
+
 .page-section .content_row.w-row {
   margin-bottom: 0px
 }

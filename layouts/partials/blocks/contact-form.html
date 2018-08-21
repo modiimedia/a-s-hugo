@@ -2,33 +2,34 @@
 {{ $c := .company }}
 {{ $p := .phone }}
 {{ $em := .e_mail }}
+{{ $i := .index }}
 <div class="content_row w-row {{ if eq .appearance.style " dark " }}dark{{ end }}">
-    <div class="column-22 w-col w-col-7 col-section">
+    <div {{ if .content.widgets }}class="column-22 w-col w-col-7 col-section"{{ else }}class="w-col"{{ end }}>
         <h2 class="heading-3">{{ .content.heading }}</h2>
         <form name="contact" method="POST" netlify>
-            <label for="name">Name:</label>
-            <input type="text" class="w-input" maxlength="256" name="name" placeholder="Enter your name" id="name" required>
-            <label for="phone">Phone Number</label>
-            <input type="text" class="w-input" maxlength="256" name="phone" placeholder="(xxx)xxx-xxxx" id="phone">
-            <label for="email">Email Address:</label>
-            <input type="email" class="w-input" maxlength="256" name="email" placeholder="Enter your email address" id="email" required>
-            <label for="service" class="field-label">
+            <label for="name{{ .index }}">Name:</label>
+            <input type="text" class="w-input" maxlength="256" name="name{{ .index }}" placeholder="Enter your name" id="name{{ .index }}" required>
+            <label for="phone{{ .index }}">Phone Number</label>
+            <input type="text" class="w-input" maxlength="256" name="phone{{ .index }}" placeholder="(xxx)xxx-xxxx" id="phone{{ .index }}">
+            <label for="email{{ .index }}">Email Address:</label>
+            <input type="email" class="w-input" maxlength="256" name="email{{ .index }}" placeholder="Enter your email address" id="email{{ .index }}" required>
+            <label for="service{{ .index }}" class="field-label">
                 <strong>What Service are you Interested In?</strong>
                 <br>(hold ctrl/command to select multiple)
             </label>
-            <select id="service" name="service" multiple class="select-field-2 w-select">
+            <select id="service{{ .index }}" name="service{{ .index }}" multiple class="select-field-2 w-select">
                 <option value="Social Media">Social Media Management</option>
                 <option value="Consulting">Social Media Consulting</option>
                 <option value="Web Design">Web Design</option>
             </select>
-            <label for="comment">How Can We Help You?</label>
-            <textarea id="comment" name="comment" maxlength="5000" data-name="Comment" 
-                placeholder="Give us some details about what you would like to accomplish with your business." class="w-input">
-            </textarea>
+            <label for="comment{{ .index }}">How Can We Help You?</label>
+            <textarea id="comment{{ .index }}" name="comment{{ .index }}" maxlength="5000" data-name="Comment" 
+                placeholder="Give us some details about what you would like to accomplish with your business." class="w-input"></textarea>
             <div style="margin: 20px 0px;" data-netlify-recaptcha></div>
             <input type="submit" value="Submit" class="submit-button w-button">
         </form>
     </div>
+    {{ if .content.widgets }}
     <div class="column-15 w-col w-col-5 col-section">
         {{ range $i, $e := .content.widgets }}
             {{ if ne $i 0 }}
@@ -65,4 +66,5 @@
             {{ end }}
         {{ end }}
     </div>
+    {{ end }}
 </div>
