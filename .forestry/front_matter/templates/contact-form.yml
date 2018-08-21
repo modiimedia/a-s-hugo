@@ -19,7 +19,7 @@ fields:
       options:
       - light
       - dark
-      - alternate
+      - color gradient
     label: Style
     default: light
   - type: file
