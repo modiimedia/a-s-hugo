@@ -1,0 +1,30 @@
+---
+label: Contact Form
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  label: Heading
+  name: heading
+- type: field_group
+  name: appearance
+  label: Appearance
+  fields:
+  - type: select
+    name: style
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - light
+      - dark
+      - alternate
+    label: Style
+    default: light
+  - type: file
+    name: background_image
+    label: Background Image
+- type: blocks
+  name: widgets
+  label: Widgets
