@@ -52,4 +52,44 @@
         {{ partial "mailchimp-form.html" . }}
     </div>
 </div>
+
+{{- if eq .Section "blog" -}}
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+        },
+        "headline": "{{ .Title }}",
+        "datePublished": "{{ .Date }}",
+        "dateModified": "{{ .Lastmod }}",
+        {{ if .Params.author -}}
+        {{- $author := replace .Params.author "/" "\\" -}}
+        "author": {
+            "@type": "Person",
+            "name": "
+                {{- range where $.Site.RegularPages "Section" "=" "authors" -}}
+                    {{- if eq .File.Path $author -}}{{- .Title -}}{{- end -}}
+                {{- end -}}"
+        },
+        {{- end }}
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ $.Site.Data.settings.contact_info.company_name }}",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ $.Site.Params.cloudinary_url }}w_800,q_80,f_auto{{ $.Site.Data.settings.logos.main_logo }}"
+            }
+        },
+        "image": [
+            "{{ $.Site.Params.cloudinary_url }}w_850,h_850,q_60,f_auto,c_fill{{ .Params.featured_image }}",
+            "{{ $.Site.Params.cloudinary_url }}w_1000,h_750,q_60,f_auto,c_fill{{ .Params.featured_image }}",
+            "{{ $.Site.Params.cloudinary_url }}w_1200,h_675,q_60,f_auto,c_fill{{ .Params.featured_image }}"
+        ]
+    }
+    </script>
+{{ end }}
+
 {{ end }}

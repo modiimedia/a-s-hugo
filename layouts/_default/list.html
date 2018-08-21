@@ -65,4 +65,26 @@
     </div>
 </div>
 
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+    {{- range first 1 .Data.Pages -}}
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "{{ .Permalink }}"
+        }{{- end -}}{{- if gt $resultLength 1 -}}{{- range $i, $e := first 4 (after 1 .Data.Pages) -}},
+        {
+            "@type": "ListItem",
+            "position": {{ add $i 2 }},
+            "url": "{{ .Permalink }}"
+            }
+        {{- end -}}
+    {{- end -}}
+  ]
+}
+</script>
+
 {{ end }}
