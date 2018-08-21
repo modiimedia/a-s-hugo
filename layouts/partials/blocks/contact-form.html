@@ -8,22 +8,19 @@
         <h2 class="heading-3">{{ .content.heading }}</h2>
         <form name="contact" method="POST" netlify>
             <label for="name{{ .index }}">Name:</label>
-            <input type="text" class="w-input" maxlength="256" name="name{{ .index }}" placeholder="Enter your name" id="name{{ .index }}" required>
+            <input type="text" class="w-input" maxlength="256" name="name{{ .index }}" placeholder="Enter your name" required>
             <label for="phone{{ .index }}">Phone Number</label>
-            <input type="text" class="w-input" maxlength="256" name="phone{{ .index }}" placeholder="(xxx)xxx-xxxx" id="phone{{ .index }}">
+            <input type="text" class="w-input" maxlength="256" name="phone{{ .index }}" placeholder="(xxx)xxx-xxxx">
             <label for="email{{ .index }}">Email Address:</label>
-            <input type="email" class="w-input" maxlength="256" name="email{{ .index }}" placeholder="Enter your email address" id="email{{ .index }}" required>
-            <label for="service{{ .index }}" class="field-label">
-                <strong>What Service are you Interested In?</strong>
-                <br>(hold ctrl/command to select multiple)
-            </label>
-            <select id="service{{ .index }}" name="service{{ .index }}" multiple class="select-field-2 w-select">
+            <input type="email" class="w-input" maxlength="256" name="email{{ .index }}" placeholder="Enter your email address" required>
+            <label for="service{{ .index }}" class="field-label"><strong>What Service are you Interested In?</strong><br>(hold ctrl/command to select multiple)</label>
+            <select name="service{{ .index }}" multiple class="select-field-2 w-select">
                 <option value="Social Media">Social Media Management</option>
                 <option value="Consulting">Social Media Consulting</option>
                 <option value="Web Design">Web Design</option>
             </select>
             <label for="comment{{ .index }}">How Can We Help You?</label>
-            <textarea id="comment{{ .index }}" name="comment{{ .index }}" maxlength="5000" data-name="Comment" 
+            <textarea name="comment{{ .index }}" maxlength="5000" data-name="Comment" 
                 placeholder="Give us some details about what you would like to accomplish with your business." class="w-input"></textarea>
             <div style="margin: 20px 0px;" data-netlify-recaptcha></div>
             <input type="submit" value="Submit" class="submit-button w-button">
