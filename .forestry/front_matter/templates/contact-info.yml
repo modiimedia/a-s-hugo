@@ -11,7 +11,9 @@ fields:
   name: show_phone
   label: Show Phone
   default: true
+  description: Displays phone number listed in settings.
 - type: boolean
   name: show_email
   label: Show Email
   default: true
+  description: Displays email listed in settings
