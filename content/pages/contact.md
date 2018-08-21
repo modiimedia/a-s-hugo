@@ -9,6 +9,7 @@ social_image = ""
 heading = "Contact Us"
 template = "contact-form"
 [sections.appearance]
+background_image = "/v1533615751/abundantlysocial/portrait.jpg"
 style = "light"
 [[sections.widgets]]
 heading = "Contact Info"
