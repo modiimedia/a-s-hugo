@@ -2,14 +2,11 @@
     <div class="container-div footer">
         <div class="row-4 w-row">
             <div class="column w-col w-col-5">
-                <img src="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01.png" width="340"
-                    srcset="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01-p-500.png 500w, https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01-p-800.png 800w, https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01-p-1080.png 1080w, https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/596e8b079c3b1535b0b30689_logo_pink-01.png 1715w"
-                    sizes="(max-width: 479px) 83vw, (max-width: 767px) 340px, (max-width: 991px) 35vw, 340px" class="footer-logo"
-                />
+                <img src="{{ $.Site.Params.cloudinary_url }}w_400,q_70,f_auto{{ $.Site.Data.settings.logos.logo_white }}" width="340" class="footer-logo" />
                 <div class="founded-in">founded in Houston, TX</div>
             </div>
             <div class="column center w-col w-col-7">
-                <h2 class="follow-heading">Follow Abundantly Social</h2>
+                <h2 class="follow-heading">Follow {{ $.Site.Data.settings.contact_info.company_name}}</h2>
                 <div class="div-block-16">
                     {{ range $.Site.Data.settings.contact_info.social_media }}
                     <a href="{{ .url }}" target="_blank" class="social-footer-link w-inline-block">
