@@ -22,6 +22,8 @@ sections:
   label: Content List Pages
   create: none
   match: "*[blog,videos,authors]/_*"
+  templates:
+  - list-page
 - type: heading
   label: Content
 - type: directory
