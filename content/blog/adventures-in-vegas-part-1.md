@@ -1,6 +1,6 @@
 ---
 title: Adventure to Vegas Part 1
-date: 2018-01-10 15:00:00 -0600
+date: 2018-01-10 21:00:00 +0000
 author: authors/aimee-ravichandran.md
 description: This past week I went on a road-trip to Las Vegas with my friend Robyn
   and her three kids. It was full of fun, adventure, and wine! I got...
@@ -15,6 +15,7 @@ seo:
   meta_title: ''
   meta_description: ''
   social_image: ''
+draft: true
 
 ---
 ![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1533615752/abundantlysocial/aimee-r-at-vegas-with-friend.jpg)
