@@ -12,5 +12,6 @@ seo:
   meta_title: 
   meta_description: 
   social_image: 
+draft: true
 
 ---
