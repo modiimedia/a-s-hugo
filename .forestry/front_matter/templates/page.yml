@@ -21,11 +21,12 @@ fields:
   - pricing-grid
   - contact-form
 - type: text
-  label: type
-  name: type
+  label: Layout
+  name: layout
   default: page
   hidden: true
   config:
     required: true
+  description: Decide which layout to use in /layouts/_default.md
 pages:
 - content/pages/contact.md
