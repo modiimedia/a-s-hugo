@@ -9,7 +9,7 @@ hero_banner:
   button:
     show_button: true
     button_text: Contact Us Today
-    internal_link: blog/our-story.md
+    internal_link: contact.md
     external_link: ''
 testimony_slider:
 - name: Anthony J. Harris
@@ -55,6 +55,6 @@ content_sections:
   button_settings:
     show: true
     button_text: Learn More About Us
-    internal_link: pages/about.md
+    internal_link: about.md
 
 ---
