@@ -11,7 +11,7 @@ sections:
   label: HomePage
 - type: directory
   path: content
-  label: Section Pages
+  label: Content List Pages
   create: none
   match: "*[blog,videos,authors]/_*"
 - type: directory
