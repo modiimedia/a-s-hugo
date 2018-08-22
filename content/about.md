@@ -1,6 +1,9 @@
 +++
-title = "About Us"
 layout = "page"
+title = "About Us"
+[seo]
+meta_description = "Abundantly Social focuses helping businesses grow and improving their online presence. It was founded by Aimee Ravichandran and is based out of Houston, Texas."
+social_image = "/v1533615751/abundantlysocial/portrait.jpg"
 [[sections]]
 content_order = "right to left"
 main_content = "Hi Everyone! I am Aimee Ravichandran, the CEO of Abundantly Social. I grew up in San Antonio, Texas where I attended UTSA and graduated with a Bachelor in Psychology. During that time, I began working with Houston known Sandy Lawrence, CEO of Perceptive Public Relations. That’s where I began to learn the ins and outs of social media and develop a great understanding of managing different type of businesses social media accounts. And I did not stop there! I went on to take courses and attended numerous Social Media Examiner webinars learning about social media marketing and consulting. That was 5 years ago. Now, with 5 years experience under my belt, I’ve decided to make the jump and start Abundantly Social, doing what I love, helping businesses break through on the social media market, and getting them out there to the world. Here, at Abundantly Social, we do it all: website design, social media marketing / manager, consultant, and more.   "
