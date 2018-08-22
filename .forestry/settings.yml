@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: content
-  label: List Pages
-  create: none
-  match: "*[blog,videos,authors]/_*"
 - type: document
   path: content/_index.md
   label: HomePage
@@ -27,6 +22,11 @@ sections:
   new_doc_ext: md
   templates:
   - page
+- type: directory
+  path: content
+  label: List Pages
+  create: none
+  match: "*[blog,videos,authors]/_*"
 - type: directory
   path: content/videos
   label: Videos
