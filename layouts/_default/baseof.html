@@ -9,6 +9,8 @@
     {{ $cloudinary := $.Site.Params.Cloudinary_url }}
     {{ partial "seotags.html" (dict "cloudinary" $cloudinary "company" $website "Title" .Title "mTitle" $seo.meta_title "Description" .Description "mDescription" $seo.meta_description "featImage" .Params.featured_image "socialImage" $seo.social_image ) }}
   {{- end -}}
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ $.Site.Data.settings.seo.site_title }}">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
   <link href="/css/components.css" rel="stylesheet" type="text/css" />
