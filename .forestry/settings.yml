@@ -23,7 +23,7 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "[!_]*"
+  match: "[!_]*.md"
   new_doc_ext: md
   templates:
   - page
