@@ -20,5 +20,12 @@ fields:
   - 2-column-section
   - pricing-grid
   - contact-form
+- type: text
+  label: type
+  name: type
+  default: page
+  hidden: true
+  config:
+    required: true
 pages:
 - content/pages/contact.md
