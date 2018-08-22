@@ -2,5 +2,5 @@
 <meta content="{{ if .mDescription }}{{ .mDescription }}{{ else }}{{ .Description }}{{ end }}" name="description" />
 <meta content="{{ if .mTitle }}{{ .mTitle }}{{ else }}{{ .Title }}{{ end }}" property="og:title" />
 <meta content="{{ if .mDescription }}{{ .mDescription }}{{ else }}{{ .Description }}{{ end }}" property="og:description" />
-<meta property="og:image" content="{{ if .socialImage }}{{ .cloudinary }}w_1200,h_630,q_80,f_auto,c_fill{{ .socialImage }}{{ else }}{{ if .featImage }}{{ .cloudinary }}w_1200,h_680,q_80,f_auto,c_fill{{ .featImage }}{{ end }}{{ end }}">
+<meta property="og:image" content="{{ if .socialImage }}{{ .cloudinary }}w_1200,h_630,q_80,f_jpg,c_fill{{ .socialImage }}{{ else }}{{ if .featImage }}{{ .cloudinary }}w_1200,h_680,q_80,f_jpg,c_fill{{ .featImage }}{{ end }}{{ end }}">
 <meta content="summary" name="twitter:card" />
