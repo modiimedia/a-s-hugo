@@ -11,17 +11,17 @@ sections:
   label: HomePage
 - type: directory
   path: content
-  label: Content List Pages
-  create: none
-  match: "*[blog,videos,authors]/_*"
-- type: directory
-  path: content
   label: Other Pages
   create: all
   match: "[!_]*.md"
   new_doc_ext: md
   templates:
   - page
+- type: directory
+  path: content
+  label: Content List Pages
+  create: none
+  match: "*[blog,videos,authors]/_*"
 - type: heading
   label: Content
 - type: directory
