@@ -20,10 +20,10 @@ sections:
   templates:
   - post
 - type: directory
-  path: content/pages
+  path: content
   label: Pages
   create: all
-  match: "**/*"
+  match: "**/[!_]*"
   new_doc_ext: md
   templates:
   - page

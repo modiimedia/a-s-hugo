@@ -28,5 +28,3 @@ fields:
   config:
     required: true
   description: Decide which layout to use in /layouts/_default.md
-pages:
-- content/pages/contact.md
