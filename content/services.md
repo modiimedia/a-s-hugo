@@ -1,6 +1,10 @@
 +++
-title = "Services"
 layout = "page"
+title = "Services"
+[seo]
+meta_description = "We offer a number of services including: Social media management, social media consultation, and web design services. Get in touch with us to see how we can help you today."
+meta_title = "Services We Provide"
+social_image = "/v1533615748/abundantlysocial/consulting-image-compressed-compressor.jpg"
 [[sections]]
 content_order = "right to left"
 main_content = "## Social Media Management\n\nIncrease audience engagement and retention. We will help you post regular content that will excite your current audience and attract new ones. We work with all of our businesses to find content that is suited perfectly for them and their brand."
