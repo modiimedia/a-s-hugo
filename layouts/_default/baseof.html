@@ -4,12 +4,10 @@
   <meta charset="utf-8" />
   {{ .Hugo.Generator }}
   {{ block "seo" . -}}
-    <title>{{ .Title }} | {{ $.Site.Data.settings.contact_info.company_name }}</title>
-    <meta content="{{ .Description }}" name="description" />
-    <meta content="{{ .Title }}" property="og:title" />
-    <meta content="{{ .Description }}" property="og:description" />
-    <meta property="og:image" content="{{ $.Site.Params.cloudinary_url }}w_1000,q_60,f_auto{{ .Params.Featured_image }}">
-    <meta content="summary" name="twitter:card" />
+    {{ $seo := .Params.seo }}
+    {{ $website := $.Site.Data.settings.contact_info.company_name }}
+    {{ $cloudinary := $.Site.Params.Cloudinary_url }}
+    {{ partial "seotags.html" (dict "cloudinary" $cloudinary "company" $website "Title" .Title "mTitle" $seo.meta_title "Description" .Description "mDescription" $seo.meta_description "featImage" .Params.featured_image "socialImage" $seo.social_image ) }}
   {{- end -}}
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="/css/normalize.css" rel="stylesheet" type="text/css" />

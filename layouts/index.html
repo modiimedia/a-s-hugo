@@ -1,3 +1,13 @@
+{{ define "seo" }}
+    {{ $mTitle := $.Site.Data.settings.seo.site_title }}
+    {{ $mDesc := $.Site.Data.settings.seo.site_description }}
+    {{ $website := $.Site.Data.settings.seo.site_slogan }}
+    {{ $image := .Params.featured_image }}
+    {{ $bImage := $.Site.Data.settings.logos.main_logo }}
+    {{ $cloudinary := $.Site.Params.Cloudinary_url }}
+    {{ partial "seotags.html" (dict "cloudinary" $cloudinary "company" $website "Title" .Title "mTitle" $mTitle "Description" .Description "mDescription" $mDesc "featImage" $bImage "socialImage" $image ) }}
+{{ end }}
+
 {{ define "main" }}
 
 {{ $colors := $.Site.Data.style.site_colors }}
