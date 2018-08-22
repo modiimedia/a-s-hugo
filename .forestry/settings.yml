@@ -33,7 +33,7 @@ sections:
   path: content/authors
   label: Authors
   create: all
-  match: "**/*"
+  match: "**/[!_]*"
   templates:
   - author
 upload_dir: abundantlysocial
