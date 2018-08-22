@@ -5,24 +5,32 @@
 {{ $i := .index }}
 <div class="content_row w-row {{ if eq .appearance.style " dark " }}dark{{ end }}">
     <div {{ if .content.widgets }}class="column-22 w-col w-col-7 col-section"{{ else }}class="w-col"{{ end }}>
-        <h2 class="heading-3">{{ .content.heading }}</h2>
+        <h2 class="formHeading">{{ .content.heading }}</h2>
         <form name="contact" method="POST" netlify>
-            <label for="name{{ .index }}">Name:</label>
-            <input type="text" class="w-input" maxlength="256" name="name" id="name{{ .index }}" placeholder="Enter your name" required>
-            <label for="phone{{ .index }}">Phone Number</label>
-            <input type="text" class="w-input" maxlength="256" name="phone" id="phone{{ .index }}" placeholder="(xxx)xxx-xxxx">
-            <label for="email{{ .index }}">Email Address:</label>
-            <input type="email" class="w-input" maxlength="256" name="email" id="email{{ .index }}" placeholder="Enter your email address" required>
-            <label for="service{{ .index }}" class="field-label"><strong>What Service are you Interested In?</strong><br>(hold ctrl/command to select multiple)</label>
-            <select name="service" id="service{{ .index }}" multiple class="select-field-2 w-select">
-                <option value="Social Media">Social Media Management</option>
-                <option value="Consulting">Social Media Consulting</option>
-                <option value="Web Design">Web Design</option>
-            </select>
-            <label for="comment{{ .index }}">How Can We Help You?</label>
-            <textarea name="comment" id="commnet{{ .index }}" maxlength="5000" data-name="Comment" 
-                placeholder="Give us some details about what you would like to accomplish with your business." class="w-input"></textarea>
-            <div style="margin: 20px 0px;" data-netlify-recaptcha></div>
+            <div class="formGroup">
+                <label for="name{{ .index }}">Name:</label>
+                <input type="text" class="textInput w-input" maxlength="256" name="name" id="name{{ .index }}" placeholder="Enter your name" required autocomplete="name">
+                <label for="phone{{ .index }}">Phone Number</label>
+                <input type="text" class="textInput w-input" maxlength="256" name="phone" id="phone{{ .index }}" placeholder="(xxx)xxx-xxxx" autocomplete="tel">
+                <label for="email{{ .index }}">Email Address:</label>
+                <input type="email" class="textInput w-input" maxlength="256" name="email" id="email{{ .index }}" placeholder="Enter your email address" required autocomplete="email">        
+            </div>
+            <div class="formGroup">
+                <h5>What Service are you Interested In?</h5>
+                <input class="c_box" type="checkbox" name="social-media-management" id="social-media-management{{ .index }}">
+                <label class="c_box_label" for="social-media-management{{ .index }}">Social Media Management</label>
+                <input class="c_box" type="checkbox" name="social-media-consulting" id="social-media-consulting{{ .index }}">      
+                <label class="c_box_label" for="social-media-consulting{{ .index }}">Social Media Consulting</label>
+                <input class="c_box" type="checkbox" name="webdesign" id="webdesign{{ .index }}">
+                <label class="c_box_label" for="webdesign{{ .index }}">Web Design </label>
+            </div>
+            <div class="formGroup">
+                <label for="comment{{ .index }}">How Can We Help You?</label>
+                <textarea name="comment" id="commnet{{ .index }}" maxlength="5000" data-name="Comment" 
+                placeholder="Give us some details about what you would like to accomplish with your business." class="textInput w-input"></textarea>
+            </div>
+
+                <div style="margin: 20px 0px;" data-netlify-recaptcha></div>
             <input type="submit" value="Submit" class="submit-button w-button">
         </form>
     </div>
