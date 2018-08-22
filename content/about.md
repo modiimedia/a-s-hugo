@@ -2,7 +2,7 @@
 layout = "page"
 title = "About Us"
 [seo]
-meta_description = "Abundantly Social focuses helping businesses grow and improving their online presence. It was founded by Aimee Ravichandran and is based out of Houston, Texas."
+meta_description = "Abundantly Social focuses on helping businesses grow and improving their online presence. It was founded by Aimee Ravichandran and is based out of Houston, Texas."
 social_image = "/v1533615751/abundantlysocial/portrait.jpg"
 [[sections]]
 content_order = "right to left"
