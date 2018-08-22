@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: content
   label: List Pages
-  create: all
+  create: none
   match: "*[blog,videos,authors]/_*"
 - type: document
   path: content/_index.md
