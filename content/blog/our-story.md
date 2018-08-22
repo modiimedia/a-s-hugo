@@ -14,7 +14,6 @@ seo:
   meta_title: ''
   meta_description: ''
   social_image: ''
-draft: true
 
 ---
 I want to share with you all how Josh and I met and leading up to our engagement.
