@@ -1,0 +1,14 @@
+---
+label: List Page
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: include
+  name: seo
+  label: Seo
+  template: seo
