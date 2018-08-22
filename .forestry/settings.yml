@@ -26,7 +26,7 @@ sections:
   path: content/videos
   label: Videos
   create: all
-  match: "**/*"
+  match: "**/[!_]*"
   templates:
   - video
 - type: directory
