@@ -9,7 +9,7 @@ sections:
   label: HomePage
 - type: directory
   path: content
-  label: List Pages
+  label: Section Pages
   create: none
   match: "*[blog,videos,authors]/_*"
 - type: directory
