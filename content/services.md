@@ -1,5 +1,6 @@
 +++
 title = "Services"
+layout = "page"
 [[sections]]
 content_order = "right to left"
 main_content = "## Social Media Management\n\nIncrease audience engagement and retention. We will help you post regular content that will excite your current audience and attract new ones. We work with all of our businesses to find content that is suited perfectly for them and their brand."
