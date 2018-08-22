@@ -1,11 +1,11 @@
 +++
 date = "2018-08-21T14:32:39-05:00"
-title = "Contact"
 layout = "page"
+title = "Contact"
 [seo]
-meta_description = ""
-meta_title = ""
-social_image = ""
+meta_description = "Start growing your business today. Contact Abundantly Social and we can get the conversation going."
+meta_title = "Contact Us"
+social_image = "/v1533615750/abundantlysocial/kait-loggins-291456-p-3200.jpg"
 [[sections]]
 heading = "Contact Us"
 template = "contact-form"
