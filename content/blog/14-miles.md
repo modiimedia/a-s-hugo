@@ -12,6 +12,7 @@ seo:
   meta_description: ''
   social_image: ''
 categories: personal life
+draft: true
 
 ---
 You see, my idea of camping or being outdoors is being clean and not letting bugs bite me. I guess in a sense, I am a little bit of a girlie girl. Now I will go hiking with my husband when he is on break from school because it is something he enjoys doing, part of being married is sometimes doing what the other one enjoys.
