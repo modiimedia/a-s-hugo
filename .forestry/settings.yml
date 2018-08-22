@@ -16,7 +16,7 @@ sections:
   match: "*[blog,videos,authors]/_*"
 - type: directory
   path: content
-  label: Pages
+  label: Other Pages
   create: all
   match: "[!_]*.md"
   new_doc_ext: md
