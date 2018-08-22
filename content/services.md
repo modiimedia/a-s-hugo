@@ -14,7 +14,7 @@ template = "2-column-section"
 [sections.appearance]
 style = "light"
 [sections.button]
-custom_link = "#social-media-pricing"
+custom_link = "#social-media-pricing-plans"
 show_button = true
 text = "See Pricing"
 [[sections]]
@@ -26,7 +26,7 @@ template = "2-column-section"
 [sections.appearance]
 style = "light"
 [sections.button]
-internal_link = "pages/services.md"
+internal_link = "contact.md"
 show_button = true
 text = "Schedule a Consultation"
 [[sections]]
@@ -38,7 +38,7 @@ template = "2-column-section"
 [sections.appearance]
 style = "light"
 [sections.button]
-custom_link = "#web-design"
+custom_link = "#web-design-pricing"
 show_button = true
 text = "See Pricing"
 [[sections]]
