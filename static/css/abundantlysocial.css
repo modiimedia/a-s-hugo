@@ -160,8 +160,13 @@ figcaption {
 }
 
 .brand {
-  padding-top: 2px;
-  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  max-height: 100%;
+}
+
+.brand img {
+  margin-bottom: 10px;
 }
 
 .brand.w--current {
@@ -689,6 +694,7 @@ figcaption {
   border-bottom: 1px solid #d4d4d4;
   background-color: #fff;
   box-shadow: none;
+  max-height: 100px;
 }
 
 .facebook_icon_pink {
@@ -2537,8 +2543,10 @@ figcaption {
 .footer-logo {
   position: relative;
   margin-top: -10px;
-  -webkit-filter: contrast(0%) brightness(200%);
-  filter: contrast(0%) brightness(200%);
+  /* -webkit-filter: contrast(0%) brightness(200%);
+  filter: contrast(0%) brightness(200%); */
+  max-height: 200px;
+  margin-bottom: 20px;
 }
 
 .paragraph-8 {
@@ -2873,6 +2881,11 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
   .brand {
     margin-left: -8px;
   }
+
+  .brand img {
+    max-height: 70px;
+  }
+
   .section {
     background-size: auto, auto, cover;
   }
@@ -3007,6 +3020,7 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
     margin-left: -8px;
     padding-left: 0px;
   }
+
   .button {
     font-size: 16px;
   }
@@ -3238,9 +3252,9 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
     background-attachment: scroll, scroll, fixed;
   }
   .brand {
-    width: 200px;
-    margin-top: 4px;
-    margin-left: -20px;
+    /* width: 200px; */
+    /* margin-top: 4px; */
+    /* margin-left: -20px; */
   }
   .heading2.testimonial_heading {
     font-size: 30px;

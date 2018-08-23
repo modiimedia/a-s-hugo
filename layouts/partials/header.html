@@ -2,8 +2,8 @@
     {{ partial "mailchimp-nav-form.html" . }}
     <div class="container-div">
         <a href="/" class="brand w-nav-brand">
-            <img src="{{ $.Site.Params.cloudinary_url }},w_300,q_80,f_auto{{ $.Site.Data.settings.logos.main_logo }}" width="227"
-                alt="Abundantly Social" sizes="(max-width: 479px) 200px, 227px" class="logo-image" />
+            <img src="{{ $.Site.Params.cloudinary_url }},w_300,h_80,c_fit,q_80,f_auto{{ $.Site.Data.settings.logos.main_logo }}"
+                alt="Abundantly Social" class="logo-image" />
         </a>
         {{ partial "main-navigation.html" . }}
     </div>
