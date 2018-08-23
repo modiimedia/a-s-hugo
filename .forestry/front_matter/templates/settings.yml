@@ -76,8 +76,8 @@ fields:
   - type: file
     name: logo_white
     label: White Logo
-    description: A version of your logo that is all white, so that it can be used
-      on dark backgrounds.
+    description: A version of your logo that is white, so that it can be used on dark
+      backgrounds.
   - type: file
     name: favicon
     label: Favicon
