@@ -17,16 +17,13 @@
     <h2 class="sidebar-heading">Sort by Category</h2>
     <div class="w-dyn-list">
         <div class="collection-list w-dyn-items">
+            {{ range $.Site.Taxonomies.categories.Alphabetical }}
             <div class="category-item w-dyn-item">
-                <a href="/category/articles" class="category-link w-inline-block">
-                    <div>Articles</div>
+                <a href="/categories/{{ .Name | urlize }}/" class="category-link w-inline-block">
+                    <div>{{ replace .Name "-" " " | title }}</div>
                 </a>
             </div>
-            <div class="category-item w-dyn-item">
-                <a href="/category/personal-life" class="category-link w-inline-block">
-                    <div>Personal Life</div>
-                </a>
-            </div>
+            {{ end }}
         </div>
     </div>
 </aside>
