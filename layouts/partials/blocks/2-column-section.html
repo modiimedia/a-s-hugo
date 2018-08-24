@@ -11,7 +11,7 @@
                             href="{{ .button.custom_link }}"
                         {{- else -}}
                             href="/{{ replace $link ".md" "/" }}"
-                        {{- end }} class="button w-button">See Pricing</a>
+                        {{- end }} class="button w-button">{{ .button.text }}</a>
                 </div>
             {{- end -}}
         </div>
@@ -33,7 +33,7 @@
                             href="{{ .button.custom_link }}"
                         {{- else -}}
                             href="/{{ replace $link ".md" "/" }}"
-                        {{- end }} class="button w-button">See Pricing</a>
+                        {{- end }} class="button w-button">{{ .button.text }}</a>
                 </div>
             {{- end -}}
         </div>
