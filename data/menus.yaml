@@ -21,7 +21,7 @@ main_menu:
     title: Articles
     internal_link: blog/_index.md
   - template: menu-item
-    name: Videos
+    name: Podcasts
     title: Videos
     internal_link: videos/_index.md
 - template: menu-item
