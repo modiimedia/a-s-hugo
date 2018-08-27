@@ -80,3 +80,5 @@ fields:
       image if not set)
   hidden: false
   default: ''
+pages:
+- content/blog/off-you-go.md
