@@ -18,6 +18,6 @@ social_image = ""
 
 ### He has changed our apartment at least 3 times, I would come home from the office and it would be spotless (not a bad thing) but things would be moved or changed. Now I am one that likes to feel included in making decisions about changing up our apartment decor. I know how that sounds I should appreciate that he wanted to help me out and take care of all things around the house. I AM I PROMISE!  Have I mentioned that he is addicted to creating Amazon Wish Lists?
 
-### No? Well Josh has a problem, we have already had an invention and he plans to seek help insert AAA (Amazon Addicts Anonymous). School will keep him distracted and help keep him off Amazon for the time being. Fingers crossed he doesn't fall off the wagon. ;)
+### No? Well Josh has a problem, we have already had an intervention and he plans to seek help insert AAA (Amazon Addicts Anonymous). School will keep him distracted and help keep him off Amazon for the time being. Fingers crossed he doesn't fall off the wagon. ;)
 
 ### Ah, it feels so good to get that off of my chest.  Now it is his Senior year at UH! Whoop Whoop! I am so proud of everything he has accomplished up to this point but I am so excited to see what he will accomplish in the future. Fingers crossed that it is not changing up our apartment anymore. ;)
