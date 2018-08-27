@@ -3,7 +3,6 @@ author = "authors/aimee-ravichandran.md"
 categories = "personal life"
 date = "2018-08-27T14:16:19-05:00"
 description = "School Is Back In Session"
-draft = true
 featured_image = "/v1535396961/abundantlysocial/josh%20and%20me.jpg"
 tags = ["personal", "husband", "humor", "school", "college", "amazon"]
 title = "Off you GO!"
