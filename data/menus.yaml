@@ -14,17 +14,17 @@ main_menu:
   internal_link: pages/services.md
   title: Services
 - template: dropdown-menu
-  name: Tips & Advice
+  name: Blog
   children:
   - template: menu-item
-    name: Articles
+    name: The Chem-E and Me
     title: Articles
     internal_link: blog/_index.md
   - template: menu-item
-    name: Videos
+    name: Podcasts
     title: Videos
     internal_link: videos/_index.md
 - template: menu-item
   name: Contact
   title: Contact
-  internal_link: pages/contact.md
+  internal_link: videos
