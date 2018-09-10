@@ -44,7 +44,7 @@ text = "See Pricing"
 [[sections]]
 appearance = "dark"
 background_image = "/v1534549187/abundantlysocial/fabrice-villard-740512-unsplash%20%281%29.jpg"
-description = "Description Goes Here"
+description = ""
 details = "**All plans include:**\n\n* 1 post a day for 5 days (per platform)\n* Engagment in groups\n* Custom scripted responses (per platform)\n* Building connections\n* Engage with audience\n* Shared on all my platforms and my audience \n* One consultation call a month"
 heading = "Social Media Pricing Plans"
 template = "pricing-grid"
