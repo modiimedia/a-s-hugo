@@ -18,14 +18,19 @@
     {{ end }}
     </div>
     <div class="pgrid-textbox">
-        <div>
+        {{ if .details }}
+        <div class="flex-grow">
             {{ .details | markdownify }}
         </div>
-        <div>
+        {{ end }}
+        {{ if .add_ons }}
+        <div class="flex-grow">
+            <h3>Add-Ons:</h3>
             {{ range .add_ons }}
                 <div>{{ .name }} - ${{ .price }}</div>
                 <div>{{ .notes }}</div>
             {{ end }}
         </div>
+        {{ end }}
     </div>
 </div>
