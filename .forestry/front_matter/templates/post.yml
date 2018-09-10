@@ -81,4 +81,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/blog/let-s-get-personal.md
 - content/blog/off-you-go.md
