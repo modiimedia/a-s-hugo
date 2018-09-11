@@ -14,7 +14,7 @@ social_image = ""
 +++
 What do you do when someone you love is struggling with making their dream a reality?
 
-I am a very positive and compassionate person when someone else is hurting emotionally I hurt also hurt with them.  Well my husband whom I usually make fun of on these blog post is that person this time. Now I love my husband more than anything and to see him struggle but still be motivated to do whatever he can to get a Chemical Engineering job is inspiring, but at the same time it makes me hurt for him.
+I am a very positive and compassionate person when someone else is hurting emotionally I hurt with them.  Well my husband whom I usually make fun of on these blog post is that person this time. Now I love my husband more than anything and to see him struggle but still be motivated to do whatever he can to get a Chemical Engineering job is inspiring, but at the same time it makes me hurt for him.
 
 Now I always claim that my husband does not have emotions except when it comes to me. So he does not show how discouraged he is  losing hope in the sole reason we moved to Houston. To watch someone I love lose hope in something they are so passionate about is incredibly hard.
 
