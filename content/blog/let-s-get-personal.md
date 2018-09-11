@@ -1,5 +1,5 @@
 +++
-author = "authors/aimee-ravichandran.md"
+author = ""
 categories = "personal life"
 date = "2018-09-10T00:00:00-05:00"
 description = "This is the only way I know!"
