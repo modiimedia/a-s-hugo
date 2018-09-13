@@ -4,7 +4,7 @@ categories = "personal life"
 date = "2018-09-13T00:00:00-05:00"
 description = "How to make your images float left or right"
 draft = true
-featured_image = "/v1534549187/abundantlysocial/fabrice-villard-740512-unsplash%20%281%29.jpg"
+featured_image = "/v1536864248/abundantlysocial/dd594e241abf617abed2b7d586c19ef9--female-portrait-model-portraits.jpg"
 tags = []
 title = "Image Demonstration"
 [seo]
