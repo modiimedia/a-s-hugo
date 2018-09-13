@@ -4,8 +4,8 @@ categories = "personal life"
 date = "2018-09-13T00:00:00-05:00"
 description = "This is the only way I know!"
 draft = true
-featured_image = "/v1536621957/abundantlysocial/blog%20post.jpg"
-tags = ["personal", "college", "husband", "struggles", "love", "motivation "]
+featured_image = "/v1534549187/abundantlysocial/fabrice-villard-740512-unsplash%20%281%29.jpg"
+tags = []
 title = "Image Demonstration"
 [seo]
 meta_description = ""
