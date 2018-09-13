@@ -2,7 +2,7 @@
 author = "authors/aimee-ravichandran.md"
 categories = "personal life"
 date = "2018-09-13T00:00:00-05:00"
-description = "This is the only way I know!"
+description = "How to make your images float left or right"
 draft = true
 featured_image = "/v1534549187/abundantlysocial/fabrice-villard-740512-unsplash%20%281%29.jpg"
 tags = []
