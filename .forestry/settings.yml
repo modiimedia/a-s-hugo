@@ -30,7 +30,8 @@ sections:
   path: content/blog
   label: Posts
   create: all
-  match: "**/[!_]*"
+  match: "**/*"
+  exclude: "**/_index.md"
   templates:
   - post
 - type: directory
