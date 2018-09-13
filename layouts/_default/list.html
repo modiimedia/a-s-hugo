@@ -14,7 +14,8 @@
                                 <div class="div-block-40">
                                     <h2 class="featured-heading">{{ .Title }}</h2>
                                     <div class="div-block-41 w-clearfix">
-                                        <div class="text-block-24-copy">by {{ .Params.Author }}</div>
+                                        {{ $auth := replace .Params.Author "/" "\\" }}
+                                        <div class="text-block-24-copy">by {{ with $.Site.GetPage $auth }}{{ .Title }}{{ end }}</div>
                                         {{ with .Params.category }}<div style="background-color:#356597" class="text-block-25-copy">{{ . }}</div>{{ end }}
                                     </div>
                                     <p class="paragraph-6">This past week I went on a road-trip to Las Vegas with my friend Robyn and her three

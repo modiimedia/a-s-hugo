@@ -1733,6 +1733,8 @@ figcaption {
 
 .blog-text-block {
   margin-top: 50px;
+  font-size: 18px;
+  line-height: 200%;
 }
 
 .blog-text-block h2 {
@@ -1749,7 +1751,45 @@ figcaption {
 }
 
 .blog-text-block p {
-  font-size: 18px;
+  margin: 1em 0px;
+}
+
+.blog-text-block pre {
+  padding: 30px;
+  background: #333;
+  background: var(--text-color);
+  color: rgb(255, 219, 122);
+}
+
+.blog-text-block img {
+  margin: 1em auto 0px auto;
+  display: block;
+}
+
+.blog-text-block img[alt*="<right>"], .blog-text-block img[title*="<right>"] {
+  float: right;
+  max-width: 300px;
+  margin: 1em;
+  margin-right: 0px;
+}
+
+.blog-text-block img[alt*="<left>"], .blog-text-block img[title*="<left>"] {
+  float: left;
+  max-width: 300px;
+  margin: 1em;
+  margin-left: 0px;
+}
+
+/* .blog-text-block > p > img[alt*="<left>"] {
+  margin-top: 0px;
+  margin-bottom: 0px;
+} */
+
+@media (max-width: 550px) {
+  .blog-text-block img {
+    float: none!important;
+    max-width: 100%!important;
+  }
 }
 
 .blog-text-block h4 {
@@ -3245,6 +3285,9 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
 @media (max-width: 479px) {
   .page-section {
     margin: 50px 0px;
+  }
+  .page-section.blog-single {
+    margin: 100px 0px;
   }
   .hero_section {
     background-image: -webkit-linear-gradient(322deg, rgba(253, 39, 176, .51), hsla(0, 0%, 100%, .19)), -webkit-linear-gradient(270deg, rgba(87, 161, 255, .67), rgba(87, 161, 255, .67)), url('../images/5Sw5ZtG.png');
