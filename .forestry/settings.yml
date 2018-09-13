@@ -13,7 +13,8 @@ sections:
   path: content
   label: Other Pages
   create: all
-  match: "[!_]*.md"
+  match: "*.md"
+  exclude: _index.md
   new_doc_ext: md
   templates:
   - page
