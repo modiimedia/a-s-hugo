@@ -38,14 +38,16 @@ sections:
   path: content/videos
   label: Videos
   create: all
-  match: "**/[!_]*"
+  match: "**/*"
+  exclude: "**/_index.md"
   templates:
   - video
 - type: directory
   path: content/authors
   label: Authors
   create: all
-  match: "**/[!_]*"
+  match: "**/*"
+  exclude: "**/_index.md"
   templates:
   - author
 upload_dir: abundantlysocial
