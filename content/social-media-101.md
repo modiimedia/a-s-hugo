@@ -14,8 +14,8 @@ secondary_content = "Join us for an in-depth trip into social media, with Abunda
 show = true
 template = "2-column-section"
 [sections.appearance]
-background_image = "/v1536947126/abundantlysocial/37027504_489960801443541_4019886932887601152_o.jpg"
-style = "light"
+background_image = ""
+style = "dark"
 [sections.button]
 custom_link = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFMATGZMX6LDL"
 show_button = true
