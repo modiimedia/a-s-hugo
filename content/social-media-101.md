@@ -17,7 +17,7 @@ template = "2-column-section"
 background_image = ""
 style = "dark"
 [sections.button]
-custom_link = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFMATGZMX6LDL"
+custom_link = "https://www.crowdcast.io/e/social-media-101-with-qa/register"
 show_button = true
 text = "Claim Your Seat Today"
 
