@@ -28,3 +28,5 @@ fields:
   config:
     required: true
   description: Decide which layout to use in /layouts/_default.md
+pages:
+- content/social-media-101.md
