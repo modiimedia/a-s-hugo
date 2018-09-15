@@ -59,7 +59,7 @@ fields:
         required: true
       label: Logo Icon
       name: platform
-      description: Select a brand icon to display. (i.e. 'Facebook, Pinterest, etc')
+      description: Select a brand icon to display. (i.e. "Facebook" or "Pinterest")
       default: ''
     - type: text
       label: url
