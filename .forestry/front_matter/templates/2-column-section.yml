@@ -2,6 +2,7 @@
 label: 2 Column Section
 hide_body: false
 is_partial: true
+display_field: main_content
 fields:
 - type: boolean
   label: Show Section
@@ -81,3 +82,6 @@ fields:
     name: background_image
     label: Background Image
     default: ''
+- type: text
+  name: section_title
+  label: Section Title
