@@ -56,11 +56,9 @@ sections:
 - type: document
   path: data/settings.yaml
   label: General Settings
-  match: "**/*"
 - type: document
   path: data/style.yaml
   label: Appearance / Style
-  match: "**/*"
 - type: document
   path: data/menus.yaml
   label: Menus
