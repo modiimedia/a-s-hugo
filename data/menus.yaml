@@ -33,4 +33,4 @@ main_menu:
   name: Social Media 101
   internal_link: social-media-101.md
   make_button: true
-  icon: calendar-alt
+  icon: calendar
