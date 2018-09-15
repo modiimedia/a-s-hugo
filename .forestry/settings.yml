@@ -74,6 +74,18 @@ sections:
   read_only: true
   templates:
   - blank
+- type: directory
+  path: data
+  label: Data / Settings
+  create: none
+  match: "**/*"
+  exclude: "**/*.toml"
+  new_doc_ext: ".yaml"
+  templates:
+  - menus
+  - style
+  - settings
+  - blank
 upload_dir: abundantlysocial
 public_path: https://res.cloudinary.com/modii/w_840,q_50,f_auto
 front_matter_path: ''
