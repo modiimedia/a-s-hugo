@@ -3105,6 +3105,18 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
 }
 
 @media (max-width: 767px) {
+  .content_row.w-row > .w-col{
+    margin: 20px 0px;
+  }
+  .content_row.w-row > :first-child {
+    margin-top: 0px;
+  }
+  .content_row.w-row > :last-child {
+    margin-bottom: 0px;
+  }
+  .column-15 {
+    padding-left: 10px;
+  }
   .page-section {
     margin: 100px 0px;
   }
