@@ -1,4 +1,5 @@
 ---
+title: Menus
 main_menu:
 - template: menu-item
   name: Home
