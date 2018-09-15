@@ -56,17 +56,24 @@ sections:
 - type: document
   path: data/settings.yaml
   label: General Settings
+  templates:
+  - settings
 - type: document
   path: data/style.yaml
   label: Appearance / Style
+  templates:
+  - blank
 - type: document
   path: data/menus.yaml
   label: Menus
-  new_doc_ext: yaml
+  templates:
+  - menus
 - type: document
   path: data/icons.yaml
   label: Icons
   read_only: true
+  templates:
+  - blank
 upload_dir: abundantlysocial
 public_path: https://res.cloudinary.com/modii/w_840,q_50,f_auto
 front_matter_path: ''
