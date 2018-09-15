@@ -31,3 +31,4 @@ main_menu:
 - template: menu-item
   name: Social Media 101
   internal_link: social-media-101.md
+  make_button: true
