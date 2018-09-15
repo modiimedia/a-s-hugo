@@ -87,7 +87,7 @@ fields:
     name: price
     label: Price
     config:
-      step: '0.01'
+      step: ''
   - type: text
     name: notes
     label: Notes
