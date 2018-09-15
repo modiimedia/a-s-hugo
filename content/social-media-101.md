@@ -18,6 +18,7 @@ background_image = "/v1536947126/abundantlysocial/37027504_489960801443541_40198
 style = "dark"
 [sections.button]
 custom_link = "https://www.crowdcast.io/e/social-media-101-with-qa"
+new_tab = true
 show_button = true
 text = "Claim Your Spot "
 [[sections]]
