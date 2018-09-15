@@ -18,7 +18,7 @@ style = "light"
 [sections.button]
 text = "Learn More"
 [[sections]]
-content_order = "left to right"
+content_order = "right to left"
 main_content = "![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1536947126/abundantlysocial/37027504_489960801443541_4019886932887601152_o.jpg)"
 secondary_content = "#### Join me for an in-depth trip into social media.  I will be sharing tips on how to build your social media audience as well as create effective social media ads and campaigns. A Q&A will follow the presentation. Don't miss this opportunity to learn tips on how to grow your business."
 show = true
