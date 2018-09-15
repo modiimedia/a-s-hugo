@@ -83,3 +83,5 @@ fields:
     label: Favicon
     description: Little icon that appears in the tab at the top of browsers. Upload
       a square PNG for best results.
+pages:
+- data/settings.yaml
