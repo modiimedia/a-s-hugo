@@ -51,5 +51,3 @@ fields:
   - type: file
     name: background_texture
     label: Background Texture
-data_files:
-- data/style.yaml

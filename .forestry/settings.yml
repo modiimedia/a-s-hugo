@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: data/menus.yaml
-  label: Menus
-  match: "**/*"
 - type: heading
   label: Pages
 - type: document
@@ -57,6 +53,10 @@ sections:
   - author
 - type: heading
   label: Data / Settings
+- type: document
+  path: data/menus.yaml
+  label: Menus
+  match: "**/*"
 upload_dir: abundantlysocial
 public_path: https://res.cloudinary.com/modii/w_840,q_50,f_auto
 front_matter_path: ''

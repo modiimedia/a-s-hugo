@@ -10,5 +10,3 @@ fields:
   - menu-item
   - dropdown-menu
   description: Create your menu items.
-data_files:
-- data/menus.yaml
