@@ -43,7 +43,10 @@ fields:
     - type: select
       config:
         source:
-          type: simple
+          type: documents
+          section: data-settings
+          file: data/icons.yaml
+          path: fontawesome_brand_icons
         options:
         - facebook
         - twitter
@@ -58,7 +61,7 @@ fields:
       name: platform
       description: Select a social media platform. If you don't see the one you need  contact
         your webmaster.
-      default: facebook
+      default: ''
     - type: text
       label: url
       name: url
