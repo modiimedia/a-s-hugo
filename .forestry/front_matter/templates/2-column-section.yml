@@ -58,6 +58,9 @@ fields:
     label: Custom External Link
     description: Paste your custom URL here. Populating this field will override the
       "internal link" chosen above
+  - type: boolean
+    name: new_tab
+    label: Open In New Tab?
   description: Settings for Button. Button will appear under the "Main Content"
 - type: field_group
   name: appearance
