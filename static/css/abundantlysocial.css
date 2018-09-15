@@ -3,6 +3,7 @@ body {
   padding-top: 97px;
   /* background-color: var(--background); */
   font-family: Lato, sans-serif;
+  color: #333333;
   color: var(--text-color);
   font-size: 18px;
   line-height: 30px;
@@ -141,6 +142,7 @@ figcaption {
 }
 
 .nav_link:hover {
+  color: blue;
   color: var(--primary);
 }
 
@@ -193,6 +195,7 @@ figcaption {
   left: -1px;
   right: -1px;
   bottom: 0px;
+  background: #333333;
   background: var(--primary);
   opacity: 0;
   border-radius: 100px;
@@ -353,6 +356,7 @@ figcaption {
 .footer {
   padding-top: 50px;
   /* background-color: var(--background); */
+  background-color: #333333;
   background-color: var(--footer-color);
   color: #fff;
 }
@@ -514,6 +518,7 @@ figcaption {
 
 .submit-button {
   margin-top: 40px;
+  background-color: #333333;
   background-color: var(--primary);
 }
 
@@ -1418,25 +1423,6 @@ figcaption {
   cursor: pointer;
 }
 
-.updates:hover {
-  color: var(--primary);
-}
-
-.updates-text {
-  display: inline-block;
-  margin-left: 5px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  border: 1px none #333;
-  border-radius: 50px;
-  background-color: transparent;
-}
-
-.envelope-image {
-  display: inline-block;
-  margin-top: -4px;
-}
-
 .close-button {
   position: absolute;
   top: -20px;
@@ -1509,6 +1495,7 @@ figcaption {
   display: block;
   width: 120px;
   height: 2px;
+  background-color: #333333;
   background-color: var(--primary);
   opacity: 0;
   -webkit-transform: scale3d(0.5, 1, 1);
@@ -1876,6 +1863,7 @@ figcaption {
 }
 
 .blog-text-block a {
+  color: blue;
   color: var(--primary);
   font-weight: 400;
   text-decoration: underline;
@@ -1953,6 +1941,7 @@ figcaption {
 }
 
 .link-block-8:hover {
+  color: blue;
   color: var(--primary);
 }
 
@@ -2071,6 +2060,7 @@ figcaption {
   margin-bottom: 10px;
   border-style: none none solid;
   border-width: 1px 1px 0px;
+  border-color: #333333;
   border-color: var(--primary);
   -webkit-transition: border 200ms ease;
   transition: border 200ms ease;
@@ -2196,6 +2186,7 @@ figcaption {
 }
 
 .category-link {
+  color: #333333;
   color: var(--primary);
   text-decoration: none;
 }
@@ -2226,10 +2217,12 @@ figcaption {
 .tag-link {
   padding-right: 10px;
   padding-left: 10px;
+  border: 1px solid #333333;
   border: 1px solid var(--primary);
   border-radius: 20px;
   -webkit-transition: background-color 200ms ease, color 200ms ease;
   transition: background-color 200ms ease, color 200ms ease;
+  color: #333333;
   color: var(--primary);
   font-size: 14px;
   line-height: 24px;
@@ -2237,6 +2230,7 @@ figcaption {
 }
 
 .tag-link:hover {
+  background-color: #333333;
   background-color: var(--primary);
   color: #fff;
 }
@@ -2427,6 +2421,7 @@ figcaption {
 }
 
 .video-item-inner:hover {
+  color: #333333;
   color: var(--primary);
 }
 
@@ -2571,6 +2566,7 @@ figcaption {
 }
 
 .link-block-11:hover {
+  color: #333333;
   color: var(--primary);
 }
 
@@ -2578,12 +2574,14 @@ figcaption {
   padding: 5px 15px;
   float: none;
   border-radius: 0px;
+  background-color: #333333;
   background-color: var(--primary);
   color: #fff;
   text-decoration: none;
 }
 
 .button-smaller:hover {
+  background-color: #333333;
   background-color: var(--primary);
   filter: brightness(95%);
   -webkit-filter: brightness(95%);
@@ -3024,6 +3022,7 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
   .dark_section {
     padding-top: 100px;
     padding-bottom: 100px;
+    background: #333333;
     background: var(--background);
     background-position: 0px 0px, 8% -68px;
     background-size: auto, auto;
@@ -3180,6 +3179,7 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
   }
   .dark_section {
     padding: 50px 0px;
+    background: #333333;
     background: var(--background);
     background-position: 0px 0px, 50% 50%;
   }
@@ -3411,6 +3411,7 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
     margin-left: -20px;
   }
   .dark_section {
+    background: #333333;
     background: var(--background);
     background-position: 0px 0px, 0px 50%;
     background-size: auto, cover;
