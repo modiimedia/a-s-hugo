@@ -40,5 +40,5 @@ fields:
     color_format: Hex
   label: Button Color
   name: button_color
-  description: Site automatically pulls colors from Settings > Style / Appearance
+  description: Site automatically pulls colors from Settings > Appearance & Style
     > Site Colors. Setting the button color here will override the default settings.
