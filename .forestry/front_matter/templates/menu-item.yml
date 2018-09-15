@@ -2,6 +2,7 @@
 label: Menu Item
 hide_body: false
 is_partial: true
+display_field: name
 fields:
 - type: text
   name: name
@@ -39,4 +40,5 @@ fields:
     color_format: Hex
   label: Button Color
   name: button_color
-  description: Leaving blank will use the default primary color
+  description: Site automatically pulls colors from Settings > Appearance & Style
+    > Site Colors. Setting the button color here will override the default settings.

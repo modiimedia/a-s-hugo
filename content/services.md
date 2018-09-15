@@ -9,6 +9,7 @@ social_image = "/v1533615748/abundantlysocial/consulting-image-compressed-compre
 content_order = "right to left"
 main_content = "## Social Media Management\n\nIncrease audience engagement and retention. We will help you post regular content that will excite your current audience and attract new ones. We work with all of our businesses to find content that is suited perfectly for them and their brand."
 secondary_content = "![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1533615748/abundantlysocial/AdobeStock_36972905-Converted-compressor.png)"
+section_name = "Social Media Management"
 show = true
 template = "2-column-section"
 [sections.appearance]
@@ -21,6 +22,7 @@ text = "See Pricing"
 content_order = "right to left"
 main_content = "## Social Media Consultation\n\nConsultations for small and medium sized businesses. Do you find yourself struggling to cultivate an audience? Or are your customer interactions dwindling? We have years of experience working in public relations and social media management. We'll help you form a plan and give you advice on how to execute it!\n\n**Consultation rate:**\n\n90 minute session - $195"
 secondary_content = "![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1533615748/abundantlysocial/consulting-image-compressed-compressor.jpg)"
+section_name = "Social Media Consultation"
 show = true
 template = "2-column-section"
 [sections.appearance]
@@ -33,6 +35,7 @@ text = "Schedule a Consultation"
 content_order = "right to left"
 main_content = "## Web Design\n\nNeed a website to go along with our social media packages? We can cover that too! We offer exclusive discounted website bundles to all of our social media customers through partnership. These are fully hosted plans that include everything from custom emails address, blogs, website backups, eCommerce integration, and more. In addition, all the websites are made to be fully-responsive so it will look good on any device. It's everything you need to get your online presence up and running!  "
 secondary_content = "![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1533615747/abundantlysocial/web-design-Converted-01-compressed-compressor.png)"
+section_name = "Web Design"
 show = true
 template = "2-column-section"
 [sections.appearance]
