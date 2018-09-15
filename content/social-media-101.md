@@ -1,6 +1,5 @@
 +++
 date = "2018-09-14T12:40:33-05:00"
-draft = true
 layout = "page"
 title = "Social Media 101 with Q&A                          Wednesday September 26th at 7pm cst"
 [seo]
@@ -14,12 +13,12 @@ secondary_content = "![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v153
 show = true
 template = "2-column-section"
 [sections.appearance]
-background_image = "/v1533615751/abundantlysocial/portrait.jpg"
+background_image = ""
 style = "dark"
 [sections.button]
 text = "Learn More"
 [[sections]]
-content_order = "left to right"
+content_order = "right to left"
 main_content = "##### Join me for an in-depth trip into social media.  I will be sharing tips on how to build your social media audience as well as create effective social media ads and campaigns. A Q&A will follow the presentation. Don't miss this opportunity to learn tips on how to grow your business."
 secondary_content = "##### ![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1536947126/abundantlysocial/37027504_489960801443541_4019886932887601152_o.jpg)"
 show = true
