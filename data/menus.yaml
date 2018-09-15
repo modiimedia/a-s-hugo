@@ -28,3 +28,6 @@ main_menu:
   name: Contact
   title: Contact
   internal_link: videos
+- template: menu-item
+  name: Social Media 101
+  internal_link: social-media-101.md
