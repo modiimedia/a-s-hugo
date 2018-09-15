@@ -154,6 +154,72 @@ figcaption {
   color: #333;
   font-weight: 400;
 }
+.nav_link i {
+  margin-right: 10px;
+}
+.nav_link.nav_button {
+  background: none;
+  border: 1px solid #333333;
+  border: 1px solid var(--primary);
+  color: #333333;
+  color: var(--primary);
+  border-bottom-width: 3px;
+  border-radius: 100px;
+  padding: 3px 15px;
+  height: auto;
+  font-weight: bold;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.nav_link.nav_button:hover {
+  color: white!important;
+}
+
+.nav_link.nav_button span {
+  z-index: 1;
+  position: relative;
+}
+
+.nav_link.nav_button:nth-of-type(odd) {
+  border-color: var(--secondary);
+  color: var(--secondary);
+  z-index: 0;
+}
+
+.button_hover {
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  right: -1px;
+  bottom: 0px;
+  background: var(--primary);
+  opacity: 0;
+  border-radius: 100px;
+}
+.nav_button:nth-of-type(odd) .button_hover {
+  background: var(--secondary)
+}
+
+.nav_link.nav_button:hover .button_hover{
+  opacity: 0.8;
+}
+
+.nav_link.nav_button.w--current {
+  color: white;
+}
+
+.nav_link.nav_button.w--current .button_hover {
+  opacity: 0.8;
+}
+
+@media(max-width:991px) {
+  .nav_link.nav_button {
+    margin: 10px 10px;
+    padding: 2px 5px;
+    text-align: center;
+  }
+}
 
 .container {
   padding-right: 0px;

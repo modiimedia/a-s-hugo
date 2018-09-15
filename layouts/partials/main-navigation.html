@@ -1,31 +1,45 @@
 <nav role="navigation" class="nav-menu w-nav-menu">
     {{ range $.Site.Data.menus.main_menu }}
-    {{ if .children }}
-    <div data-delay="0" class="w-dropdown">
-        <div class="nav_link w-dropdown-toggle">
-            <div class="w-icon-dropdown-toggle"></div>
-            <div>{{ .name }}</div>
-        </div>
-        <nav class="dropdown-list w-dropdown-list">
-            {{ range .children }}
+    {{ if ne .make_button true }}
+        {{ if .children }}
+            <div data-delay="0" class="w-dropdown">
+                <div class="nav_link w-dropdown-toggle">
+                    <div class="w-icon-dropdown-toggle"></div>
+                    <div>{{ .name }}</div>
+                </div>
+                <nav class="dropdown-list w-dropdown-list">
+                    {{ range .children }}
+                    {{ $url := replace .internal_link "_index.md" "" }}
+                    {{ $urlB := replace $url "pages/" "" }}
+                    {{ $urlComplete := replace $urlB ".md" "/" }}
+                    <a {{ if .external_link }}href="{{ .external_link }}"{{ else }}href="/{{ $urlComplete }}"{{ end }} class="nav_link w-dropdown-link">{{ .name }}</a>
+                    {{ end }}
+                </nav>
+            </div>
+        {{ else }}
             {{ $url := replace .internal_link "_index.md" "" }}
             {{ $urlB := replace $url "pages/" "" }}
             {{ $urlComplete := replace $urlB ".md" "/" }}
-            <a {{ if .external_link }}href="{{ .external_link }}"{{ else }}href="/{{ $urlComplete }}"{{ end }} class="nav_link w-dropdown-link">{{ .name }}</a>
-            {{ end }}
-        </nav>
-    </div>
-    {{ else }}
-    {{ $url := replace .internal_link "_index.md" "" }}
-    {{ $urlB := replace $url "pages/" "" }}
-    {{ $urlComplete := replace $urlB ".md" "/" }}
-    <a {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link">{{ .name }}</a>
+            <a {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link">{{ .name }}</a>
+        {{ end }}
     {{ end }}
     {{ end }}
-    <div data-ix="newsletter-popup" class="updates">
-        <img src="https://uploads-ssl.webflow.com/595fbfae5b9a9013ee8e97a3/59758fbbe6ed92540361f420_if_icon-email_211660.svg"
-            width="28" class="envelope-image" />
-        <div class="updates-text">Get Updates</div>
+    {{ range $.Site.Data.menus.main_menu }}
+        {{ if eq .make_button true }}
+            {{ $url := replace .internal_link "_index.md" "" }}
+            {{ $urlB := replace $url "pages/" "" }}
+            {{ $urlComplete := replace $urlB ".md" "/" }}
+            <a {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link nav_button">
+                <span>
+                    <i class="fas fa-calendar-alt"></i> {{ .name }}
+                </span>
+                <div class="button_hover"></div>
+            </a>
+        {{ end }}
+    {{ end }}
+    <div data-ix="newsletter-popup" class="nav_link w-nav-link nav_button" style="font-weight: bold">
+        <span class="updates-text"><i class="fas fa-envelope"></i>Get Updates</span>
+        <div class="button_hover"></div>
     </div>
 </nav>
 
