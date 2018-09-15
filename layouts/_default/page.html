@@ -27,11 +27,17 @@
 </div>
     {{ range $i, $e := .Params.sections }}
         {{ if eq .template "2-column-section" }}
-        <div class="page-section">
+        <section {{ if eq .appearance.style "dark" }}class="dark_section"{{ else}}class="page-section"{{ end }}
+        {{- if eq .appearance "dark" -}}
+            style="
+            background-image: -webkit-linear-gradient(121deg, {{ $transparent | safeCSS }}, {{ $b1 | safeCSS }}), -webkit-linear-gradient(180deg, {{ $b1 | safeCSS }}, {{ $b1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+            background-image: linear-gradient(75deg, {{ $transparent | safeCSS }}, {{ $b1 | safeCSS }}), linear-gradient(180deg, {{ $b1 | safeCSS }}, {{ $b1 | safeCSS }}), url({{ $.Site.Params.cloudinary_url }}w_2000,q_60,f_auto{{ $.Site.Data.style.textures.banner_texture }});
+            "
+        {{- end -}}>
             <div class="container-div">    
                 {{ partial "blocks/2-column-section.html" . }}
             </div>
-        </div>        
+        </section>        
         {{ end }}
         {{ if eq .template "pricing-grid" }}
         <section class="dark_section"
