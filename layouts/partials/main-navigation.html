@@ -24,17 +24,32 @@
         {{ end }}
     {{ end }}
     {{ end }}
-    {{ range $.Site.Data.menus.main_menu }}
+    {{ range $i, $e := $.Site.Data.menus.main_menu }}
         {{ if eq .make_button true }}
             {{ $url := replace .internal_link "_index.md" "" }}
             {{ $urlB := replace $url "pages/" "" }}
             {{ $urlComplete := replace $urlB ".md" "/" }}
-            <a {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link nav_button">
+            <a id="buttonLink{{ $i }}" {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link nav_button">
                 <span>
                     <i class="fas fa-calendar-alt"></i> {{ .name }}
                 </span>
                 <div class="button_hover"></div>
             </a>
+            {{ if .button_color }}
+                {{ $color := .button_color }}
+                <style>
+                    #buttonLink{{ $i }}.nav_link.nav_button {
+                        color: {{ $color }};
+                        border-color: {{ $color }};
+                    }
+                    #buttonLink{{ $i }}.nav_link.nav_button.w--current {
+                        color: white;
+                    }
+                    #buttonLink{{ $i }}.nav_link.nav_link.nav_button .button_hover {
+                        background: {{ $color }};
+                    }
+                </style>
+            {{ end }}
         {{ end }}
     {{ end }}
     <div data-ix="newsletter-popup" class="nav_link w-nav-link nav_button" style="font-weight: bold">
