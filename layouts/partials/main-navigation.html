@@ -5,14 +5,14 @@
             <div data-delay="0" class="w-dropdown">
                 <div class="nav_link w-dropdown-toggle">
                     <div class="w-icon-dropdown-toggle"></div>
-                    <div>{{ .name }}</div>
+                    <div>{{ if .icon }}<i class="fas fa-{{ .icon }}"></i>{{ end }}{{ .name }}</div>
                 </div>
                 <nav class="dropdown-list w-dropdown-list">
                     {{ range .children }}
                     {{ $url := replace .internal_link "_index.md" "" }}
                     {{ $urlB := replace $url "pages/" "" }}
                     {{ $urlComplete := replace $urlB ".md" "/" }}
-                    <a {{ if .external_link }}href="{{ .external_link }}"{{ else }}href="/{{ $urlComplete }}"{{ end }} class="nav_link w-dropdown-link">{{ .name }}</a>
+                    <a {{ if .external_link }}href="{{ .external_link }}"{{ else }}href="/{{ $urlComplete }}"{{ end }} class="nav_link w-dropdown-link">{{ if .icon }}<i class="fas fa-{{ .icon }}"></i>{{ end }}{{ .name }}</a>
                     {{ end }}
                 </nav>
             </div>
@@ -31,7 +31,7 @@
             {{ $urlComplete := replace $urlB ".md" "/" }}
             <a id="buttonLink{{ $i }}" {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link nav_button">
                 <span>
-                    <i class="fas fa-calendar-alt"></i> {{ .name }}
+                    {{ if .icon }}<i class="fas fa-{{ .icon }}"></i>{{ end }}{{ .name }}
                 </span>
                 <div class="button_hover"></div>
             </a>
