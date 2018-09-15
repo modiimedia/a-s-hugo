@@ -60,13 +60,15 @@ fields:
       label: Logo Icon
       name: platform
       description: Select a brand icon to display. (i.e. "Facebook" or "Pinterest")
-      default: ''
+      default: 500px
     - type: text
       label: url
       name: url
       config:
         required: true
       description: Copy and paste the link to your social media account here
+    description: You social media accounts will be listed in the Footer at the bottom
+      of every page.
 - type: field_group
   name: logos
   label: Logos & Media
