@@ -25,9 +25,10 @@ fields:
   name: icon
   config:
     source:
-      type: datafiles
-      file: data-icons-yaml
-      path: fontawesome
+      type: documents
+      file: data/icons.yaml
+      path: fontawesome_solid_icons
+      section: icons
   label: Icon
   description: Add an icon to your link
 - type: boolean
