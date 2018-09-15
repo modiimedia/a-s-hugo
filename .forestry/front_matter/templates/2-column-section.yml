@@ -8,6 +8,14 @@ fields:
   label: Show Section
   name: show
   default: true
+- type: text
+  name: section_name
+  label: Section Name
+  default: ''
+  description: Name of this section. (Doesn't appear on page just makes it easier
+    to see what's what)
+  config:
+    required: true
 - type: select
   name: content_order
   config:
@@ -82,6 +90,3 @@ fields:
     name: background_image
     label: Background Image
     default: ''
-- type: text
-  name: section_title
-  label: Section Title
