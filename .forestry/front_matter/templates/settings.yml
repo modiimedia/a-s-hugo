@@ -57,10 +57,9 @@ fields:
         - tumblr
         - vimeo
         required: true
-      label: Social Platform
+      label: Logo Icon
       name: platform
-      description: Select a social media platform. If you don't see the one you need  contact
-        your webmaster.
+      description: Select a brand icon to display. (i.e. 'Facebook, Pinterest, etc')
       default: ''
     - type: text
       label: url
