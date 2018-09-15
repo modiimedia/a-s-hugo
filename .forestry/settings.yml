@@ -54,9 +54,15 @@ sections:
 - type: heading
   label: Data / Settings
 - type: document
+  path: data/icons.yaml
+  label: Icons
+  match: "**/*"
+  read_only: true
+- type: document
   path: data/menus.yaml
   label: Menus
   match: "**/*"
+  new_doc_ext: ".yaml"
 upload_dir: abundantlysocial
 public_path: https://res.cloudinary.com/modii/w_840,q_50,f_auto
 front_matter_path: ''
