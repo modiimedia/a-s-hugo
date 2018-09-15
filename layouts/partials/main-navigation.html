@@ -5,7 +5,7 @@
             <div data-delay="0" class="w-dropdown">
                 <div class="nav_link w-dropdown-toggle">
                     <div class="w-icon-dropdown-toggle"></div>
-                    <div>{{ if .icon }}<i class="fas fa-{{ .icon }}"></i>{{ end }}{{ .name }}</div>
+                    <div>{{ .name }}</div>
                 </div>
                 <nav class="dropdown-list w-dropdown-list">
                     {{ range .children }}
@@ -20,7 +20,10 @@
             {{ $url := replace .internal_link "_index.md" "" }}
             {{ $urlB := replace $url "pages/" "" }}
             {{ $urlComplete := replace $urlB ".md" "/" }}
-            <a {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link">{{ .name }}</a>
+            <a {{ if .external_link -}}href="{{ .external_link }}"{{- else -}}href="/{{ $urlComplete }}"{{- end }} class="nav_link w-nav-link">
+                {{ if .icon }}<i class="fas fa-{{ .icon }}"></i>{{ end }}
+                {{ .name }}
+            </a>
         {{ end }}
     {{ end }}
     {{ end }}
