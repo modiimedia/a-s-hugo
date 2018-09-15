@@ -21,3 +21,12 @@ fields:
   label: Custom External Link
   description: Copy the external URL you want to link to. Filling out this field will
     override the page link field above.
+- type: boolean
+  name: make_button
+  label: Make Button
+- type: color
+  config:
+    color_format: Hex
+  label: Button Color
+  name: button_color
+  description: Leaving blank will use the default primary color
