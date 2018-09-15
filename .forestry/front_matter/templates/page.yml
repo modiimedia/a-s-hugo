@@ -8,6 +8,10 @@ fields:
   label: Title
   config:
     required: true
+- type: boolean
+  label: Hide Title Banner
+  name: hide_title_banner
+  description: ''
 - type: include
   name: seo
   label: SEO
