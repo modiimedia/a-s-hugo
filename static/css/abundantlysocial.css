@@ -322,7 +322,8 @@ figcaption {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #fff;
-  font-size: 50px;
+  font-size: 250%;
+  line-height: 130%;
   text-align: center;
   text-transform: none;
 }
