@@ -3155,7 +3155,7 @@ html.w-mod-js *[data-ix="linkedin-hover"] {
     margin-bottom: 20px;
   }
   .column-15 {
-    display: none;
+    /* display: none; */
   }
   .form-block {
     padding: 20px;
