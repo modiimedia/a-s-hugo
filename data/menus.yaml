@@ -34,4 +34,4 @@ main_menu:
   internal_link: social-media-101.md
   make_button: true
   icon: calendar
-  button_color: "#FF0000"
+  button_color: 
