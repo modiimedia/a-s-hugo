@@ -35,7 +35,7 @@ fields:
     config:
       required: true
       min: '0'
-      step: '0.01'
+      step: ''
     default: '0.00'
   - type: select
     name: payment_type
