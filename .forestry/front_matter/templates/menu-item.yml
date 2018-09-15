@@ -21,6 +21,15 @@ fields:
   label: Custom External Link
   description: Copy the external URL you want to link to. Filling out this field will
     override the page link field above.
+- type: select
+  name: icon
+  config:
+    source:
+      type: datafiles
+      file: data-icons-yaml
+      path: fontawesome
+  label: Icon
+  description: Add an icon to your link
 - type: boolean
   name: make_button
   label: Make Button
