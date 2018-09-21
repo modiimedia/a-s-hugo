@@ -18,7 +18,7 @@ template = "2-column-section"
 background_image = "/v1536947126/abundantlysocial/37027504_489960801443541_4019886932887601152_o.jpg"
 style = "dark"
 [sections.button]
-custom_link = "https://www.crowdcast.io/e/social-media-101-with-qa"
+custom_link = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFMATGZMX6LDL"
 new_tab = true
 show_button = true
 text = "Claim Your Spot "
