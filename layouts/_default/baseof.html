@@ -60,9 +60,6 @@
 </head>
 
 <body>
-  {{ if .Site.IsServer }}
-    <!-- {{ .Content }} -->
-  {{ end }}
   {{ partial "header.html" . }} 
   {{ block "main" . }}
   
@@ -81,6 +78,7 @@
   <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   <!-- <script id="dsq-count-scr" src="//abundantly-social.disqus.com/count.js" async></script> -->
   {{ block "addscripts" . }}<!-- add addition js stuff here -->{{ end }}
+  <!-- {{ .Content }} -->
 </body>
 
 </html>
