@@ -4,12 +4,12 @@
   "description": "The website uses [Hugo Static Site Generator](https://gohugo.io) Static Site Generator to build the site, and utilizes [Forestry.io](https://forestry.io) for client content updates.",
   "main": "index.js",
   "dependencies": {
-    "dotenv": "^6.0.0",
+    "dotenv": "^6.2.0",
     "mkdirp": "^0.5.1",
-    "npm": "^6.4.1",
+    "npm": "^6.10.3",
     "request": "^2.88.0",
-    "slugify": "^1.3.1",
-    "uglify-js": "^3.4.6",
+    "slugify": "^1.3.4",
+    "uglify-js": "^3.6.0",
     "webflow-api": "^0.4.1"
   },
   "devDependencies": {},
