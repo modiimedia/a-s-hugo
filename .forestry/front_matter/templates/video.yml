@@ -1,7 +1,6 @@
 ---
 label: Video
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -73,7 +72,7 @@ fields:
   default: ''
   description: Settings for search engines
 pages:
+- content/videos/authortalk-with-russell-aimee-sandy.md
 - content/videos/what-is-this-80-20-rule.md
 - content/videos/why-should-you-use-hashtags-on-social-media.md
 - content/videos/authortalk-with-suehawley.md
-- content/videos/authortalk-with-russell-aimee-sandy.md

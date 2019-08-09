@@ -1,7 +1,6 @@
 ---
 label: Post
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -81,5 +80,5 @@ fields:
   hidden: false
   default: ''
 pages:
-- content/blog/let-s-get-personal.md
 - content/blog/off-you-go.md
+- content/blog/let-s-get-personal.md

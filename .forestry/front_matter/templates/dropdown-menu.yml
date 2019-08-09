@@ -1,7 +1,6 @@
 ---
 label: Dropdown Menu
 hide_body: false
-is_partial: true
 display_field: name
 fields:
 - type: text

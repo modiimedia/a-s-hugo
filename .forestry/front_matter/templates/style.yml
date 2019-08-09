@@ -1,7 +1,6 @@
 ---
 label: Style
 hide_body: true
-is_partial: false
 fields:
 - type: field_group
   label: Site Colors

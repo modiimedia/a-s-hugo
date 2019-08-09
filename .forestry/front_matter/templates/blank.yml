@@ -1,7 +1,6 @@
 ---
 label: Blank
 hide_body: true
-is_partial: false
 fields: []
 pages:
 - data/icons.yaml
