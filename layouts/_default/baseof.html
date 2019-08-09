@@ -60,6 +60,9 @@
 </head>
 
 <body>
+  {{ if .Site.IsServer }}
+    <!-- {{ .Content }} -->
+  {{ end }}
   {{ partial "header.html" . }} 
   {{ block "main" . }}
   
