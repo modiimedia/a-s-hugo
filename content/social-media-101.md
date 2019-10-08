@@ -9,9 +9,9 @@ meta_title = ""
 social_image = ""
 [[sections]]
 content_order = "right to left"
-main_content = "# Social Media 101 with Q&A\n\n<hr>\n\nJoin me for an in-depth trip into social media.  I will be sharing tips on how to build your social media audience as well as create effective social media ads and campaigns. A Q&A will follow the presentation. Don't miss this opportunity to learn tips on how to grow your business. Cost is 25.00 to attend."
+main_content = "# Social Media 101 \n\n<hr>\n\nJoin me for an in-depth trip into social media.  I will be sharing tips on how to build your social media audience as well as create effective social media ads and campaigns. A Q&A will follow the presentation. Don't miss this opportunity to learn tips on how to grow your business. "
 secondary_content = "##### ![](https://res.cloudinary.com/modii/w_840,q_50,f_auto/v1536947126/abundantlysocial/37027504_489960801443541_4019886932887601152_o.jpg)"
-section_name = "Social Media 101 with Q&A"
+section_name = "Social Media 101 "
 show = true
 template = "2-column-section"
 [sections.appearance]
@@ -19,6 +19,7 @@ background_image = "/v1536947126/abundantlysocial/37027504_489960801443541_40198
 style = "dark"
 [sections.button]
 custom_link = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SFMATGZMX6LDL"
+internal_link = ""
 new_tab = true
 show_button = true
 text = "Claim Your Spot "
@@ -33,6 +34,10 @@ template = "2-column-section"
 background_image = ""
 style = "light"
 [sections.button]
+custom_link = ""
+internal_link = ""
+new_tab = false
+show_button = false
 text = "Learn More"
 
 +++
