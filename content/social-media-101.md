@@ -2,7 +2,7 @@
 date = "2018-09-14T12:40:33-05:00"
 hide_title_banner = true
 layout = "page"
-title = "Social Media 101 with Q&A"
+title = "Social Media 101 "
 [seo]
 meta_description = ""
 meta_title = ""
