@@ -5,15 +5,26 @@ main_menu:
   name: Home
   internal_link: _index.md
   title: Home
+  external_link: ''
+  icon: ''
+  make_button: false
+  button_color: ''
 - template: menu-item
   name: About
   internal_link: pages/about.md
   external_link: ''
   title: About
+  icon: ''
+  make_button: false
+  button_color: ''
 - template: menu-item
   name: Services
   internal_link: pages/services.md
   title: Services
+  external_link: ''
+  icon: ''
+  make_button: false
+  button_color: ''
 - template: dropdown-menu
   name: Blog
   children:
@@ -21,17 +32,30 @@ main_menu:
     name: The Chem-E and Me
     title: Articles
     internal_link: blog/_index.md
+    external_link: ''
+    icon: ''
+    make_button: false
+    button_color: ''
   - template: menu-item
     name: Podcasts
     title: Videos
     internal_link: videos/_index.md
+    external_link: ''
+    icon: ''
+    make_button: false
+    button_color: ''
 - template: menu-item
   name: Contact
   title: Contact
   internal_link: contact.md
+  external_link: ''
+  icon: ''
+  make_button: false
+  button_color: ''
 - template: menu-item
-  name: Social Media 101
+  name: Member Login
   internal_link: social-media-101.md
   make_button: true
-  icon: calendar
-  button_color: 
+  icon: sign-in-alt
+  button_color: ''
+  external_link: https://members.abundantlysocial.com
