@@ -1,5 +1,7 @@
 <div style="padding: 10px; border: 1px solid red; border-radius: 10px; color: red">
-This repo is no longer active. All code for abundantly social website has been moved to a private repository.
+
+  **This repo is no longer active. All code for abundantly social website has been moved to a private 
+  repository.**
 </div>
 
 # Repository for Abundantly Social Website
