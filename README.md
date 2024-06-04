@@ -2,8 +2,8 @@
 
   **This repo is no longer active. All code for abundantly social website has been moved to a private 
   repository.**
+  
 </div>
-
 # Repository for Abundantly Social Website
 
 The website uses [Hugo Static Site Generator](https://gohugo.io) Static Site Generator to build the site, and utilizes [Forestry.io](https://forestry.io) for client content updates.
